@@ -2,7 +2,7 @@
 
 Smart Access Gateway \(SmartAG\) is a one-stop solution for connecting local branches to the Alibaba Cloud. With Smart Access Gateway, enterprises can access Alibaba cloud through the Internet in an encrypted way, and get a more intelligent, more reliable, and more secure experience in accessing the Alibaba Cloud.
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15401/6804_zh-CN.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15401/6804_en-US.png)
 
 ## Components {#section_fdf_cls_j2b .section}
 
