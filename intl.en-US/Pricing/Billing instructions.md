@@ -29,7 +29,7 @@ The device fee varies for different specifications. No shipping fee is collected
 
 The following table is the bandwidth fee.
 
-**Note:** Open a ticket if you need more than 100 Mbps bandwidth.
+**Note:** Open a ticket if you need more than 10 Mbps bandwidth.
 
 |Bandwidth \(Mbps\)|Price \(USD/Mbps/Month\)|
 |:-----------------|:-----------------------|
