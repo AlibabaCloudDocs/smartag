@@ -22,8 +22,8 @@ The device fee varies for different specifications. No shipping fee is collected
 
 |Specification|Price \(USD/Per device\)|
 |:------------|:-----------------------|
-|sag-50 standalone mode|136.20|
-|sag-50 active/standby mode|235.26|
+|sag-50 standalone mode|123.82|
+|sag-50 active/standby mode|222.88|
 
 ## Bandwidth fee {#section_cz3_gps_j2b .section}
 
@@ -33,8 +33,8 @@ The following table is the bandwidth fee.
 
 |Bandwidth \(Mbps\)|Price \(USD/Mbps/Month\)|
 |:-----------------|:-----------------------|
-|1-100|592|
-|More than 100|473.6|
+|1-100|12.38|
+|More than 100|9.90|
 
 ## Overdue instructions {#section_bnn_pps_j2b .section}
 
