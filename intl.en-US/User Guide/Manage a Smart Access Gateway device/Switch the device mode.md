@@ -1,8 +1,8 @@
 # Switch the device mode {#task_mj4_by5_q2b .task}
 
-If you choose the active/standby mode when you purchase the device, you can quickly switch to the standby device when the active device fails.
+If you choose the active/standby mode when you purchase the device, you can then quickly switch to a standby device if the active device fails, avoiding a disruption to your network.
 
--   Make sure that you select the **Active/Standby** mode when purchasing the device.
+-   Make sure that you select **Active/Standby** mode when buying the devices.
 -   Make sure the device configurations are the same for both devices.
 
 1.  Log on to the [Smart Access Gateway console](https://smartag.console.aliyun.com). 
