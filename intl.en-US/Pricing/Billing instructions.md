@@ -20,8 +20,8 @@ The device fee varies for different specifications. No shipping fee is collected
 
 **Note:** Only the standard edition is available in the pre-release phase.
 
-|Specification|Price \(USD/Per device\)|
-|:------------|:-----------------------|
+|Specification|Price \(USD\)|
+|:------------|:------------|
 |sag-50 standalone mode|123.82|
 |sag-50 active/standby mode|222.88|
 
