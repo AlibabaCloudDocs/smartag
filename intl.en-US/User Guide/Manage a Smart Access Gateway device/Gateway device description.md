@@ -4,10 +4,10 @@ After receiving the Smart Access Gateway device, check whether the gateway devic
 
 ## Specifications of Smart Access Gateway device {#section_gdf_25s_j2b .section}
 
-Alibaba Cloud provides three device specifications for you to choose from. Only the standard edition is available in the pre-release phase.
+Alibaba Cloud provides three device specifications for you to choose from. Only the standard edition \(sag-100b\) is available in the pre-release phase.
 
-|Property|Standard edition|
-|:-------|:---------------|
+|Property|sag-100b|
+|:-------|:-------|
 |Casing|Plastic, white|
 |Size|W≤215 mm, D≤180 mm, H≤44 mm|
 |Operating environment|Indoor environment|
@@ -33,7 +33,7 @@ After receiving the Smart Access Gateway device, check if the following items ar
 
 The front panel of a Smart Access Gateway device includes a power switch, a USB port, indicator lights and a reset key:
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15408/15349542876810_en-US.jpg)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15408/15353687656810_en-US.jpg)
 
 -   Power switch
 
@@ -63,7 +63,7 @@ The front panel of a Smart Access Gateway device includes a power switch, a USB 
 
 The rear panel of the Smart Access Gateway device includes the console interface, a WAN port, four LAN ports, and the power interface:
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15408/15349542876811_en-US.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15408/15353687656811_en-US.png)
 
 -   Console port
 
