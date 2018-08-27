@@ -22,8 +22,8 @@ The device fee varies for different specifications. No shipping fee is collected
 
 |Specification|Price \(USD\)|
 |:------------|:------------|
-|sag-50 standalone mode|123.82|
-|sag-50 active/standby mode|222.88|
+|sag-100b standalone mode|123.82|
+|sag-100b active/standby mode|222.88|
 
 ## Bandwidth fee {#section_cz3_gps_j2b .section}
 
