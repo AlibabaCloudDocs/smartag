@@ -11,8 +11,6 @@
 -   目标ECS故障。
 -   运营商网络故障。
 
-## 处理步骤 { .remedy}
-
 1.  登录[智能接入网关控制台](https://smartag.console.aliyun.com/sag/cn-shanghai/sags)。 
 2.  单击智能接入网关实例ID，查看设备状态是否为**在线**。 
     -   如果离线，请参考[设备显示离线](cn.zh-CN/故障处理/设备和云的连通性故障（sag-100wm）/设备显示离线.md#)处理。
