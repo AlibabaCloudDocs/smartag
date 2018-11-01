@@ -1,6 +1,6 @@
 # SAG-100B简介 {#concept_amd_jxb_pfb .concept}
 
-智能接入网关SAG-100B设备适用于小型分支接入阿里云，即插即用。SAG-100B支持SNAT转发、动态IP、静态IP和PPoE配置。
+智能接入网关SAG-100B设备适用于小型分支接入阿里云，即插即用。SAG-100B支持SNAT转发、动态IP、静态IP和PPPoE配置。
 
 ## 网关设备规格 {#section_gdf_25s_j2b .section}
 
@@ -30,7 +30,7 @@
 
 智能接入网关的前面板由电源开关、USB口、指示灯和Reset键组成：
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15408/15410548956810_zh-CN.jpg)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15408/15410820266810_zh-CN.jpg)
 
 -   电源开关
 
@@ -60,7 +60,7 @@
 
 智能接入网关的后面板由1个Console接口、1个WAN口、4个LAN口和电源接口组成：
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15408/15410548956811_zh-CN.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15408/15410820266811_zh-CN.png)
 
 -   Console口
 
