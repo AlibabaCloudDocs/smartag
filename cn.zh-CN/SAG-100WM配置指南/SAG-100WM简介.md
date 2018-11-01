@@ -38,11 +38,11 @@ SAG-100WM设备适用于小型分支和门店接入阿里云，即插即用，�
 
 智能接入网关的前面板由5个LED指示灯组成，具体说明如下：
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40483/154103846121278_zh-CN.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40483/154105779621278_zh-CN.png)
 
 |指示灯|状态说明|
 |---|----|
-|LTE|表示设备通讯是否正常：-   闪烁：通讯正常
+|LTE|表示设备通讯是否正常：-   闪烁：数据传输
 -   熄灭：禁用
 
 |
@@ -61,8 +61,8 @@ SAG-100WM设备适用于小型分支和门店接入阿里云，即插即用，�
 -   熄灭：电源未开
 
 |
-|CLOUD|表示是否连接到阿里云：-   闪烁：连接到阿里云
--   熄灭：没有连接到阿里云
+|CLOUD|表示是否连接到阿里云：-   长亮：连接到云连接网
+-   熄灭：没有连接到云连接网
 
 |
 
@@ -70,7 +70,7 @@ SAG-100WM设备适用于小型分支和门店接入阿里云，即插即用，�
 
 智能接入网关的后面板由1个RESET键、一个SIM插入口、1个USB接口，2个WAN口、3个LAN口和电源接口组成：
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40483/154103846121279_zh-CN.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40483/154105779721279_zh-CN.png)
 
 -   RESET键
 
@@ -105,5 +105,5 @@ SAG-100WM设备适用于小型分支和门店接入阿里云，即插即用，�
 
 SAG-100WM设备以直挂方式，在不影响您的网络拓扑的情况下，将本地客户端接入阿里云。
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/24578/154103846121205_zh-CN.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/24578/154105779721205_zh-CN.png)
 
