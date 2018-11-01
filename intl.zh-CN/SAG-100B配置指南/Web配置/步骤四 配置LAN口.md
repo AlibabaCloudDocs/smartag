@@ -14,13 +14,13 @@ LAN口配置用于线下客户端接入。
 
         如果您的线下客户端直通过智能接入网关接入阿里云，如下图所示，使用默认配置即可。
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15409/15409946756822_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/24591/154105491621362_zh-CN.png)
 
     -   静态IP:
 
         如果线下客户端的IP已经通过线下交换机配置好了，如下图所示，请选择静态IP方式。
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15409/15409946756823_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/24591/154105491621363_zh-CN.png)
 
         选择该方式需要配置静态IP和路由：
 
@@ -38,7 +38,7 @@ LAN口配置用于线下客户端接入。
             -   交换机路由配置
                 -   如果与云上VPC进行通信，需要在交换机中添加一条目标网段为云上VPC的网段，下一跳为LAN口静态IP的路由。
                 -   如果有其他线下分支机构通过智能接入网关互连，在交换机中添加其他分支机构的网段路由，下一跳为LAN口静态IP的路由。
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/24591/154099467621294_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/24591/154105491621294_zh-CN.png)
 
 4.  单击**保存配置**。 
 
