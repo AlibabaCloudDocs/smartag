@@ -1,6 +1,6 @@
 # SAG-100B旁挂配置教程 {#concept_hxx_njz_k2b .concept}
 
-本教程介绍如何通过智能接入网关旁挂方式，不改变已有组网的条件下快速实现公司总部网络与阿里云VPC互通。该公司的客户端已经配置了交换机。
+本教程介绍如何通过智能接入网关旁挂方式，在不改变已有组网的条件下，快速实现公司总部网络与阿里云VPC互通。该公司的客户端已经配置了交换机。
 
 ## 场景说明 {#section_xc3_bkz_k2b .section}
 
@@ -11,14 +11,14 @@
 -   在阿里云配置了VPC网络，并购买、配置了若干ECS实例。VPC的网段为192.168.0.0/24。
 -   公司总部部署了出口路由器/防火墙和核心交换机等设备。本地服务器网段为192.168.5.0/24、172.16.1.0/24、10.1.10.0/24和10.1.20.0/24等。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16771/15409761927657_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16771/15410489817657_zh-CN.png)
 
 
 ## 组网方案 {#section_vhm_y32_p2b .section}
 
 智能接入网关通过旁挂方式接入交换机，不改变公司已有的网络结构，将本地客户端接入阿里云。
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16771/15409761927700_zh-CN.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16771/15410489817700_zh-CN.png)
 
 ## 步骤一 购买智能接入网关 {#section_onw_h5c_l2b .section}
 
@@ -30,7 +30,7 @@
 2.  单击**创建智能接入网关**。
 3.  配置智能接入网关，然后单击**立即购买**。
 
-    配置详情参见[购买智能接入网关](../cn.zh-CN/购买指南/购买智能接入网关.md#)。
+    配置详情参见[购买智能接入网关](../intl.zh-CN/购买指南/购买智能接入网关.md#)。
 
     **说明：** 本教程中实例类型选择**SAG-100B**，使用方式选择**单机**。
 
@@ -39,7 +39,7 @@
 
     您可以在智能接入网关实例页面查看是否下单成功。系统会在下单后两天内发货。如果超期，您可以提交工单查看物流状态。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15407/15409761927051_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15407/15410489817051_zh-CN.png)
 
 
 ## 步骤二 配置网络连接 {#section_dtn_xbk_l2b .section}
@@ -52,31 +52,31 @@
 2.  在智能接入网关页面，找到目标网关实例。
 3.  单击**操作**列下的**网络配置**。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16771/15409761927659_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16771/15410489817659_zh-CN.png)
 
 4.  在网络配置页面，完成以下操作：
     1.  **私网网段**：配置本地客户端用来和云上通信时使用的私网网段，确保私网网段不冲突。
 
-        本操作输入172.16.1.0/24、192.168.5.0/24、10.1.10.0/24、10.1.20.0/24。详情参见[网络配置](../cn.zh-CN/控制台配置指南/管理网关实例.md#table_xrf_xd2_l2b)。
+        本操作输入172.16.1.0/24、192.168.5.0/24、10.1.10.0/24、10.1.20.0/24。详情参见[网络配置](../intl.zh-CN/控制台配置指南/管理网关实例.md#table_xrf_xd2_l2b)。
 
     2.  **绑定云连接网**：将该实例添加到云连接网中。添加后，云连接网中的网关设备可以互相通信。
 
-        本操作选择使用默认的云连接网。更多详情参见[管理云连接网](../cn.zh-CN/控制台配置指南/管理云连接网.md#)。
+        本操作选择使用默认的云连接网。更多详情参见[管理云连接网](../intl.zh-CN/控制台配置指南/管理云连接网.md#)。
 
 5.  **云连接网绑定云企业网**：选择要绑定的云企业网实例。绑定后，云连接网中的网关设备便可以和云企业网实例中已加载的网络实例（VPC或VBR）通信。
 
     本操作选择VPC所关联的云企业网实例。
 
-    **说明：** 确保云连接网和云企业网实例的区域相同。更多详情参见[云连接网区域](../cn.zh-CN/控制台配置指南/管理云连接网.md#section_sb4_vqf_l2b)。
+    **说明：** 确保云连接网和云企业网实例的区域相同。更多详情参见[云连接网区域](../intl.zh-CN/控制台配置指南/管理云连接网.md#section_sb4_vqf_l2b)。
 
 6.  单击**确定**。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16771/15409761927662_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16771/15410489817662_zh-CN.png)
 
 
 ## 步骤三 连接并激活网关设备 {#section_xjs_lrj_l2b .section}
 
-收到网关设备后，请按照[网关设备说明](../cn.zh-CN/产品简介/智能接入网关设备/SAG-100B.md#)检查配件。
+收到网关设备后，请按照[网关设备说明](../intl.zh-CN/产品简介/智能接入网关设备/SAG-100B.md#)检查配件。
 
 在收到网关设备后，您需要激活网关设备。
 
@@ -92,7 +92,7 @@
 
 **说明：** 智能接入网关默认无法通过WAN口登录Web配置页面，如需修改智能接入网关本机上网IP等配置需要用本地PC连接网关设备的LAN口后登录Web配置页面。
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16771/15409761927703_zh-CN.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16771/15410489817703_zh-CN.png)
 
 完成以下操作，配置网关设备：
 
@@ -102,17 +102,17 @@
 
 2.  配置WAN口。本操作的WAN口配置如下图所示。
 
-    其中网关地址为对端核心交换机的端口IP，并关闭SNAT功能，去往Internet流量仍在企业出口路由器/防火墙上配置SNAT。
+    其中，网关地址为对端核心交换机的端口IP，并关闭SNAT功能，去往Internet流量仍在企业出口路由器/防火墙上配置SNAT。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16771/15409761927665_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16771/15410489817665_zh-CN.png)
 
 3.  配置LAN口。本操作的LAN口配置如下图所示，采用静态IP方式。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16771/15409761937666_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16771/15410489817666_zh-CN.png)
 
 4.  完成网关设备的网络配置后，根据组网图连接智能接入网关设备，将WAN口接到核心交换机G0/7，连接本地客户端和核心交换机。本地客户端网卡采用静态配置地址，网关为核心交换机，如下图所示。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16771/15409761937667_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/16771/15410489817667_zh-CN.png)
 
 
 ## 步骤五 配置核心交换机和出口路由器 {#section_ejf_xl2_p2b .section}
@@ -151,14 +151,14 @@
 2.  在左侧导航栏，单击**实例**。
 3.  找到目标VPC内的ECS实例，然后单击**更多** \> **网络和安全组** \> **安全组配置**。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15407/15409761937646_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15407/15410489817646_zh-CN.png)
 
 4.  单击**配置规则**，然后单击**添加安全组规则**。
 5.  配置一条允许线下分支机构访问的安全组规则。
 
     下图是本操作中的安全组配置。您需要将授权对象配置为本地分支的私网网段。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15407/15409761937648_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15407/15410489817648_zh-CN.png)
 
 
 ## 步骤七 访问测试 {#section_hzm_tdk_l2b .section}
