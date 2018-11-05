@@ -38,12 +38,12 @@ SAG-100WM设备适用于小型分支和门店接入阿里云，即插即用，�
 
 智能接入网关的前面板由5个LED指示灯组成，具体说明如下：
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40483/154113033421278_zh-CN.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40483/154138637921278_zh-CN.png)
 
 |指示灯|状态说明|
 |---|----|
 |LTE|表示设备通讯是否正常：-   闪烁：数据传输
--   熄灭：禁用
+-   熄灭：未插卡
 
 |
 |WAN|表示以太网使用状态：-   长亮：以太网已连接
@@ -70,11 +70,11 @@ SAG-100WM设备适用于小型分支和门店接入阿里云，即插即用，�
 
 智能接入网关的后面板由1个RESET键、一个SIM插入口、1个USB接口，2个WAN口、3个LAN口和电源接口组成：
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40483/154113033421279_zh-CN.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40483/154138637921279_zh-CN.png)
 
 -   RESET键
 
-    如果需要将智能接入网关恢复默认设置，请在通电的情况下，使用尖状物长按RESET键5秒后，将网关设备恢复到默认配置。
+    如果需要将智能接入网关恢复默认设置，请在通电的情况下，使用尖状物长按RESET键5秒后，设备自动重启，将网关设备恢复到默认配置。
 
     智能接入网关的默认管理地址是192.168.0.1。
 
@@ -105,5 +105,5 @@ SAG-100WM设备适用于小型分支和门店接入阿里云，即插即用，�
 
 SAG-100WM设备以直挂方式，在不影响您的网络拓扑的情况下，将本地客户端接入阿里云。
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/24578/154113033421205_zh-CN.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/24578/154138637921205_zh-CN.png)
 
