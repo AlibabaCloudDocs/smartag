@@ -29,13 +29,13 @@ LAN口配置用于线下客户端接入。
 
             如果您的线下客户端直通过智能接入网关接入阿里云，如下图所示，使用默认配置即可。
 
-            ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15409/15409808676822_zh-CN.png)
+            ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15409/15414844306822_zh-CN.png)
 
         -   静态IP:
 
             如果线下客户端的IP已经通过线下交换机配置好了，如下图所示，请选择静态IP方式。
 
-            ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15409/15409808676823_zh-CN.png)
+            ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40492/154148443021798_zh-CN.png)
 
             选择该方式需要配置静态IP和路由：
 
