@@ -2,23 +2,23 @@
 
 Smart Access Gateway \(SmartAG\) is a one-stop solution for connecting local branches to the Alibaba Cloud. With Smart Access Gateway, enterprises can access Alibaba cloud through the Internet in an encrypted way, and get a more intelligent, more reliable, and more secure experience in accessing the Alibaba Cloud.
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15401/6804_en-US.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15401/15434927536804_en-US.png)
 
 ## Components {#section_fdf_cls_j2b .section}
 
 -   Smart Access Gateway device
 
-    A Smart Access Gateway is a hardware gateway device that is used for the network access of clients in local sites. You can purchase a gateway device by creating a Smart Access Gateway instance on the Alibaba Cloud console and Alibaba Cloud delivers the device to you according to the address you provided. Additionally, you can manage and view the delivery status through the console.
+    A Smart Access Gateway is a hardware gateway device that is used by the clients in a local branch to access to Alibaba Cloud. You can purchase a gateway device by creating a Smart Access Gateway instance on the Alibaba Cloud console and Alibaba Cloud delivers the device to you according to the address you provided. Additionally, you can manage and view the delivery status through the console.
 
     The Smart Access Gateway device provides the following functions:
 
-    -   WAN port: Used for accessing the Internet and supports DHCP client and static IP.
-    -   LAN port: Used for local device access and supports DHCP server and static IP.
+    -   WAN port: Used for accessing the Internet and supports DHCP client and static IP connections, and SNAT forwarding.
+    -   LAN port: Used for local device access and supports DHCP server and static IP connections.
     -   Specification: Smart Access Gateway has three specifications. You can select the specification according to your business needs.
     -   Unified management: You can manage and maintain Smart Access Gateway devices on the console or through APIs.
--   Cloud Connection Network
+-   Cloud Connect Network
 
-    Cloud Connection Network \(CCN\) is another important component of the Smart Access Gateway. It is a device access matrix composed of Alibaba Cloud Distributed Access Gateways.
+    Cloud Connect Network \(CCN\) is another important component of the Smart Access Gateway. It is a device access matrix composed of Alibaba Cloud Distributed Smart Access Gateways.
 
     You can add multiple Smart Access Gateway devices to a CCN instance and then attach the CCN instance to a Cloud Enterprise Network \(CEN\) instance to connect the local branches to the Alibaba Cloud.
 
@@ -31,11 +31,11 @@ Smart Access Gateway has the following benefits:
 
 -   Intelligent
 
-    Highly automatic and out-of-the-box configuration. Smart Access Gateway automatically adapts the network node changes and automatically switches to the backup node when the master node fails.
+    Highly automatic and out-of-the-box configuration. Smart Access Gateway automatically adapts the network node changes.
 
 -   Reliable
 
-    Nearby access through the Internet is implemented to achieve access from within a city, and multiple local branches can access to the Alibaba Cloud using the Smart Access Gateway devices with master-slave links.
+    Nearby access through the Internet is implemented within a city. Additionally, multiple local branches can access to the Alibaba Cloud using the Smart Access Gateway devices with master-slave links.
 
 -   Secure
 
