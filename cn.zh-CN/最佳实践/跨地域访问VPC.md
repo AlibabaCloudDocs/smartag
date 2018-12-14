@@ -6,7 +6,7 @@
 
 国内区域线下机构接入，在购买、配置智能接入网关后，您只要将智能接入网关所绑定的云连接网加载到同区域的云企业网，再配置杭州与美国（硅谷）的阿里云VPC之间的跨地域互通带宽即可。
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23732/154166956313795_zh-CN.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23732/154477668013795_zh-CN.png)
 
 您需要完成以下操作：
 
@@ -48,7 +48,7 @@
 
     您可以在智能接入网关实例页面查看是否下单成功。系统会在下单后两天内发货。如果超期，您可以提交工单查看物流状态。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23799/154166956321242_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23799/154477668021242_zh-CN.png)
 
 
 ## 步骤二 连接网关设备 {#section_xjs_lrj_l2b .section}
@@ -57,7 +57,7 @@
 
 本操作中杭州和美国（硅谷）分支的本地客户端可直接通过网关设备接入，使用默认的网关配置即可。如果需要配置WAN口和LAN口，参见[sag-100b Web配置](../cn.zh-CN/控制台配置指南/网关设备配置/sag-100b Web配置.md#)。
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23682/154166956313738_zh-CN.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23682/154477668013738_zh-CN.png)
 
 ## 步骤三 激活网关 {#section_lyw_rbk_l2b .section}
 
@@ -83,6 +83,8 @@
 
         本操作输入172.16.0.0/12。因为本教程中的本地分支使用了默认网关配置，所以本地客户端接入阿里云使用的IP地址会从172.16.0.0/12中分配。更多详情参见[网络配置](../cn.zh-CN/控制台配置指南/管理网关实例.md#table_xrf_xd2_l2b)。
 
+        **说明：** 不支持配置32位掩码的网段。
+
     2.  **绑定云连接网**：将该实例添加到云连接网中。添加后，云连接网中的网关设备可以互相通信。
 
         本操作选择使用默认的云连接网。更多详情参见[管理云连接网](../cn.zh-CN/控制台配置指南/管理云连接网.md#)。
@@ -103,7 +105,7 @@
 2.  在左侧导航栏，选择**快捷连接** \> **云企业网**。
 3.  在云企业网页面，单击**网络实例管理**页签，查看杭州VPC、美国（硅谷）VPC和云连接网是否已经加入云企业网。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23732/154166956314285_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23732/154477668014285_zh-CN.png)
 
 4.  单击**带宽包管理**页签，此处以单击**购买带宽包（后付费）**，购买后付费带宽包为例。
 5.  在云企业网（后付费）页面，配置带宽包信息。
@@ -115,7 +117,7 @@
 
     -   **带宽值**：根据业务需要，选择跨区域互通的带宽。
     -   **带宽包名称**：输入该带宽包的名称。
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23732/154166956314286_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23732/154477668014286_zh-CN.png)
 
 6.  单击**立即购买**立即创建一个带宽包。
 7.  单击**跨地域互通带宽管理**页签，然后单击**跨地域带宽设置**。
@@ -127,7 +129,7 @@
 
         **说明：** 每个带宽包下的跨地域互通带宽的总和不能大于该带宽包的带宽值。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23732/154166956414284_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23732/154477668014284_zh-CN.png)
 
 
 ## 步骤六 配置安全组 {#section_srm_v5d_p2b .section}
@@ -140,14 +142,14 @@
 2.  在左侧导航栏，单击**实例**。
 3.  找到目标VPC内的ECS实例，然后单击**更多** \> **网络和安全组** \> **安全组配置**。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15407/15416695647646_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15407/15447766807646_zh-CN.png)
 
 4.  单击**配置规则**，然后单击**添加安全组规则**。
 5.  配置一条允许线下分支机构访问的安全组规则。
 
     下图是本操作中的安全组配置。您需要将授权对象配置为本地分支的私网网段。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15407/15416695647648_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15407/15447766807648_zh-CN.png)
 
 
 ## 步骤七 访问测试 {#section_hzm_tdk_l2b .section}
