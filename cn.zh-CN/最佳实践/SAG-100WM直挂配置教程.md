@@ -1,12 +1,12 @@
 # SAG-100WM直挂配置教程 {#concept_hxx_njz_k2b .concept}
 
-本教程以宁波和杭州两个分支机构为例，介绍如何通过智能接入网关实现两个线下机构与上海和北京区域的阿里云VPC互通。线下机构的客户端通过智能接入网关直接接入。
+本教程以宁波和杭州两个分支机构为例，介绍如何通过智能接入网关实现两个线下机构与上海和北京区域的阿里云VPC互通。线下机构的客户端通过智能接入网关直接接入阿里云。
 
 ## 场景说明 {#section_xc3_bkz_k2b .section}
 
 同区域线下机构接入，在购买、配置智能接入网关后，您只要将智能接入网关所绑定的云连接网加载到同区域的云企业网即可。
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23682/154477664914251_zh-CN.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23682/154682852814251_zh-CN.png)
 
 您需要完成以下操作：
 
@@ -27,7 +27,7 @@
     4.  在专有网络详情页面，单击**加入云企业网**，选择要绑定的云企业网实例。
     5.  重复上述步骤，将上海区域的阿里云VPC加入同一个云企业网。
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23682/154477664913745_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23682/154682852813745_zh-CN.png)
 
 -   已经创建云连接网，详情参见[创建云连接网](../cn.zh-CN/控制台配置指南/管理云连接网/创建云连接网.md#)。
 
@@ -50,7 +50,7 @@
 
     您可以在智能接入网关实例页面查看是否下单成功。系统会在下单后两天内发货。如果超期，您可以提交工单查看物流状态。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23799/154477664921242_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23799/154682852821242_zh-CN.png)
 
 
 ## 步骤二 连接网关设备 {#section_xjs_lrj_l2b .section}
@@ -59,7 +59,7 @@
 
 本操作中杭州和宁波分支的本地客户端可直接通过网关设备接入，使用默认的网关配置即可。如果需要配置WAN口和LAN口，参见[配置向导](../cn.zh-CN/SAG-100WM配置指南/配置向导.md#)。
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23682/154477664913738_zh-CN.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23682/154682852813738_zh-CN.png)
 
 ## 步骤三 激活网关 {#section_lyw_rbk_l2b .section}
 
@@ -113,14 +113,14 @@
 2.  在左侧导航栏，单击**实例**。
 3.  找到目标VPC内的ECS实例，然后单击**更多** \> **网络和安全组** \> **安全组配置**。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15407/15447766497646_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15407/15468285287646_zh-CN.png)
 
 4.  单击**配置规则**，然后单击**添加安全组规则**。
 5.  配置一条允许线下分支机构访问的安全组规则。
 
     下图是本操作中的安全组配置。您需要将授权对象配置为本地分支的私网网段。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15407/15447766497648_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15407/15468285287648_zh-CN.png)
 
 
 ## 步骤六 访问测试 {#section_hzm_tdk_l2b .section}
