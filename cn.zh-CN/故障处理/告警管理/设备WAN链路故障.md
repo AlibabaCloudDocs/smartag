@@ -1,6 +1,6 @@
 # 设备WAN链路故障 {#reference_r2z_53w_mfb .reference}
 
-有线或4G链路故障，目前仅支持SAG-100WM。
+DeviceWanLinkDown事件提示您有线或4G链路故障。目前仅支持SAG-100WM。
 
 ## 告警信息 {#section_d4j_c3w_mfb .section}
 
