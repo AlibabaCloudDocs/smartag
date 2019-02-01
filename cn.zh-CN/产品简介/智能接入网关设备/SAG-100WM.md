@@ -1,8 +1,8 @@
 # SAG-100WM {#concept_sr2_j3s_j2b .concept}
 
-收到智能接入网关设备后，请您检查网关设备是否完好，并按照说明连接网关设备。
+SAG-100WM设备适用于小型分支和门店通过直挂组网的方式接入阿里云。
 
-## 网关设备规格 {#section_gdf_25s_j2b .section}
+## 设备规格 {#section_gdf_25s_j2b .section}
 
 |属性|SAG-100WM规格|
 |:-|:----------|
@@ -25,7 +25,7 @@
 |GSM:B3,B8|
 |USB|USB 2.0，500ma|
 
-## 网关设备配件 {#section_j5t_k5s_j2b .section}
+## 设备配件 {#section_j5t_k5s_j2b .section}
 
 在收到智能接入网关设备后，请检查以下配件是否完备：
 
@@ -38,7 +38,7 @@
 
 智能接入网关的前面板由5个LED指示灯组成，具体说明如下：
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23473/154095839913716_zh-CN.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23473/154899004713716_zh-CN.png)
 
 |指示灯|状态说明|
 |---|----|
@@ -70,7 +70,7 @@
 
 智能接入网关的后面板由1个RESET键、一个SIM插入口、1个USB接口，2个WAN口、3个LAN口和电源接口组成：
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23473/154095839913717_zh-CN.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23473/154899004713717_zh-CN.png)
 
 -   RESET键
 
