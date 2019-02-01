@@ -11,7 +11,7 @@ SAG-100WM设备适用于小型分支和门店接入阿里云，即插即用，�
 |存储温度|-40℃～70℃|
 |电源|DC 12V|
 |功耗|12W|
-|网络接口|2个GE/FE RJ45 WAN口1 RJ45|
+|网络接口|2个GE/FE RJ45 WAN口|
 |3个GE/FE RJ45 LAN口|
 |WiFi|IEEE 802.11 b/g/n,2.4G 150Mbps,终端数20，范围100平方米|
 |4G LTE\(中国大陆\)|LTE FDD:B1,B3,B5,B8|
@@ -38,7 +38,7 @@ SAG-100WM设备适用于小型分支和门店接入阿里云，即插即用，�
 
 智能接入网关的前面板由5个LED指示灯组成，具体说明如下：
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40483/154138637921278_zh-CN.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40483/154900768821278_zh-CN.png)
 
 |指示灯|状态说明|
 |---|----|
@@ -70,7 +70,7 @@ SAG-100WM设备适用于小型分支和门店接入阿里云，即插即用，�
 
 智能接入网关的后面板由1个RESET键、一个SIM插入口、1个USB接口，2个WAN口、3个LAN口和电源接口组成：
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40483/154138637921279_zh-CN.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40483/154900768821279_zh-CN.png)
 
 -   RESET键
 
@@ -105,5 +105,5 @@ SAG-100WM设备适用于小型分支和门店接入阿里云，即插即用，�
 
 SAG-100WM设备以直挂方式，在不影响您的网络拓扑的情况下，将本地客户端接入阿里云。
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/24578/154138637921205_zh-CN.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/24578/154900768821205_zh-CN.png)
 
