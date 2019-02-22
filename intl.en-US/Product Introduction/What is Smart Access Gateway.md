@@ -2,7 +2,7 @@
 
 Smart Access Gateway \(SAG\) is an all-in-one solution for connecting local branches to the Alibaba Cloud. With Smart Access Gateway, enterprises can access Alibaba Cloud through the Internet using a fully encrypted connection, which offers greater benefits including a more intelligent, more reliable, and more secure network experience.
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15401/15489900246804_en-US.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15401/15508249016804_en-US.png)
 
 ## Components {#section_fdf_cls_j2b .section}
 
@@ -27,5 +27,5 @@ Smart Access Gateway \(SAG\) is an all-in-one solution for connecting local bran
 
 Smart Access Gateway connects organizations \(such as local data centers, branches, and outlets\) to Alibaba Cloud, allowing you to implement highly scalable services and easily establish a hybrid cloud.
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15401/154899002421212_en-US.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15401/155082490121212_en-US.png)
 
