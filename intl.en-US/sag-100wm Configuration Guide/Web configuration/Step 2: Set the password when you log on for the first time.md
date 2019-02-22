@@ -21,9 +21,6 @@ Before logging on to the web configuration page, make sure that:
 
     -   If neither the LAN port nor the console is configured, the default address is `192.168.0.1`.
 2.  Set the logon password. 
-
-    ![](images/21180_en-US.png)
-
 3.  Click **OK**. Enter the new password. Keep your logon password securely. If the password is lost or forgotten, you can press and hold the reset button on your device for two seconds and then log on to the Web console to reset the password.
 
     **Note:** 
