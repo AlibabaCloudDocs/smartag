@@ -38,7 +38,7 @@ SAG-100WM设备适用于小型分支和门店通过直挂组网的方式接入�
 
 智能接入网关的前面板由5个LED指示灯组成，具体说明如下：
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40483/155067456521278_zh-CN.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40483/155082495021278_zh-CN.png)
 
 |指示灯|状态说明|
 |---|----|
@@ -70,7 +70,7 @@ SAG-100WM设备适用于小型分支和门店通过直挂组网的方式接入�
 
 智能接入网关的后面板由1个RESET键、一个SIM插入口、1个USB接口，2个WAN口、3个LAN口和电源接口组成：
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40483/155067456521279_zh-CN.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40483/155082495021279_zh-CN.png)
 
 -   RESET键
 
