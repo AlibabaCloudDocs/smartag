@@ -4,11 +4,11 @@ After purchasing a Smart Access Gateway device, you can use the corresponding Sm
 
 ## Activate the gateway device {#section_n5p_bc2_l2b .section}
 
-After receiving the gateway device, you need to activate it on the console. Billing starts right after the device is activated. For more information, see [Billing instructions](../../../../intl.en-US/Pricing/Billing instructions.md#).
+After receiving the gateway device, you need to activate it on the console. Billing starts right after the device is activated.
 
 **Note:** If the device is not manually activated, the system automatically activates the gateway device and billing starts 15 days after the device is received by default.
 
-Complete these steps to activate the Smart Access Gateway device:
+To activate the Smart Access Gateway device, complete these steps:
 
 1.  Log on to the [Smart Access Gateway console](https://smartag.console.aliyun.com/).
 2.  On the SmartAG page, find the target gateway instance.
@@ -18,7 +18,7 @@ Complete these steps to activate the Smart Access Gateway device:
 
 After activating the Smart Access Gateway device, you also need to attach it to CCN and then attach the CCN instance to a CEN instance, so that on-premises branches can be connected to Alibaba Cloud.
 
-To configure the network, follow these steps:
+To configure the network, complete these steps:
 
 1.  Log on to the [Smart Access Gateway console](https://smartag.console.aliyun.com/).
 2.  On the SmartAG page, find the target gateway instance.
@@ -42,7 +42,7 @@ To configure the network, follow these steps:
 
  After the CCN instance is attached to the CEN instance, all networks \(VPCs and VBRs\) attached to the CEN instance can communicate with the CCN instance.
 
-**Note:** Make sure that the CCN instance and the CEN instance are in the same area. For more information, see [CCN areas](intl.en-US/User Guide/Cloud Connect Network.md#section_sb4_vqf_l2b).
+**Note:** Make sure that the CCN instance and the CEN instance are in the same area. For more information, see [CCN areas](reseller.en-US/User Guide/Cloud Connect Network.md#section_sb4_vqf_l2b).
 
  |
 
@@ -56,6 +56,9 @@ To lock a Smart Access Gateway instance, follow these steps:
 1.  Log on to the [Smart Access Gateway console](https://smartag.console.aliyun.com/).
 2.  On the SmartAG page, find the target gateway instance.
 3.  On the Instance Details page, click the **Enable** option for **Offline Lock**.
+
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15410/15516127197050_en-US.png)
+
 4.  Enter a threshold \(in seconds\) for the locked status and click **OK**.
 
     If, for example, 3600 is entered, the gateway device becomes locked after 60 minutes.
