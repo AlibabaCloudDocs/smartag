@@ -38,37 +38,37 @@ SAG-100WM设备适用于小型分支和门店接入阿里云，即插即用，�
 
 -   前面板
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40483/155132502421278_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40483/155192940021278_zh-CN.png)
 
 -   后面板
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40483/155132502421279_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40483/155192940021279_zh-CN.png)
 
 
 ## 设备二 {#section_lqn_c11_ygb .section}
 
 -   前面板
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40483/155132502439754_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40483/155192940039754_zh-CN.png)
 
 -   侧面板
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40483/155132502439755_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40483/155192940139755_zh-CN.png)
 
 -   后面板
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40483/155132502439756_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40483/155192940139756_zh-CN.png)
 
 
 ## 设备三 {#section_dq4_t11_ygb .section}
 
 -   前面板
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40483/155132502439757_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40483/155192940139757_zh-CN.png)
 
 -   后面板
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40483/155132502439758_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40483/155192940139758_zh-CN.png)
 
 
 ## 设备介绍 {#section_q1k_2vs_j2b .section}
@@ -132,5 +132,5 @@ SAG-100WM设备适用于小型分支和门店接入阿里云，即插即用，�
 
 SAG-100WM设备以直挂方式，在不影响您的网络拓扑的情况下，将本地客户端接入阿里云。
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/24578/155132502421205_zh-CN.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/24578/155192940121205_zh-CN.png)
 
