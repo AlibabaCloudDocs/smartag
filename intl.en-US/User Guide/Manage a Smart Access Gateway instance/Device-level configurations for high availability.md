@@ -1,0 +1,19 @@
+# Device-level configurations for high availability {#task_mj4_by5_q2b .task}
+
+If you choose the active/standby mode when you purchase devices, the device can quickly switch to the standby device when the active device fails.
+
+-   Make sure that you select the **Active/Standby** mode when purchasing the device.
+
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/17036/15542568458559_en-US.png)
+
+-   Make sure the device configurations are the same for both devices.
+
+1.  Log on to the [Smart Access Gateway console](https://smartag.console.aliyun.com). 
+2.  On the SAG page, find the target instance and click the ID of the instance. 
+3.  In the **High-Availability Configurations** area, click **Switch** to switch to the other device. 
+
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/17036/15542568458561_en-US.png)
+
+    **Note:** For SAG-100WM Smart Access Gateway devices, after you switch to the standby device in the console, you must connect the WAN port of the standby gateway device to the Internet.
+
+
