@@ -1,6 +1,6 @@
 # 步骤三 配置WAN口 {#task_wqg_tfc_pfb .task}
 
-智能接入网关WAN模式用于配置Internet接入，支持动态IP和静态IP连接。
+智能接入网关WAN模式用于配置Internet接入，支持动态IP、PPPoE连接和静态IP连接。
 
 1.  登录智能接入网关Web配置页面。 
 2.  输入登录密码，单击**确定**，在WAN配置页面，配置WAN口。 
@@ -20,6 +20,6 @@
 
     -   PPPoE：如果通过拨号方式接入互联网，选择该方式。然后输入运营商提供的PPPoE的账号和密码。
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15409/15409946656821_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15409/15542634496821_zh-CN.png)
 
 
