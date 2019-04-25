@@ -32,43 +32,32 @@ SAG-100WM设备适用于小型分支和门店接入阿里云，即插即用，�
 -   一台智能接入网关设备
 -   一根电源线
 
-**说明：** 如果发现有配件短缺或损坏的情况，请及时与阿里云售后联系。SAG-100WM支持三个厂商设备随机发货。
+**说明：** 如果发现有配件短缺或损坏的情况，请及时与阿里云售后联系。SAG-100WM支持两个厂商设备随机发货。
 
-## 设备一 {#section_izy_yzz_xgb .section}
+## 设备一（尺寸：180\*110\*30mm） {#section_izy_yzz_xgb .section}
 
 -   前面板
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40483/155192940021278_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40483/155616105521278_zh-CN.png)
 
 -   后面板
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40483/155192940021279_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40483/155616105521279_zh-CN.png)
 
 
-## 设备二 {#section_lqn_c11_ygb .section}
+## 设备二（尺寸：275\*175\*44.4mm） {#section_lqn_c11_ygb .section}
 
 -   前面板
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40483/155192940039754_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40483/155616105539754_zh-CN.png)
 
 -   侧面板
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40483/155192940139755_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40483/155616105539755_zh-CN.png)
 
 -   后面板
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40483/155192940139756_zh-CN.png)
-
-
-## 设备三 {#section_dq4_t11_ygb .section}
-
--   前面板
-
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40483/155192940139757_zh-CN.png)
-
--   后面板
-
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40483/155192940139758_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40483/155616105539756_zh-CN.png)
 
 
 ## 设备介绍 {#section_q1k_2vs_j2b .section}
@@ -132,5 +121,5 @@ SAG-100WM设备适用于小型分支和门店接入阿里云，即插即用，�
 
 SAG-100WM设备以直挂方式，在不影响您的网络拓扑的情况下，将本地客户端接入阿里云。
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/24578/155192940121205_zh-CN.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/24578/155616105721205_zh-CN.png)
 
