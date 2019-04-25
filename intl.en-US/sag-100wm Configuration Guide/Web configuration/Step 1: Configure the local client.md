@@ -1,12 +1,12 @@
 # Step 1: Configure the local client {#concept_ofg_bf2_qfb .concept}
 
-Before performing the web configuration for the SAG-100WM gateway device, you must enable DHCP on local clients so that the clients can connect to the device.
+Before performing the Web configuration for the SAG-100WM gateway device, you must enable DHCP on local clients so that the clients can connect to the device.
 
 ## Windows client configuration {#section_bzn_qj1_qfb .section}
 
 To configure a static IP address for a Windows client, follow these steps:
 
-1.  In the lower right corner, right-click the network connection icon, then click **Open the Network and Sharing Center**.
+1.  In the lower right corner, right-click the network connection icon, and then click **Open the Network and Sharing Center**.
 2.  In the left-side panel, click **Change Adapter Configurations**.
 3.  Right-click the connected network, and then click **Properties**.
 4.  Double-click the **Internet Protocol Version 4 \(TCP/IPv4\)** option.
