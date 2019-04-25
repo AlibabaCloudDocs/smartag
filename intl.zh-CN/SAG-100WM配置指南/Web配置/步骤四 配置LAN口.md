@@ -3,8 +3,8 @@
 LAN口配置用于线下客户端接入。
 
 1.  登录智能接入网关Web配置页面。 
-2.  配置完WAN口后，单击**下一步**，配置LAN口。 
-3.  在LAN配置页面，配置LAN口信息。 
+2.  配置完WAN口后，单击**LAN口管理**。 
+3.  在LAN口管理页面，配置LAN口信息。 
     -   无线功能
 
         LAN口配置用于线下客户端接入，如果您选择开启无线功能，参考以下信息配置LAN口。
@@ -13,11 +13,16 @@ LAN口配置用于线下客户端接入。
         |:-|:-|
         |**SSID**|局域网的名称，用于区分不同的网络，可自定义。|
         |**SSID广播**|开启SSID广播后，无线设备才能搜索到该SSID名称的WIFI信号。|
+        |**无线安全**|打开无线安全，可以设置密码。关闭无线安全，表示不设置密码，任何人都可以接入。
+
+|
         |**认证类型**|支持WPA-PSK和WPA2-PSK两种认证类型，WPA2-PSK安全性更高。|
-        |**加密算法**|         -   TKIP提供结合信息完整性检查和重新按键机制的信息包密钥。
+        |**加密算法**|         -   TKIP为临时密钥完整性协议，不安全，不推荐使用。
         -   AES是WiFi授权的高效加密标准。
  |
         |**密码**|设置连接WiFi的密码。|
+
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40492/155616116941292_zh-CN.png)
 
     -   有线模式
 
@@ -27,15 +32,15 @@ LAN口配置用于线下客户端接入。
 
             系统会从控制台网络配置中设置的第一个私网网段中分配LAN口的IP地址。
 
-            如果您的线下客户端直通过智能接入网关接入阿里云，如下图所示，使用默认配置即可。
+            如果您的线下客户端直接通过智能接入网关接入阿里云，如下图所示，使用默认配置即可。
 
-            ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15409/15409808676822_zh-CN.png)
+            ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15409/15561611696822_zh-CN.png)
 
         -   静态IP:
 
             如果线下客户端的IP已经通过线下交换机配置好了，如下图所示，请选择静态IP方式。
 
-            ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15409/15409808676823_zh-CN.png)
+            ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40492/155616116921798_zh-CN.png)
 
             选择该方式需要配置静态IP和路由：
 
