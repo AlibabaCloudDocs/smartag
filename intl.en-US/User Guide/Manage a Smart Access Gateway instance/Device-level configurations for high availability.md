@@ -1,13 +1,21 @@
-# Device-level configurations for high availability {#task_y24_gj3_4fb .task}
+# Device-level configurations for high availability {#task_mj4_by5_q2b .task}
 
-By default, active/standby links are enabled on the SAG-100WM device. The broadband link operates as the active link and the wireless 4G-LTE operates as the standby link. If the active link fails, traffic is automatically distributed to the standby link.
+If you choose the active/standby mode when you purchase devices, the device can quickly switch to the standby device when the active device fails.
 
-**Note:** Currently, active/standby links are only supported by SAG-100WM devices.
+-   Make sure that you select the **Active/Standby** mode when purchasing the device.
+
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/17036/15561605608559_en-US.png)
+
+-   Make sure the device configurations are the same for both devices.
 
 1.  Log on to the [Smart Access Gateway console](https://smartag.console.aliyun.com). 
 2.  On the SAG page, find the target instance and click the ID of the instance. 
-3.  In the **High-Availability Configurations** area, view the active/standby links. 
+3.  In the **High-Availability Configurations** area, click **Switch** to switch to the other device. 
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/24400/155425686014246_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/17036/15561605628561_en-US.png)
+
+    **Note:** For SAG-100WM devices, after you switch to the standby device in the console, you must connect the WAN port of the standby SAG device to the Internet.
+
+    SAG-100WM devices support manual switching between active and standby devices. SAG-1000 devices support automatic switching between active and standby devices and do not support manual switching between them.
 
 
