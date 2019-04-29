@@ -2,7 +2,7 @@
 
 Smart Access Gateway \(SAG\) is an all-in-one solution for connecting local branches to the Alibaba Cloud. With Smart Access Gateway, enterprises can access Alibaba Cloud through the Internet using a fully encrypted connection, which offers greater benefits including a more intelligent, more reliable, and more secure network experience.
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15401/15508249016804_en-US.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15401/15565075706804_en-US.png)
 
 ## Components {#section_fdf_cls_j2b .section}
 
@@ -20,12 +20,12 @@ Smart Access Gateway \(SAG\) is an all-in-one solution for connecting local bran
 
     You can add multiple Smart Access Gateway devices to a CCN instance and then attach the CCN instance to a Cloud Enterprise Network \(CEN\) instance to connect the local branches to the Alibaba Cloud.
 
-    The CCN instance and the Smart Access Gateway instances to be added must be in the same area. If the CCN areas and CEN areas are the same, the local branch can directly access Alibaba Cloud without additional configurations required. For more information, see [Cloud Connect Network](../../../../../intl.en-US//Cloud Connect Network.md#).
+    The CCN instance and the Smart Access Gateway instances to be added must be in the same area. If the CCN areas and CEN areas are the same, the local branch can directly access Alibaba Cloud without additional configurations required. For more information, see [Cloud Connect Network](../../../../intl.en-US/User Guide/CCN/Cloud Connect Network.md#).
 
 
 ## Scenarios {#section_vxm_pwg_4fb .section}
 
 Smart Access Gateway connects organizations \(such as local data centers, branches, and outlets\) to Alibaba Cloud, allowing you to implement highly scalable services and easily establish a hybrid cloud.
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15401/155082490121212_en-US.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15401/155650757021212_en-US.png)
 
