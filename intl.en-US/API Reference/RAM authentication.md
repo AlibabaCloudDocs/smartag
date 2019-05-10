@@ -1,9 +1,9 @@
 # RAM authentication {#concept_avx_2vm_l2b .concept}
 
-Before calling Smart Access Gateway APIs using a RAM user, you must grant the RAM user the corresponding permission from the primary account by creating an authentication policy. An Alibaba Cloud Resource Name \(ARN\) is used as a unique description of a resource in the authorization rule. The following table lists the ARNs of Smart Access Gateway APIs.
+Before calling Smart Access Gateway APIs using a RAM account, you must grant the RAM account the corresponding permission from the primary account by creating an authentication policy. In the authentication policy, an Alibaba Cloud Resource Name \(ARN\) is used as the unique identifier of the resource to authorize. The following table lists the resource names of Smart Access Gateway APIs.
 
-|Resource type|ARN|
-|:------------|:--|
+|VPC resources|Resource description in the authorization rule|
+|:------------|:---------------------------------------------|
 |CreateSmartAccessGateway|acs:smartag:$\{region-id\}:$\{resource-owner-id\}:smartag/\*|
 |UpdateSmartAccessGatewayVersion|acs:smartag:$\{region-id\}:$\{resource-owner-id\}:smartag/$\{smartag-id\}|
 |DescribeSmartAccessGateways|acs:smartag:$\{region-id\}:$\{resource-owner-id\}:smartag/\*|
