@@ -34,76 +34,94 @@ After receiving the Smart Access Gateway device, check that the following items 
 
 **Note:** If any item is missing or damaged, contact Alibaba Cloud after-sales personnel.
 
+## Type 1 \(size: 180×110×30mm\) {#section_yws_onk_uy1 .section}
+
+-   Front panel
+
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40483/155745346521278_en-US.png)
+
+-   Real panel
+
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40483/155745346521279_en-US.png)
+
+
+## Type 2 \(size: 275×175×44.4mm\) {#section_p2n_zun_00f .section}
+
+-   Front panel
+
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40483/155745346539754_en-US.png)
+
+    ./images/39754\_en-US.png
+
+-   Side panel
+
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40483/155745346639755_en-US.png)
+
+-   Real panel
+
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40483/155745346639756_en-US.png)
+
+
 ## Front panel {#section_q1k_2vs_j2b .section}
 
-There are five LEDs on the front panel of the SAG-100WM Smart Access Gateway device:
+The following is an overview about a Smart Access Gateway device of the Type 1 category. \(Types 2, although different in appearance, possess the same functions as Type 1 devices.\)
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40483/155304825221278_en-US.png)
+-   Front panel: There are five LED indicators on the front panel.
 
-|LED indicator|Description|
-|-------------|-----------|
-|LTE|Indicates whether the device communication is normal:-   Flickering: Data transmission is normal.
--   Off: No card is inserted.
+    |LED indicator|Description|
+    |-------------|-----------|
+    |LTE|Indicates whether the device communication is normal:     -   Flickering: Data transmission is normal.
+    -   Off: No card is inserted.
+ |
+    |WAN|Indicates the Ethernet status of the device:     -   On: The device is connected to the Ethernet.
+    -   Flickering: Data transmission is normal.
+    -   Off: The device is not connected to the Ethernet.
+ |
+    |WIFI|Indicates the WIFI connection status of the device:     -   On: The WLAN is enabled.
+    -   Flickering: Data transmission is normal.
+    -   Off: The WLAN is not enabled.
+ |
+    |RUN|Indicates the status of the Smart Access Gateway device:     -   On: The device is powered on.
+    -   Flickering: Data transmission is normal.
+    -   Off: The device is not powered on.
+ |
+    |CLOUD|Indicates whether the device is connected to Alibaba Cloud:     -   On: The device is connected to the CEN.
+    -   Off: The device is not connected to the CEN.
+ |
 
-|
-|WAN|Indicates the Ethernet status of the device:-   On: The device is connected to the Ethernet.
--   Flickering: Data transmission is normal.
--   Off: The device is not connected to the Ethernet.
+-   Rear panel: There is one reset button, one SIM slot, one USB port, two WAN ports, three LAN ports, and a power interface on the rear panel of Smart Access Gateway:
+    -   RESET button
 
-|
-|WIFI|Indicates the WIFI connection status of the device:-   On: The WLAN is enabled.
--   Flickering: Data transmission is normal.
--   Off: The WLAN is not enabled.
+        To restore the Smart Access Gateway to its default configurations, press and hold the reset button for five seconds while the device is powered on.
 
-|
-|RUN|Indicates the status of the Smart Access Gateway device:-   On: The device is powered on.
--   Flickering: Data transmission is normal.
--   Off: The device is not powered on.
+        The default administration IP address of the Smart Access Gateway device is 192.168.0.1.
 
-|
-|CLOUD|Indicates whether the device is connected to Alibaba Cloud:-   On: The device is connected to the CEN.
--   Off: The device is not connected to the CEN.
+    -   SIM slot
 
-|
+        Insert a SIM card into the slot.
 
-## Rear panel {#section_xmv_qvs_j2b .section}
+    -   USB interface
 
-There is one reset button, one SIM slot, one USB port, two WAN ports, three LAN ports, and a power interface on the rear panel of Smart Access Gateway:
+        Currently, you cannot use a 4G USB to access the Internet.
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40483/155304825221279_en-US.png)
+    -   WAN port
 
--   RESET key
+        The WAN port is used for accessing the Internet. It supports SNAT forwarding, dynamic IP, static IP, and PPoE.
 
-    To restore the Smart Access Gateway to its default configurations, press and hold the reset button for five seconds while the device is powered on.
+    -   LAN port
 
-    The default administration IP address of the Smart Access Gateway device is 192.168.0.1.
+        LAN ports are used for connecting local clients and can be connected to the switch through configured routes.
 
--   SIM slot
+    -   DC power socket
 
-    Insert a SIM card into the slot.
+        The power interface is on the far right side of the panel. The power supply must be 12-V DC power supply.
 
--   USB port
-
-    Currently, you cannot use a 4G USB to access the Internet.
-
--   WAN port
-
-    The WAN port is used for accessing the Internet. It supports SNAT forwarding, dynamic IP, static IP, and PPoE.
-
--   LAN port
-
-    LAN ports are used for connecting local clients and can be connected to the switch through configured routes.
-
--   DC power socket
-
-    The power interface is on the far right side of the panel. The power supply must be 12-V DC power supply.
-
-    **Note:** We recommend that you use the original power cable.
+        **Note:** We recommend that you use the original power cable.
 
 
 ## Networking mode {#section_ltr_jf3_pfb .section}
 
 The SAG-100WM device connects local clients to Alibaba Cloud through inline mode. The network topology is unchanged for this device.
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/24578/155304825221205_en-US.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/24578/155745346621205_en-US.png)
 
