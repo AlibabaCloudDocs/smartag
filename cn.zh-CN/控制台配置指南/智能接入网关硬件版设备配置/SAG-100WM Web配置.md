@@ -33,7 +33,7 @@ SAG-100WM设备支持动态IP、静态IP、PPPoE连接及SNAT转发。您可以�
 
     -   PPPoE：如果您想通过拨号方式接入互联网，选择该方式。然后输入运营商提供的PPPoE的账号和密码。
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15409/15561606936821_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15409/15580858846821_zh-CN.png)
 
 
 ## LAN配置（开启无线功能） {#section_fj3_zst_j2b .section}
@@ -51,7 +51,7 @@ LAN口配置用于线下客户端接入，如果您选择开启无线功能，�
  |
 |**密码**|设置连接WiFi的密码。|
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23646/155616069313651_zh-CN.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23646/155808588413651_zh-CN.png)
 
 ## LAN配置（有线模式） { .section}
 
@@ -63,13 +63,13 @@ LAN口配置用于线下客户端接入，如果您选择通过网线连接LAN�
 
     如果您的线下客户端直通过智能接入网关接入阿里云，如下图所示，使用默认配置即可。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15409/15561606956822_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15409/15580858846822_zh-CN.png)
 
 -   静态IP:
 
     如果线下客户端的IP已经通过线下交换机配置好了，如下图所示，请选择静态IP方式。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15409/15561606956823_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15409/15580858856823_zh-CN.png)
 
     选择该方式需要配置静态IP和路由：
 
@@ -94,6 +94,6 @@ LAN口配置用于线下客户端接入，如果您选择通过网线连接LAN�
 
     -   如果与云上VPC进行通信，需要在交换机中添加一条目标网段为云上VPC的网段，下一跳为LAN口静态IP的路由。
     -   如果有其他线下分支机构通过智能接入网关互连，在交换机中添加其他分支机构的网段路由，下一跳为LAN口静态IP的路由。
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15409/15561606956824_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23646/155808588539824_zh-CN.png)
 
 
