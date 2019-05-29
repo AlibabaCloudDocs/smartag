@@ -10,7 +10,7 @@ SAG Software enables end users to accelerate the access to applications and proc
 
 -   Secure cloud access: Securely connect to the cloud through a private network built on an encrypted tunnel over the Internet.
 -   Connect from anywhere: End users can access the private network from anywhere over the Internet.
--   Multiple OS supported: SAG Software is compatible with multiple PC and mobile operating systems including Windows, MacOS, Linux, Andriod and iOS.
+-   Multiple OS supported: SAG Software is compatible with multiple PC and mobile operating systems including Windows, MacOS, Linux, Android and iOS.
 -   Integration ready: SDK is available to be integrated to a third party app client to offer a customized solution.
 -   Elastic connection: The number of connections and the bandwidth per connection can be adjusted.
 -   Centralized management：IT administrators can manage all the connections through a single pane of glass.
