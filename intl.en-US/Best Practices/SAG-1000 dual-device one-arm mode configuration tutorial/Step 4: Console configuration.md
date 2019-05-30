@@ -40,7 +40,7 @@ To configure an access control list \(ACL\), follow these steps:
 1.  Log on to the [SAG console](https://smartag.console.aliyun.com/).
 2.  Click **ACL** and configure an ACL rule for the SAG device. For more information, see [Configure an ACL rule](../intl.en-US/User Guide/Access control list (ACL)/Configure an access control list.md#).
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23988/155922032041205_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23988/155923010141205_en-US.png)
 
 
 ## Step 4: Configure a security group {#section_srm_v5d_p2b .section}
@@ -57,6 +57,6 @@ To configure the security group, follow these steps:
 
     The following figure shows the security group configurations in this tutorial. You must enter the private CIDR blocks of the local branches as the authorization objects.
 
-    ![](images/13853_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23710/155923010113853_en-US.png)
 
 
