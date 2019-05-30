@@ -17,7 +17,7 @@ To configure device 1, follow these steps:
 
     In this tutorial, enter 192.168.101.1 as the service IP address, enter 192.168.20.1/24 as the administrator IP address, and enter 192.168.20.4 as the next hop.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23988/155922965013922_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23988/155922971413922_en-US.png)
 
     |Configuration|Description|
     |:------------|:----------|
@@ -38,13 +38,11 @@ In the isolation mode, the service traffic and the administration traffic do not
 
         In this tutorial, OSPF is enabled, and the IP addresses of the ports used for communicating with the switches are 192.168.11.2/24 and 192.168.12.2/24.
 
-        ![](images/13843_en-US.png)
-
 7.  Configure OSPF.
 
     In this tutorial, MD5 authentication is selected. Enter the service IP 192.168.101.1 as the RouterId.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23988/155922965113929_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23988/155922971413929_en-US.png)
 
     |Configuration|Description|
     |:------------|:----------|
