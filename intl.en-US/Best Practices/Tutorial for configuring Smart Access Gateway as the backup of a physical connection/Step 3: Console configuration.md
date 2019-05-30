@@ -17,9 +17,6 @@ To configure active/standby links, follow these steps:
 1.  Log on to the [Smart Access Gateway console](https://smartag.console.aliyun.com/).
 2.  On the SAG page, find the target gateway instance.
 3.  Click the ID of the target instance, and then in the **High-Availability Configurations** area, enable link-level backup.
-
-    ![](images/21679_en-US.png)
-
 4.  Complete the following configurations, and then click **OK**:
     -   **High Availability Mode**: Select **Channel**.
     -   **Main Channel**: Select the established physical connection.
@@ -57,7 +54,7 @@ To configure an access control list \(ACL\), follow these steps:
 1.  Log on to the [SAG console](https://smartag.console.aliyun.com/).
 2.  Click **ACL** and configure an ACL rule for the SAG device. For more information, see [Configure an ACL](../intl.en-US/User Guide/Access control list (ACL)/Configure an access control list.md#).
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23988/155923034141205_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23988/155923046741205_en-US.png)
 
 
 ## Step 5: Configure a security group {#section_srm_v5d_p2b .section}
