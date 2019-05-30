@@ -17,7 +17,7 @@ To configure device 1, follow these steps:
 
     In this tutorial, enter 192.168.101.1 as the service IP address, enter 192.168.20.1/24 as the administrator IP address, and enter 192.168.20.4 as the next hop.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23988/155702689213922_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23988/155922965013922_en-US.png)
 
     |Configuration|Description|
     |:------------|:----------|
@@ -44,7 +44,7 @@ In the isolation mode, the service traffic and the administration traffic do not
 
     In this tutorial, MD5 authentication is selected. Enter the service IP 192.168.101.1 as the RouterId.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23988/155702689213929_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23988/155922965113929_en-US.png)
 
     |Configuration|Description|
     |:------------|:----------|
@@ -83,15 +83,17 @@ Add route configurations for the peer switches of device 1 according to the foll
     ```
     interface GigabitEthernet 0/11
      no switchport
-     ip ospf network point-to-point
+     ip ospf network point-to-point           The network type must be p2p
      ip ospf authentication message-digest
      ip ospf message-digest-key 7 md5 1234
      ip ospf hello-interval 3
      ip ospf dead-interval 10
-     ip address 192.168.11.1 255.255.255.0 The IP address of the port on the peer switch of the Smart Access Gateway
+     ip address 192.168.11.1 255.255.255.0    The IP address of the port on the peer switch of the Smart Access Gateway
+    
     interface GigabitEthernet 0/12
      no switchport
-     ip ospf network point-to-point
+     ip ospf network point-to-point          The network type must be p2p
+     ip ospf authentication message-digest
      ip ospf authentication message-digest
      ip ospf message-digest-key 7 md5 1234
      ip ospf hello-interval 3
@@ -112,14 +114,14 @@ Add route configurations for the peer switches of device 1 according to the foll
      area 0
      area 1
      area 2
-     area 2 nssa translator always default-information-originate
+     area 2 nssa translator always default-information-originate 
      area 1 nssa translator always default-information-originate
-     network 192.168.3.0 0.0.0.255 area 0                          The CIDR block of the local PC
-     network 192.168.11.0 0.0.0.255 area 1                         The CIDR block of the switch
+     network 192.168.3.0 0.0.0.255 area 0                         The CIDR block of the local PC
+     network 192.168.11.0 0.0.0.255 area 1                        The CIDR block of the switch
      network 192.168.12.0 0.0.0.255 area 1
-     network 192.168.13.0 0.0.0.255 area 2
+     network 192.168.13.0 0.0.0.255 area 2 
      network 192.168.14.0 0.0.0.255 area 2
-     network 192.168.100.0 0.0.0.255 area 0                     The CIDR block used for communicating with the uplink router
+     network 192.168.100.0 0.0.0.255 area 0                      The CIDR block used for communicating with the uplink router
      network 192.168.101.3 0.0.0.0 area 0                        The loopback address of the switch
      default-information originate always                        Advertise default routes to the Smart Access Gateway
     ```
@@ -133,11 +135,11 @@ Add route configurations for the peer switches of device 1 according to the foll
 
     **Note:** You must configure the network type of the interfaces using the OSPF protocol on the same Smart Access Gateway device to P2P, otherwise the routes cannot be correctly calculated.
 
-    ``` {#codeblock_3i6_i6e_rj0}
+    ``` {#codeblock_qjx_rpk_lkq}
     interface GigabitEthernet 0/11
      no switchport
      ip address 192.168.11.1 255.255.255.0     The IP address of the port on the peer switch of the Smart Access Gateway
-     ip ospf network point-to-point
+     ip ospf network point-to-point          The network type must be p2p
      ip ospf authentication message-digest
      ip ospf message-digest-key 7 md5 1234
      ip ospf dead-interval 10
@@ -145,8 +147,8 @@ Add route configurations for the peer switches of device 1 according to the foll
     !
     interface GigabitEthernet 0/12
      no switchport
-     ip address 192.168.12.1 255.255.255.0  The IP address of the port on the peer switch of the Smart Access Gateway
-     ip ospf network point-to-point
+     ip address 192.168.12.1 255.255.255.0   The IP address of the port on the peer switch of the Smart Access Gateway
+     ip ospf network point-to-point       The network type must be p2p
      ip ospf authentication message-digest
      ip ospf message-digest-key 7 md5 1234
      ip ospf dead-interval 10
@@ -158,7 +160,7 @@ Add route configurations for the peer switches of device 1 according to the foll
 
     **Note:** You must configure OSPF to be in the NSSA area and to automatically generate default routes and advertise them to the Smart Access Gateway.
 
-    ``` {#codeblock_x4s_tzn_9r0}
+    ``` {#codeblock_52z_sz2_lh0}
     interface Loopback 0
     ip address 192.168.101.3 255.255.255.255                       The loopback address of the switch
     !
@@ -167,10 +169,11 @@ Add route configurations for the peer switches of device 1 according to the foll
      area 2 nssa default-information-originate no-summary         Advertise default routes to the Smart Access Gateway
      network 192.168.3.0 0.0.0.255 area 0                         The CIDR block of the local PC
      network 192.168.11.0 0.0.0.255 area 1                        The CIDR block of the switch
+     network 192.168.12.0 0.0.0.255 area 1                        The CIDR block of the switch
      network 192.168.100.0 0.0.0.255 area 0                       The CIDR block used for communicating with the uplink router
      network 192.168.101.3 0.0.0.0 area 0                         The loopback address of the switch
-     network 192.168.11.0 0.0.0.255 area 1                         The CIDR block of the switch
-     network 192.168.12.0 0.0.0.255 area 1
+     network 192.168.13.0 0.0.0.255 area 1                        The CIDR block of the switch
+     network 192.168.14.0 0.0.0.255 area 1
      default-information originate always
     !
     ```
