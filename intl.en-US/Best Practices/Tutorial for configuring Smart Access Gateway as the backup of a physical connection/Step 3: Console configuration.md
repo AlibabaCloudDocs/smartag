@@ -54,7 +54,7 @@ To configure an access control list \(ACL\), follow these steps:
 1.  Log on to the [SAG console](https://smartag.console.aliyun.com/).
 2.  Click **ACL** and configure an ACL rule for the SAG device. For more information, see [Configure an ACL](../intl.en-US/User Guide/Access control list (ACL)/Configure an access control list.md#).
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23988/155923046741205_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23988/155953304341205_en-US.png)
 
 
 ## Step 5: Configure a security group {#section_srm_v5d_p2b .section}
