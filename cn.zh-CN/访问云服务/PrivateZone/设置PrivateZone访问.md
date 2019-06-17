@@ -10,11 +10,11 @@ PrivateZone是基于阿里云专有网络VPC环境的私有DNS域名解析和管
 
     **说明：** 您只有在第一次配置PrivateZone访问时需要为智能接入网关进行授权。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/122838/156015501938425_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/122838/156075241138425_zh-CN.png)
 
 4.  在云资源访问授权页面，单击**同意授权**允许加载到云企业网的云连接网（智能接入网关的组成部分）关联的本地分支访问PrivateZone服务。 
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/122838/156015502038860_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/122838/156075241138860_zh-CN.png)
 
 5.  单击**设置PrivateZone**，然后在设置PrivateZone页面，完成以下配置： 
     1.  **服务所在地**：选择配置了PrivateZone服务的VPC的所在地域。 
