@@ -1,4 +1,4 @@
-# CreateCloudConnectNetwork {#doc_api_1139401 .reference}
+# CreateCloudConnectNetwork {#doc_api_Smartag_CreateCloudConnectNetwork .reference}
 
 调用CreateCloudConnectNetwork创建云连接网。
 
@@ -22,6 +22,9 @@
  取值： **CreateCloudConnectNetwork**
 
  |
+|CidrBlock|String|否|172.16.22.0/24|私网网段。
+
+ |
 |Description|String|否|ccn描述|云连接网的描述。
 
  长度为2-256个字符，必须以字母或中文开头，但不能以`http://`或 `https://`开头。
@@ -35,12 +38,18 @@
 |RegionId|String|否|cn-hangzhou|云连接网的所属区域。取值： cn-shanghai：中国大陆
 
  |
+|SnatCidrBlock|String|否|172.16.22.3/24|SNAT内网网段。
+
+ |
 
 ## 返回参数 {#resultMapping .section}
 
 |名称|类型|示例值|描述|
 |--|--|---|--|
 |CcnId|String|ccn-l9340rlu5ens\*\*\*\*\*|云连接网ID。
+
+ |
+|CidrBlock|String|172.16.22.0/24|私网网段。
 
  |
 |Description|String|ccn描述|云连接网说明。
@@ -50,6 +59,9 @@
 
  |
 |RequestId|String|F0C4D78D-C60E-4A3B-A652-3A2835305C0B|请求ID。
+
+ |
+|SnatCidrBlock|String|172.16.22.3/24|SNAT内网网段。
 
  |
 |Status|String|Active|云连接网实例状态。
