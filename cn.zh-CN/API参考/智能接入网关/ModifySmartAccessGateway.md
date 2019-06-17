@@ -1,4 +1,4 @@
-# ModifySmartAccessGateway {#doc_api_1139400 .reference}
+# ModifySmartAccessGateway {#doc_api_Smartag_ModifySmartAccessGateway .reference}
 
 调用ModifySmartAccessGateway修改智能接入网关的配置。
 
@@ -41,6 +41,12 @@ TEST
 |SecurityLockThreshold|Integer|否|3|离线锁定功能用户设定的阈值，大于等于0。
 
  单位：秒
+
+ |
+|SnatEntries.N.CidrBlock|String|否|172.16.22.0/24|配置本地终端接入阿里云使用的私网网段。
+
+ |
+|SnatEntries.N.SnatIp|String|否|172.16.22.5|外网地址是云连接网SNAT网段内的一个IP地址，不填则系统自动分配。
 
  |
 
@@ -97,6 +103,7 @@ https://smartag.cn-shanghai.aliyuncs.com/?Action=ModifySmartAccessGateway
 |500|SmartAccessGatewayNotActivated|The specified Smart Access Gateway has not been activated.|该智能接入网关尚未激活，请先激活该实例。|
 |403|VbrConflict.ChangeSubnet|The subnet of the gateway conflicts with the VBR. Modify the subnet first.|该智能接入网关的子网网段与VBR有冲突，请修改子网网段。|
 |403|VbrConflict.CreateBackup|The subnet of the gateway conflicts with the VBR. Create a backup relationship first.|该智能接入网关的子网网段与VBR有冲突，请先创建专线备份。|
+|403|SmartAccessGatewayNotBind|The instance has not yet been bound.|该实例未被绑定|
 
 [查看本产品错误码](https://error-center.aliyun.com/status/product/Smartag)
 
