@@ -21,6 +21,9 @@
 |AssociatedCcnId|String|否|ccn-bxuau4ezctt\*\*\*\*\*\*|绑定的云连接网ID。
 
  |
+|InstanceType|String|否|sag-100wm|实例类型。
+
+ |
 |Name|String|否|sag|智能接入网关名称。
 
  |
@@ -87,6 +90,9 @@
 |└CreateTime|Long|1523604565000|智能接入网关的创建时间。
 
  |
+|└DataPlan|Long|5|套餐流量。
+
+ |
 |└Description|String|sag描述|智能接入网关描述。
 
  |
@@ -113,10 +119,22 @@
 |└SmartAGId|String|sag-v0fkpk4akfz5\*\*\*\*\*\*|智能接入网关ID。
 
  |
+|└SnatEntries| | |SNAT配置条目。
+
+ |
+|└CidrBlock|String|10.10.10.1|私网网段。
+
+ |
+|└SnatIp|String|10.10.10.5|外网地址是云连接网SNAT网段内的一个IP地址，不填则系统自动分配。
+
+ |
 |└SoftwareVersion|String|1.0.0|智能接入网关的软件版本。
 
  |
 |└Status|String|Init|智能接入网关的状态。
+
+ |
+|└UserCount|Integer|12|用户账号个数。
 
  |
 |TotalCount|Integer|2|列表条目数。
@@ -129,7 +147,8 @@
 
 ``` {#request_demo}
 
-http(s)://[Endpoint]/?<公共请求参数>
+http(s)://[Endpoint]/?Action=DescribeSmartAccessGateways
+&<公共请求参数>
 
 ```
 
