@@ -41,5 +41,5 @@ For more information on how to get started, see [Configuration guide](../../../.
 
 ## Q: How is SAG Software priced? {#section_bjk_lvc_x1f .section}
 
-For more information on SAG pricing, see [Billing](../../../../intl.en-US/Pricing/Billing.md#)
+For more information on SAG pricing, see [Billing of Smart Access Gateway \(Software\)](../../../../intl.en-US/Smart Access Gateway Software/Billing of Smart Access Gateway (Software).md#)
 
