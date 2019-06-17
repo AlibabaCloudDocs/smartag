@@ -1,4 +1,4 @@
-# DisassociateACL {#doc_api_1162918 .reference}
+# DisassociateACL {#doc_api_Smartag_DisassociateACL .reference}
 
 调用DisassociateACL将智能接入网关实例跟访问控制解绑。
 
