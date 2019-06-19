@@ -2,7 +2,32 @@
 
 智能接入网关提供以下相关API接口。
 
-## 访问控制 {#section_76v_oua_xge .section}
+## 智能接入网关 {#section_sv2_vna_uqi .section}
+
+|API|描述|
+|---|--|
+|[BindSmartAccessGateway](~~69805~~)|调用BindSmartAccessGateway接口将智能接入网关绑定到指定的云连接网中。|
+|[UnbindSmartAccessGateway](~~69834~~)|调用UnbindSmartAccessGateway将智能接入网关从指定的云连接网中解绑。|
+|[UpgradeSmartAccessGateway](~~100566~~)|调用UpgradeSmartAccessGateway接口升高智能接入网关实例的带宽。|
+|[DescribeSmartAccessGatewayVersions](~~69825~~)|调用DescribeSmartAccessGatewayVersions查询智能接入网关的软件版本。|
+|[GetSmartAccessGatewayUseLimit](~~69828~~)|调用GetSmartAccessGatewayUseLimit查询可购买的智能接入网关数量。|
+|[DescribeRegions](~~69813~~)|调用DescribeRegions查询可用地域。|
+|[CreateSmartAccessGateway](~~99993~~)|调用CreateSmartAccessGateway智能接入网关实例。|
+|[DescribeSmartAccessGateways](~~69815~~)|调用DescribeSmartAccessGateways查询已创建的智能接入网关。|
+|[UpdateSmartAccessGatewayVersion](~~69836~~)|调用UpdateSmartAccessGatewayVersion升级智能接入网关的软件版本。|
+|[ModifySmartAccessGateway](~~69833~~)|调用ModifySmartAccessGateway修改智能接入网关的配置。|
+
+## 云连接网 {#section_9u9_dja_ukr .section}
+
+|API|描述|
+|---|--|
+|[DeleteCloudConnectNetwork](~~69810~~)|调用DeleteCloudConnectNetwork删除云连接网。|
+|[GetCloudConnectNetworkUseLimit](~~69826~~)|调用GetCloudConnectNetworkUseLimit查询当前账号在指定区域内的云连接网个数限制。|
+|[CreateCloudConnectNetwork](~~69809~~)|调用CreateCloudConnectNetwork创建云连接网。|
+|[ModifyCloudConnectNetwork](~~69830~~)|调用ModifyCloudConnectNetwork修改云连接网的名称和描述。|
+|[DescribeCloudConnectNetworks](~~69811~~)|调用DescribeCloudConnectNetworks查询已创建的云连接网。|
+
+## 访问控制 {#section_ear_hu6_c4h .section}
 
 |API|描述|
 |---|--|
@@ -17,7 +42,7 @@
 |[CreateACL](~~112536~~)|调用CreateACL创建访问控制。|
 |[DescribeACLAttribute](~~112856~~)|调用DescribeACLAttribute批量查询访问控制，需要增加Name参数，支持按照Name过滤。|
 
-## 智能接入网关软件版 {#section_krc_q5e_tke .section}
+## 智能接入网关软件版 {#section_bd5_wwt_rms .section}
 
 |API|描述|
 |---|--|
