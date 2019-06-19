@@ -2,7 +2,7 @@
 
 智能接入网关提供以下相关API接口。
 
-## 访问控制 {#section_09k_mfc_91k .section}
+## 访问控制 {#section_76v_oua_xge .section}
 
 |API|描述|
 |---|--|
@@ -17,7 +17,7 @@
 |[CreateACL](~~112536~~)|调用CreateACL创建访问控制。|
 |[DescribeACLAttribute](~~112856~~)|调用DescribeACLAttribute批量查询访问控制，需要增加Name参数，支持按照Name过滤。|
 
-## 智能接入网关软件版 {#section_lme_mgm_wew .section}
+## 智能接入网关软件版 {#section_krc_q5e_tke .section}
 
 |API|描述|
 |---|--|
