@@ -1,76 +1,35 @@
-# API概览 {#doc_api_overview .concept}
+# API概览 {#doc_15412 .concept}
 
 智能接入网关提供以下相关API接口。
 
-## 智能接入网关 { .section}
+## 访问控制 {#section_wiv_gqk_tdl .section}
 
 |API|描述|
 |---|--|
-| [CreateSmartAccessGateway](~~79821#Smartag_CreateSmartAccessGateway~~)
+|[DescribeACLs](~~112858~~)|调用DescribeACLs查询访问控制信息。|
+|[ModifyACL](~~112860~~)|调用ModifyACL修改访问控制。|
+|[DeleteACL](~~112862~~)|调用DeleteACL删除访问控制。|
+|[AssociateACL](~~112863~~)|调用AssociateACL将访问控制与智能接入网关实例绑定。|
+|[DisassociateACL](~~112865~~)|调用DisassociateACL将智能接入网关实例跟访问控制解绑。|
+|[AddACLRule](~~112893~~)|调用AddACLRule添加访问控制规则。|
+|[DeleteACLRule](~~112894~~)|调用DeleteACLRule删除访问控制规则。|
+|[ModifyACLRule](~~112896~~)|调用ModifyACLRule修改访问控制规则。|
+|[CreateACL](~~112536~~)|调用CreateACL创建访问控制。|
+|[DescribeACLAttribute](~~112856~~)|调用DescribeACLAttribute批量查询访问控制，需要增加Name参数，支持按照Name过滤。|
 
- |调用CreateSmartAccessGateway智能接入网关实例。|
-| [BindSmartAccessGateway](~~15417#Smartag_BindSmartAccessGateway~~)
-
- |调用BindSmartAccessGateway接口将智能接入网关绑定到指定的云连接网中。|
-| [UnbindSmartAccessGateway](~~15418#Smartag_UnbindSmartAccessGateway~~)
-
- |调用UnbindSmartAccessGateway将智能接入网关从指定的云连接网中解绑。|
-| [UpdateSmartAccessGatewayVersion](~~15421#Smartag_UpdateSmartAccessGatewayVersion~~)
-
- |调用UpdateSmartAccessGatewayVersion升级智能接入网关的软件版本。|
-| [UpgradeSmartAccessGateway](~~80703#Smartag_UpgradeSmartAccessGateway~~)
-
- |调用UpgradeSmartAccessGateway接口升高智能接入网关实例的带宽。|
-| [DescribeSmartAccessGatewayVersions](~~15419#Smartag_DescribeSmartAccessGatewayVersions~~)
-
- |调用DescribeSmartAccessGatewayVersions查询智能接入网关的软件版本。|
-| [GetSmartAccessGatewayUseLimit](~~15420#Smartag_GetSmartAccessGatewayUseLimit~~)
-
- |调用GetSmartAccessGatewayUseLimit查询可购买的智能接入网关数量。|
-| [ModifySmartAccessGateway](~~15415#Smartag_ModifySmartAccessGateway~~)
-
- |调用ModifySmartAccessGateway修改智能接入网关的配置。|
-| [DescribeRegions](~~15427#Smartag_DescribeRegions~~)
-
- |调用DescribeRegions查询可用地域。|
-
-## 云连接网 { .section}
+## 智能接入网关软件版 {#section_hdt_dm8_gp9 .section}
 
 |API|描述|
 |---|--|
-| [CreateCloudConnectNetwork](~~15422#Smartag_CreateCloudConnectNetwork~~)
-
- |调用CreateCloudConnectNetwork创建云连接网。|
-| [ModifyCloudConnectNetwork](~~15424#Smartag_ModifyCloudConnectNetwork~~)
-
- |调用ModifyCloudConnectNetwork修改云连接网的名称和描述。|
-| [DeleteCloudConnectNetwork](~~15425#Smartag_DeleteCloudConnectNetwork~~)
-
- |调用DeleteCloudConnectNetwork删除云连接网。|
-| [DescribeCloudConnectNetworks](~~15423#Smartag_DescribeCloudConnectNetworks~~)
-
- |调用DescribeCloudConnectNetworks查询已创建的云连接网。|
-| [GetCloudConnectNetworkUseLimit](~~15426#Smartag_GetCloudConnectNetworkUseLimit~~)
-
- |调用GetCloudConnectNetworkUseLimit查询当前账号在指定区域内的云连接网个数限制。|
-
-## 访问控制 { .section}
-
-|API|描述|
-|---|--|
-| [DescribeACLs](~~150465#Smartag_DescribeACLs~~)
-
- |调用DescribeACLs查询访问控制信息。|
-| [ModifyACL](~~150467#Smartag_ModifyACL~~)
-
- |调用ModifyACL修改访问控制。|
-| [DeleteACL](~~150468#Smartag_DeleteACL~~)
-
- |调用DeleteACL删除访问控制。|
-| [AssociateACL](~~150469#Smartag_AssociateACL~~)
-
- |调用AssociateACL将访问控制与智能接入网关实例绑定。|
-| [DisassociateACL](~~150470#Smartag_DisassociateACL~~)
-
- |调用DisassociateACL将智能接入网关实例跟访问控制解绑。|
+|[CreateSmartAccessGatewaySoftware](~~120540~~)|调用CreateSmartAccessGatewaySoftware创建智能接入网关软件版。|
+|[CreateSmartAccessGatewayClientUser](~~120685~~)|调用CreateSmartAccessGatewayClientUser创建用户。|
+|[DescribeSmartAccessGatewayClientUsers](~~120687~~)|调用DescribeSmartAccessGatewayClientUsers查询软件版实例用户列表。|
+|[ResetSmartAccessGatewayClientUserPassword](~~120704~~)|调用ResetSmartAccessGatewayClientUserPassword重置软件版客户端密码。|
+|[DeleteSmartAccessGatewayClientUser](~~120712~~)|调用DeleteSmartAccessGatewayClientUser删除软件客户端用户。|
+|[ModifySmartAccessGatewayClientUser](~~120713~~)|调用ModifySmartAccessGatewayClientUser修改用户带宽。|
+|[DescribeUserOnlineClientStatistics](~~120719~~)|调用DescribeUserOnlineClientStatistics查询指定智能接入网关软件版实例用户数统计。|
+|[KickOutClients](~~120728~~)|调用KickOutClients根据智能接入网关软件版实例ID和用户名，剔除在线连接。|
+|[DescribeUserOnlineClients](~~120729~~)|调用DescribeUserOnlineClients根据用户名和智能接入网关软件版实例ID查询指定用户在线连接列表。|
+|[DescribeSagOnlineClientStatistics](~~120717~~)|调用DescribeSagOnlineClientStatistics查询当前用户智能接入网关软件版实例在线连接数据。|
+|[DescribeUserFlowStatistics](~~120730~~)|调用DescribeUserOnlineClients查询指定智能接入网关软件版实例下用户的流量统计。|
 
