@@ -2,7 +2,7 @@
 
 智能接入网关提供以下相关API接口。
 
-## 智能接入网关 {#section_360_3ns_kl8 .section}
+## 智能接入网关 {#section_0do_ezk_lsx .section}
 
 |API|描述|
 |---|--|
@@ -17,7 +17,7 @@
 |[UpdateSmartAccessGatewayVersion](~~69836~~)|调用UpdateSmartAccessGatewayVersion升级智能接入网关的软件版本。|
 |[ModifySmartAccessGateway](~~69833~~)|调用ModifySmartAccessGateway修改智能接入网关的配置。|
 
-## 云连接网 {#section_qc6_5gp_oqk .section}
+## 云连接网 {#section_jki_xo8_ot6 .section}
 
 |API|描述|
 |---|--|
@@ -27,7 +27,7 @@
 |[ModifyCloudConnectNetwork](~~69830~~)|调用ModifyCloudConnectNetwork修改云连接网的名称和描述。|
 |[DescribeCloudConnectNetworks](~~69811~~)|调用DescribeCloudConnectNetworks查询已创建的云连接网。|
 
-## 访问控制 {#section_p19_8oi_voo .section}
+## 访问控制 {#section_w4z_lde_s5o .section}
 
 |API|描述|
 |---|--|
@@ -42,7 +42,7 @@
 |[CreateACL](~~114016~~)|调用CreateACL创建访问控制。|
 |[DescribeACLAttribute](~~114017~~)|调用DescribeACLAttribute批量查询访问控制，需要增加Name参数，支持按照Name过滤。|
 
-## 智能接入网关软件版 {#section_uwj_twc_no7 .section}
+## 智能接入网关软件版 {#section_oa8_wb7_bry .section}
 
 |API|描述|
 |---|--|
