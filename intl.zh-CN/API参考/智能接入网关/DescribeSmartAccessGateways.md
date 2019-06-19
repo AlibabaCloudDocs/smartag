@@ -15,7 +15,7 @@
  |
 |Action|String|否|DescribeSmartAccessGateways|执行的操作。
 
- 取值： **DescribeSmartAccessGateways**
+ 取值： **DescribeSmartAccessGateways**。
 
  |
 |AssociatedCcnId|String|否|ccn-bxuau4ezctt\*\*\*\*\*\*|绑定的云连接网ID。
