@@ -20,7 +20,7 @@ TEST
  |
 |Action|String|否|ModifySmartAccessGateway|要执行的操作。
 
- 取值： **ModifySmartAccessGateway**
+ 取值： **ModifySmartAccessGateway**。
 
  |
 |CidrBlock|String|否|172.16.0.1/24|线下机构客户端用来通信的私网网段，确保各私网网段不冲突。
@@ -40,13 +40,7 @@ TEST
  |
 |SecurityLockThreshold|Integer|否|3|离线锁定功能用户设定的阈值，大于等于0。
 
- 单位：秒
-
- |
-|SnatEntries.N.CidrBlock|String|否|172.16.22.0/24|配置本地终端接入阿里云使用的私网网段。
-
- |
-|SnatEntries.N.SnatIp|String|否|172.16.22.5|外网地址是云连接网SNAT网段内的一个IP地址，不填则系统自动分配。
+ 单位：秒。
 
  |
 
@@ -64,10 +58,10 @@ TEST
 
 ``` {#request_demo}
 
-https://smartag.cn-shanghai.aliyuncs.com/?Action=ModifySmartAccessGateway
-&SmartAGId=sag-0ovhf732a9j0pt0aeo
-&Name=DocTest
-&CommonParameters
+http(s)://[Endpoint]/?Action=ModifySmartAccessGateway
+&RegionId=cn-hangzhou
+&SmartAGId=sag-0ovhf732a9j0******
+&<公共请求参数>
 
 ```
 
@@ -103,7 +97,24 @@ https://smartag.cn-shanghai.aliyuncs.com/?Action=ModifySmartAccessGateway
 |500|SmartAccessGatewayNotActivated|The specified Smart Access Gateway has not been activated.|该智能接入网关尚未激活，请先激活该实例。|
 |403|VbrConflict.ChangeSubnet|The subnet of the gateway conflicts with the VBR. Modify the subnet first.|该智能接入网关的子网网段与VBR有冲突，请修改子网网段。|
 |403|VbrConflict.CreateBackup|The subnet of the gateway conflicts with the VBR. Create a backup relationship first.|该智能接入网关的子网网段与VBR有冲突，请先创建专线备份。|
+|400|SAG.IpCountTooLittle|The number of available IP addresses of the CIDR block is fewer than the number of SslConnectionSpec.|地址段可用ip数少于连接数。|
+|400|SAG.SslConnectionSpecInvalid|The number of SslConnectionSpec is invalid.|连接数非法。|
+|400|SAG.CcnCidrNoConfig|You must configure the CIDR block of CCN.|绑定的云连接网地址段未配置。|
+|400|SAG.CidrEmpty|You must specify the CIDR blocks of SAG.|智能网关地址段为空。|
+|400|SAG.ConflictCidr.CcnSnatCidr|The SAG CIDR block is in conflict with the CCN CIDR block.|智能网关地址段与云连接网地址段冲突。|
+|400|SAG.ConflictSnatIp|The specified SNAT IP address is invalid.|指定的SNAT IP存在冲突。|
+|400|SAG.InstanceIdEmpty|You must specify the SAG instance ID.|智能网关实例ID为空。|
+|400|SAG.InstanceNoFound|The specified SAG instance does not exist.|智能网关实例不存在。|
+|400|SAG.InvalidCidr|The specified CIDR block is invalid.|智能网关地址段非法。|
+|400|SAG.InvalidCidr.NoBelongCcnCidr|The specified SAG CIDR block does not belong to the CCN CIDR block.|智能网关地址段不属于云接网地址段。|
+|400|SAG.InvalidSnatCidr|The specified SNAT CIDR block is invalid.|智能网关SNAT CIDR非法。|
+|400|SAG.InvalidSnatIp|The specified SNAT IP address is invalid.|智能网关SNAT IP非法。|
+|400|CCN.CidrEmpty|You must specify the CCN CIDR block.|云连接网的地址段为空。|
 |403|SmartAccessGatewayNotBind|The instance has not yet been bound.|该实例未被绑定|
+|400|CCN.SnatCidrConflict|The specified SNAT CIDR block is invalid.|指定的SNAT地址段存在冲突|
+|400|ActionNotSupport|The specified instance does not support this action.|当前实例不支持此功能。|
+|400|CCN.SnatCidrNoConfig|You must configure the SNAT CIDR block of the CCN.|云连接网的SNAT地址段尚未配置。|
+|403|FeatureNotSupport|The current edition of the smart access gateway does not support this feature.|智能接入网关当前版本不支持该功能特性|
 
 [查看本产品错误码](https://error-center.aliyun.com/status/product/Smartag)
 
