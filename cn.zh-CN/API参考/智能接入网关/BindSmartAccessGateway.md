@@ -10,18 +10,18 @@
 
 |名称|类型|是否必选|示例值|描述|
 |--|--|----|---|--|
-|CcnId|String|是|ccn-isdjvvkexkrpk\*\*\*\*\*|要绑定的云连接网ID。
+| CcnId |String|是|ccn-isdjvvkexkrpk\*\*\*\*\*| 要绑定的云连接网ID。
 
  |
-|SmartAGId|String|是|sag-m7ez44zpayma\*\*\*\*\*|智能接入网关ID。
+| SmartAGId |String|是|sag-m7ez44zpayma\*\*\*\*\*| 智能接入网关ID。
 
  |
-|Action|String|否|BindSmartAccessGateway|执行的操作。
+| Action |String|否|BindSmartAccessGateway| 执行的操作。
 
- 取值： **BindSmartAccessGateway**
+ 取值： **BindSmartAccessGateway** 
 
  |
-|RegionId|String|否|cn-hangzhou|智能接入网关的所属区域。
+| RegionId |String|否|cn-hangzhou| 智能接入网关的所属区域。
 
  |
 
@@ -29,7 +29,7 @@
 
 |名称|类型|示例值|描述|
 |--|--|---|--|
-|RequestId|String|8A3FF8DD-B27D-4ED2-B032-5EF90B38195D|请求ID。
+|RequestId|String|8A3FF8DD-B27D-4ED2-B032-5EF90B38195D| 请求ID。
 
  |
 
@@ -48,7 +48,7 @@ http(s)://[Endpoint]/?Action=BindSmartAccessGateway
 
 正常返回示例
 
-`XML` 格式
+ `XML` 格式
 
 ``` {#xml_return_success_demo}
 <BindSmartAccessGatewayResponse>
@@ -57,7 +57,7 @@ http(s)://[Endpoint]/?Action=BindSmartAccessGateway
 
 ```
 
-`JSON` 格式
+ `JSON` 格式
 
 ``` {#json_return_success_demo}
 {
@@ -81,5 +81,5 @@ http(s)://[Endpoint]/?Action=BindSmartAccessGateway
 |500|SmartAccessGatewayInArrears|The specified Smart Access Gateway has expired.|该智能接入网关已经到期停服，请续费。|
 |500|SmartAccessGatewayNotActivated|The specified Smart Access Gateway has not been activated.|该智能接入网关尚未激活，请先激活该实例。|
 
-[查看本产品错误码](https://error-center.aliyun.com/status/product/Smartag)
+ [查看本产品错误码](https://error-center.aliyun.com/status/product/Smartag) 
 
