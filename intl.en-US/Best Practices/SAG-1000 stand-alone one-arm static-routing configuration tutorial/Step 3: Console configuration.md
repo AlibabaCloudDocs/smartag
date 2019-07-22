@@ -18,7 +18,7 @@ To configure the network, follow these steps:
 
     2.  **CCN Instance ID/Name**: Add the gateway instance to the CCN instance. Then gateway devices in the CCN instance can communicate with one another.
 
-        In this tutorial, the default CCN is used. For more information, see [Cloud Connect Network](../intl.en-US/User Guide/Cloud Connect Network/Cloud Connect Network.md#).
+        In this tutorial, the default CCN is used. For more information, see [Cloud Connect Network](../intl.en-US/Cloud Connect Network/Cloud Connect Network.md#).
 
 5.  **Bind CEN Instance**: Select the CEN instance to attach. After the CCN instance is attached to the CEN instance, gateway devices in the CCN instance can communicate with networks \(VPCs and VBRs\) attached to the CEN instance.
 6.  Click **OK**.
@@ -38,9 +38,9 @@ To activate the SAG device, follow these steps:
 To configure an access control list \(ACL\), follow these steps:
 
 1.  Log on to the [Smart Access Gateway console](https://smartag.console.aliyun.com/).
-2.  Click **ACL** and configure an ACL rule for the SAG device. For more information, see [Configure an access control list](../intl.en-US/User Guide/Access control list/Configure an access control list.md#).
+2.  Click **ACL** and configure an ACL rule for the SAG device. For more information, see [Configure an access control list](../intl.en-US/Access control list/Configure an access control list.md#).
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23988/156084288041205_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23988/156376189141205_en-US.png)
 
 
 ## Step 4: Configure a security group {#section_srm_v5d_p2b .section}
@@ -57,6 +57,6 @@ To configure the security group, follow these steps:
 
     The following figure shows the security group configurations in this tutorial. You must enter the private CIDR blocks of the local branches as the authorization objects.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23710/156084288013853_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23710/156376189113853_en-US.png)
 
 
