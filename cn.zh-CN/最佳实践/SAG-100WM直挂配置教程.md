@@ -6,7 +6,7 @@
 
 同区域线下机构接入，在购买、配置智能接入网关后，您只要将智能接入网关所绑定的云连接网加载到云企业网即可。
 
-![组网图](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23682/156376170814251_zh-CN.png)
+![组网图](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23682/156376184814251_zh-CN.png)
 
 您需要完成以下操作：
 
@@ -28,7 +28,7 @@
     4.  在专有网络详情页面，单击**加入云企业网**，选择要绑定的云企业网实例。
     5.  重复上述步骤，将上海区域的阿里云VPC加入同一个云企业网。
 
-        ![加入云企业网](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23682/156376170813745_zh-CN.png)
+        ![加入云企业网](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23682/156376184813745_zh-CN.png)
 
 -   已经创建云连接网，详情参见[创建云连接网](../intl.zh-CN/云连接网/创建云连接网.md#)。
 
@@ -51,7 +51,7 @@
 
     您可以在智能接入网关实例页面查看是否下单成功。系统会在下单后两天内发货。如果超期，您可以提交工单查看物流状态。
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23799/156376170821242_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23799/156376184821242_zh-CN.png)
 
 
 ## 步骤二 连接网关设备 {#section_xjs_lrj_l2b .section}
@@ -60,7 +60,7 @@
 
 本操作中杭州和宁波分支的本地客户端可直接通过网关设备接入，使用默认的网关配置即可。如果需要配置WAN口和LAN口，参见[配置向导](../intl.zh-CN/智能接入网关硬件版/配置指导/SAG-100WM使用说明/配置流程.md#)。
 
-![连接网关设备](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23682/156376170913738_zh-CN.png)
+![连接网关设备](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23682/156376184813738_zh-CN.png)
 
 ## 步骤三 激活网关 {#section_lyw_rbk_l2b .section}
 
@@ -93,7 +93,7 @@
 
         本操作选择使用默认的云连接网，更多详情参见[云连接网介绍](../intl.zh-CN/云连接网/云连接网介绍.md#)。
 
-        ![添加网络](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23682/156376170952054_zh-CN.png)
+        ![添加网络](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23682/156376184952054_zh-CN.png)
 
     3.  单击**确定**。
 5.  重复上述步骤，为另一个分支机构的网关实例进行网络配置。
@@ -110,7 +110,7 @@
 3.  单击需要绑定云企业网的云连接网实例**操作**列的**绑定云企业网**。
 4.  在绑定云企业网页面，选择要绑定的云企业网实例。绑定后，云连接网中的网关设备便可以和云企业网实例中已加载的网络实例（VPC或VBR）通信。
 
-    ![绑定云企业网](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/987728/156376170952171_zh-CN.png)
+    ![绑定云企业网](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/987728/156376184952171_zh-CN.png)
 
 
 ## 步骤六 配置安全组 {#section_srm_v5d_p2b .section}
@@ -123,14 +123,14 @@
 2.  在左侧导航栏，单击**实例**。
 3.  找到目标VPC内的ECS实例，然后单击**更多** \> **网络和安全组** \> **安全组配置**。
 
-    ![安全组配置](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15407/15637617097646_zh-CN.png)
+    ![安全组配置](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15407/15637618497646_zh-CN.png)
 
 4.  单击**配置规则**，然后单击**添加安全组规则**。
 5.  配置一条允许线下分支机构访问的安全组规则。
 
     下图是本操作中的安全组配置。您需要将授权对象配置为本地分支的私网网段。
 
-    ![安全组规则](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23682/156376171038920_zh-CN.png)
+    ![安全组规则](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23682/156376184938920_zh-CN.png)
 
 
 ## 步骤七 访问测试 {#section_hzm_tdk_l2b .section}
