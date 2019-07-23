@@ -13,7 +13,7 @@ SAG-100WM设备适用于小型分支和门店接入阿里云，即插即用，�
 |功耗|12W|
 |网络接口|2个GE/FE RJ45 WAN口|
 |3个GE/FE RJ45 LAN口|
-|WiFi|IEEE 802.11 b/g/n，2.4G 150Mbps，终端数20，范围100平方米|
+|WiFi|IEEE 802.11 b/g/n，2.4G 300Mbps，终端数20，范围100平方米|
 |4G LTE\(中国大陆\)|LTE FDD:B1,B3,B5,B8|
 |LTE TDD:B38,B39,B40,B41|
 |WCDMA:B1,B5,B8|
@@ -38,26 +38,26 @@ SAG-100WM设备适用于小型分支和门店接入阿里云，即插即用，�
 
 -   前面板
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40483/156352832821278_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40483/156386734221278_zh-CN.png)
 
 -   后面板
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40483/156352832921279_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40483/156386734221279_zh-CN.png)
 
 
 ## 设备二（尺寸：275\*175\*44.4mm） {#section_lqn_c11_ygb .section}
 
 -   前面板
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40483/156352832939754_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40483/156386734239754_zh-CN.png)
 
 -   侧面板
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40483/156352832939755_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40483/156386734239755_zh-CN.png)
 
 -   后面板
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40483/156352832939756_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40483/156386734339756_zh-CN.png)
 
 
 ## 设备介绍 {#section_q1k_2vs_j2b .section}
@@ -68,24 +68,24 @@ SAG-100WM设备适用于小型分支和门店接入阿里云，即插即用，�
 
     |指示灯|状态说明|
     |---|----|
-    |LTE|表示设备通讯是否正常：    -   闪烁：数据传输
+    |LTE|表示设备通讯是否正常：     -   闪烁：数据传输
     -   熄灭：未插卡
-|
-    |WAN|表示以太网使用状态：    -   长亮：以太网已连接
+ |
+    |WAN|表示以太网使用状态：     -   长亮：以太网已连接
     -   闪烁：数据传输
     -   熄灭：以太网未连接
-|
-    |WIFI|表示WIFI连接状态：    -   长亮：WLAN启动
+ |
+    |WIFI|表示WIFI连接状态：     -   长亮：WLAN启动
     -   闪烁：数据传输
     -   熄灭：WLAN未启动
-|
-    |RUN|表示智能接入网关设备状态：    -   长亮：电源接通
+ |
+    |RUN|表示智能接入网关设备状态：     -   长亮：电源接通
     -   闪烁：数据传输
     -   熄灭：电源未开
-|
-    |CLOUD|表示是否连接到阿里云：    -   长亮：连接到云连接网
+ |
+    |CLOUD|表示是否连接到阿里云：     -   长亮：连接到云连接网
     -   熄灭：没有连接到云连接网
-|
+ |
 
 -   后面板：智能接入网关的后面板由1个RESET键、一个SIM插入口、1个USB接口，2个WAN口、3个LAN口和电源接口组成。
     -   RESET键
@@ -121,5 +121,5 @@ SAG-100WM设备适用于小型分支和门店接入阿里云，即插即用，�
 
 SAG-100WM设备以直挂方式，在不影响您的网络拓扑的情况下，将本地客户端接入阿里云。
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/24578/156352832921205_zh-CN.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/24578/156386734321205_zh-CN.png)
 
