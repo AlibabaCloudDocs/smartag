@@ -38,26 +38,26 @@ SAG-100WM设备适用于小型分支和门店接入阿里云，即插即用，�
 
 -   前面板
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40483/156386734221278_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40483/156393397821278_zh-CN.png)
 
 -   后面板
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40483/156386734221279_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40483/156393397921279_zh-CN.png)
 
 
 ## 设备二（尺寸：275\*175\*44.4mm） {#section_lqn_c11_ygb .section}
 
 -   前面板
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40483/156386734239754_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40483/156393397939754_zh-CN.png)
 
 -   侧面板
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40483/156386734239755_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40483/156393397939755_zh-CN.png)
 
 -   后面板
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40483/156386734339756_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40483/156393397939756_zh-CN.png)
 
 
 ## 设备介绍 {#section_q1k_2vs_j2b .section}
@@ -96,7 +96,13 @@ SAG-100WM设备适用于小型分支和门店接入阿里云，即插即用，�
 
     -   SIM卡插入口
 
-        内嵌SIM卡。
+        内嵌SIM卡，只支持Mini-Sim卡，Micro-Sim和Nano-Sim卡无法直接使用。如果需要使用Micro-Sim和Nano-Sim卡，需要使用卡框，不能用卡套，使用卡套容易导致卡拔不出来。
+
+        智能接入网关设备随机携带的是三切卡，即同时支持了Mini-Sim，Micro-Sim和Nano-Sim卡，您如果需要换卡，可以使用三切卡的卡框。
+
+        Mini-Sim又叫2FF卡，Micro-Sim又叫3FF卡，Nano-Sim又叫4FF卡，形状如下图所示。
+
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40483/156393398052693_zh-CN.png)
 
     -   USB口
 
@@ -121,5 +127,5 @@ SAG-100WM设备适用于小型分支和门店接入阿里云，即插即用，�
 
 SAG-100WM设备以直挂方式，在不影响您的网络拓扑的情况下，将本地客户端接入阿里云。
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/24578/156386734321205_zh-CN.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/24578/156393398021205_zh-CN.png)
 
