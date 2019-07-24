@@ -4,14 +4,14 @@ SNAT功能可以隐藏内部地址并解决私网地址冲突问题，线下站�
 
 1.  登录[智能接入网关管理控制台](https://smartag.console.aliyun.com)。
 2.  在左侧导航栏选择**智能接入网关**，在智能接入网关页面，单击需要进行网络配置的实例ID或者单击**操作**列的**网络配置**。
-3.  在智能j接入网关详情页面，单击**私网SNAT**。
+3.  在智能接入网关详情页面，单击**私网SNAT**。
 4.  在私网SNAT页签下，单击**添加SANT**。
 5.  在添加SNAT页面，配置SNAT信息。 
 
     SANT参数配置说明如下：
 
-    -   **外网IP地址**：外网地址是云连接网SNAT网段内的一个IP地址。
+    -   **外网IP地址**：外网地址用来提供互联网访问的外网IP。
     -   **内网网段**：配置本地终端接入阿里云使用的私网网段，需要确保各私网网段不冲突。
-    ![添加snat](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/803493/156385042651427_zh-CN.png)
+    ![添加snat](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/803493/156395910351427_zh-CN.png)
 
 
