@@ -1,35 +1,35 @@
-# BindSmartAccessGateway {#doc_api_1108016 .reference}
+# BindSmartAccessGateway {#doc_api_Smartag_BindSmartAccessGateway .reference}
 
 调用BindSmartAccessGateway接口将智能接入网关绑定到指定的云连接网中。
 
-## 调试 {#apiExplorer .section}
+## 调试 {#api_explorer .section}
 
-前往【[API Explorer](https://api.aliyun.com/#product=Smartag&api=BindSmartAccessGateway)】在线调试，API Explorer 提供在线调用 API、动态生成 SDK Example 代码和快速检索接口等能力，能显著降低使用云 API 的难度，强烈推荐使用。
+[您可以在OpenAPI Explorer中直接运行该接口，免去您计算签名的困扰。运行成功后，OpenAPI Explorer可以自动生成SDK代码示例。](https://api.aliyun.com/#product=Smartag&api=BindSmartAccessGateway&type=RPC&version=2018-03-13)
 
 ## 请求参数 {#parameters .section}
 
 |名称|类型|是否必选|示例值|描述|
 |--|--|----|---|--|
-| CcnId |String|是|ccn-isdjvvkexkrpk\*\*\*\*\*| 要绑定的云连接网ID。
+|CcnId|String|是|ccn-isdjvvkexkrpk\*\*\*\*\*|要绑定的云连接网ID。
 
  |
-| SmartAGId |String|是|sag-m7ez44zpayma\*\*\*\*\*| 智能接入网关ID。
+|SmartAGId|String|是|sag-m7ez44zpayma\*\*\*\*\*|智能接入网关ID。
 
  |
-| Action |String|否|BindSmartAccessGateway| 执行的操作。
+|Action|String|否|BindSmartAccessGateway|执行的操作。
 
- 取值： **BindSmartAccessGateway** 
-
- |
-| RegionId |String|否|cn-hangzhou| 智能接入网关的所属区域。
+ 取值： **BindSmartAccessGateway**
 
  |
+|RegionId|String|否|cn-hangzhou|智能接入网关的所属区域。
 
-## 返回参数 {#resultMapping .section}
+ |
+
+## 返回数据 {#resultMapping .section}
 
 |名称|类型|示例值|描述|
 |--|--|---|--|
-|RequestId|String|8A3FF8DD-B27D-4ED2-B032-5EF90B38195D| 请求ID。
+|RequestId|String|8A3FF8DD-B27D-4ED2-B032-5EF90B38195D|请求ID。
 
  |
 
@@ -48,16 +48,15 @@ http(s)://[Endpoint]/?Action=BindSmartAccessGateway
 
 正常返回示例
 
- `XML` 格式
+`XML` 格式
 
 ``` {#xml_return_success_demo}
 <BindSmartAccessGatewayResponse>
-  <RequestId>6877D55B-08F7-4DA3-916B-32A6FD402E06</RequestId>
+    <RequestId>6877D55B-08F7-4DA3-916B-32A6FD402E06</RequestId>
 </BindSmartAccessGatewayResponse>
-
 ```
 
- `JSON` 格式
+`JSON` 格式
 
 ``` {#json_return_success_demo}
 {
@@ -81,5 +80,5 @@ http(s)://[Endpoint]/?Action=BindSmartAccessGateway
 |500|SmartAccessGatewayInArrears|The specified Smart Access Gateway has expired.|该智能接入网关已经到期停服，请续费。|
 |500|SmartAccessGatewayNotActivated|The specified Smart Access Gateway has not been activated.|该智能接入网关尚未激活，请先激活该实例。|
 
- [查看本产品错误码](https://error-center.aliyun.com/status/product/Smartag) 
+访问[错误中心](https://error-center.aliyun.com/status/product/Smartag)查看更多错误码。
 
