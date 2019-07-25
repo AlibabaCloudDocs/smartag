@@ -1,10 +1,10 @@
-# UpgradeSmartAccessGateway {#doc_api_1109003 .reference}
+# UpgradeSmartAccessGateway {#doc_api_Smartag_UpgradeSmartAccessGateway .reference}
 
 调用UpgradeSmartAccessGateway接口升高智能接入网关实例的带宽。
 
-## 调试 {#apiExplorer .section}
+## 调试 {#api_explorer .section}
 
-前往【[API Explorer](https://api.aliyun.com/#product=Smartag&api=UpgradeSmartAccessGateway)】在线调试，API Explorer 提供在线调用 API、动态生成 SDK Example 代码和快速检索接口等能力，能显著降低使用云 API 的难度，强烈推荐使用。
+[您可以在OpenAPI Explorer中直接运行该接口，免去您计算签名的困扰。运行成功后，OpenAPI Explorer可以自动生成SDK代码示例。](https://api.aliyun.com/#product=Smartag&api=UpgradeSmartAccessGateway&type=RPC&version=2018-03-13)
 
 ## 请求参数 {#parameters .section}
 
@@ -32,8 +32,14 @@
  取值： **UpgradeSmartAccessGateway**
 
  |
+|DataPlan|Long|否|5|账户流量套餐规格，单位G。
 
-## 返回参数 {#resultMapping .section}
+ |
+|UserCount|Integer|否|10|可创建账号数量。
+
+ |
+
+## 返回数据 {#resultMapping .section}
 
 |名称|类型|示例值|描述|
 |--|--|---|--|
@@ -64,10 +70,9 @@ http(s)://[Endpoint]/?AutoPay=true
 
 ``` {#xml_return_success_demo}
 <UpgradeSmartAccessGateway>
-  <RequestId>45F07029-1783-4B2D-B4CE-45B9EAA58440</RequestId>
-  <OrderId>203384676330296</OrderId>
-</UpgradeSmartAccessGateway>
-
+      <RequestId>45F07029-1783-4B2D-B4CE-45B9EAA58440</RequestId>
+	  <OrderId>203384676330296</OrderId>
+    </UpgradeSmartAccessGateway>
 ```
 
 `JSON` 格式
@@ -81,5 +86,10 @@ http(s)://[Endpoint]/?AutoPay=true
 
 ## 错误码 { .section}
 
-[查看本产品错误码](https://error-center.aliyun.com/status/product/Smartag)
+|HttpCode|错误码|错误信息|描述|
+|--------|---|----|--|
+|400|SAG.InvalidUserCount|The specified UserCount is invalid.|非法的用户数。|
+|400|SAG.InvalidDataPlan|The specified DataPlan is invalid.|非法的流量包套餐。|
+
+访问[错误中心](https://error-center.aliyun.com/status/product/Smartag)查看更多错误码。
 
