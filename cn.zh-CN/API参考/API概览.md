@@ -2,7 +2,7 @@
 
 智能接入网关提供以下相关API接口。
 
-## 智能接入网关 {#section_xkn_mjj_jnv .section}
+## 智能接入网关 {#section_zky_avl_jav .section}
 
 |API|描述|
 |---|--|
@@ -19,8 +19,16 @@
 |[ModifySmartAccessGateway](cn.zh-CN/API参考/智能接入网关/ModifySmartAccessGateway.md)|调用ModifySmartAccessGateway修改智能接入网关的配置。|
 |[ActivateSmartAccessGateway](cn.zh-CN/API参考/智能接入网关/ActivateSmartAccessGateway.md)|调用ActivateSmartAccessGateway激活智能接入网关设备。|
 |[DescribeSmartAccessGatewayHa](cn.zh-CN/API参考/智能接入网关/DescribeSmartAccessGatewayHa.md)|查询智能接入网关的高可用配置。|
+|[AddSnatEntry](cn.zh-CN/API参考/智能接入网关/AddSnatEntry.md)|调用AddSnatEntry给智能接入网关实例添加私网SNAT条目。|
+|[DescribeSnatEntries](cn.zh-CN/API参考/智能接入网关/DescribeSnatEntries.md)|调用DescribeSnatEntries查询智能接入网关实例绑定的SNAT条目。|
+|[DeleteSnatEntry](cn.zh-CN/API参考/智能接入网关/DeleteSnatEntry.md)|调用DeleteSnatEntry删除指定智能接入网关绑定的SNAT条目。|
+|[AddDnatEntry](cn.zh-CN/API参考/智能接入网关/AddDnatEntry.md)|调用AddDnatEntry给智能接入网关实例添加DNAT条目。|
+|[DescribeDnatEntries](cn.zh-CN/API参考/智能接入网关/DescribeDnatEntries.md)|调用DescribeDnatEntries查询智能接入网关实例绑定的DNAT条目。|
+|[DeleteDnatEntry](cn.zh-CN/API参考/智能接入网关/DeleteDnatEntry.md)|调用DeleteDnatEntry删除指定智能接入网关实例绑定的DNAT条目。|
+|[RebootSmartAccessGateway](cn.zh-CN/API参考/智能接入网关/RebootSmartAccessGateway.md)|调用RebootSmartAccessGateway重启智能接入网关实例。|
+|[UnlockSmartAccessGateway](cn.zh-CN/API参考/智能接入网关/UnlockSmartAccessGateway.md)|调用UnlockSmartAccessGateway解锁智能接入网关实例。|
 
-## 云连接网 {#section_6eb_efr_yxz .section}
+## 云连接网 {#section_zwh_jtx_1th .section}
 
 |API|描述|
 |---|--|
@@ -29,8 +37,11 @@
 |[CreateCloudConnectNetwork](cn.zh-CN/API参考/云连接网/CreateCloudConnectNetwork.md)|调用CreateCloudConnectNetwork创建云连接网。|
 |[ModifyCloudConnectNetwork](cn.zh-CN/API参考/云连接网/ModifyCloudConnectNetwork.md)|调用ModifyCloudConnectNetwork修改云连接网的名称和描述。|
 |[DescribeCloudConnectNetworks](cn.zh-CN/API参考/云连接网/DescribeCloudConnectNetworks.md)|调用DescribeCloudConnectNetworks查询已创建的云连接网。|
+|[GrantInstanceToCbn](cn.zh-CN/API参考/云连接网/GrantInstanceToCbn.md)|调用GrantInstanceToCbn将云企业网实例授权给云连接网。|
+|[RevokeInstanceFromCbn](cn.zh-CN/API参考/云连接网/RevokeInstanceFromCbn.md)|调用RevokeInstanceFromCbn撤销云企业网对云连接网的授权。|
+|[DescribeGrantRules](cn.zh-CN/API参考/云连接网/DescribeGrantRules.md)|调用DescribeGrantRules查询绑定的云连接网的授权规则。|
 
-## 访问控制 {#section_kjo_nwn_7or .section}
+## 访问控制 {#section_oxg_9ep_cdu .section}
 
 |API|描述|
 |---|--|
@@ -45,7 +56,7 @@
 |[CreateACL](cn.zh-CN/API参考/访问控制/CreateACL.md)|调用CreateACL创建访问控制。|
 |[DescribeACLAttribute](cn.zh-CN/API参考/访问控制/DescribeACLAttribute.md)|调用DescribeACLAttribute批量查询访问控制，需要增加Name参数，支持按照Name过滤。|
 
-## 智能接入网关APP {#section_768_kuf_m9o .section}
+## 智能接入网关APP {#section_use_gug_zmd .section}
 
 |API|描述|
 |---|--|
@@ -57,7 +68,7 @@
 |[ModifySmartAccessGatewayClientUser](cn.zh-CN/API参考/智能接入网关APP/ModifySmartAccessGatewayClientUser.md)|调用ModifySmartAccessGatewayClientUser修改用户带宽。|
 |[DescribeUserOnlineClientStatistics](cn.zh-CN/API参考/智能接入网关APP/DescribeUserOnlineClientStatistics.md)|调用DescribeUserOnlineClientStatistics查询指定智能接入网关APP实例用户数统计。|
 |[KickOutClients](cn.zh-CN/API参考/智能接入网关APP/KickOutClients.md)|调用KickOutClients根据智能接入网关APP实例ID和用户名，剔除在线连接。|
-|[DescribeUserOnlineClients](cn.zh-CN/API参考/智能接入网关APP/DescribeUserOnlineClients.md)|调用DescribeUserOnlineClients根据用户名和智能接入网关软件版实例ID查询指定用户在线连接列表。|
+|[DescribeUserOnlineClients](cn.zh-CN/API参考/智能接入网关APP/DescribeUserOnlineClients.md)|调用DescribeUserOnlineClients根据用户名和智能接入网关APP实例ID查询指定用户在线连接列表。|
 |[DescribeSagOnlineClientStatistics](cn.zh-CN/API参考/智能接入网关APP/DescribeSagOnlineClientStatistics.md)|调用DescribeSagOnlineClientStatistics查询当前用户智能接入网关APP实例在线连接数据。|
-|[DescribeUserFlowStatistics](cn.zh-CN/API参考/智能接入网关APP/DescribeUserFlowStatistics.md)|调用DescribeUserOnlineClients查询指定智能接入网关软件版实例下用户的流量统计。|
+|[DescribeUserFlowStatistics](cn.zh-CN/API参考/智能接入网关APP/DescribeUserFlowStatistics.md)|调用DescribeUserOnlineClients查询指定智能接入网关APP实例下用户的流量统计。|
 
