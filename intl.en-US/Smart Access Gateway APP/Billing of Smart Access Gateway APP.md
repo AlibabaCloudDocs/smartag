@@ -14,7 +14,6 @@ The following table describes how SAG APP is billed according to the target regi
     -   If n<=100, the price per month is: n × 45. Unit: RMB.
 -   The free data plan provided for each client account cannot be shared by different accounts.
 -   The 5 GB traffic per month refers to the maximum upstream or downstream traffic.
--   5 GB/month
 -   If a free data plan is not used up at the end of a month, the remaining traffic in the data plan does not carry over to the next month.
 -   If a free data plan is used up, additional traffic usage is billed by the Pay-As-You-Go method once each month.
 -   The price of international-site SAG APP is calculated based on that of China-site SAG APP according to the exchange rate \(unit: USD\).
@@ -27,9 +26,9 @@ The following table describes the usage and billing of the SAG APP package.
 |100-1000|35|35|100|
 |Unit price when the data plan is used up \(GB\)|20|20|70|
 
-## Status change and notification {#section_lzc_jhw_hhb .section}
+## Status changes and notifications {#section_lzc_jhw_hhb .section}
 
-智能接入网关APP实例停机/释放/受限状态导致的动作如下表所示。
+The following table describes the status changes and notifications of SAG APP.
 
 |Instance status|Action|
 |---------------|------|
