@@ -6,7 +6,7 @@ This tutorial uses a Ningbo branch and a Hangzhou branch as an example to descri
 
 In this tutorial, a company wants to connect local branches in Hangzhou and Ningbo to VPCs hosted in Shanghai and Beijing. Given that the branches and VPCs are all in the same SAG area, you only need to attach the Cloud Connect Network \(CCN\) instance associated with the SAG instances to the Cloud Enterprise Network \(CEN\) instance.
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23682/156376185814251_en-US.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23682/156523334014251_en-US.png)
 
 To connect the local branches to the VPCs, you need to complete the following tasks:
 
@@ -27,9 +27,9 @@ To connect the local branches to the VPCs, you need to complete the following ta
     4.  On the VPC Details page, click **Attach to CEN**, and then select the target CEN instance.
     5.  Repeat the preceding steps to add the VPC in Shanghai to the same CEN instance.
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23682/156376185813745_en-US.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23682/156523334013745_en-US.png)
 
--   A CCN instance is created. For more information, see [Create a CCN instance](../intl.en-US/Cloud Connect Network/Create a CCN instance.md#).
+-   A CCN instance is created. For more information, see [Create a CCN instance](../reseller.en-US/Cloud Connect Network/Create a CCN instance.md#).
 
 ## Step 1: Buy an SAG device {#section_onw_h5c_l2b .section}
 
@@ -41,7 +41,7 @@ To buy an SAG device, follow these steps:
 2.  Click **Create SmartAG**.
 3.  Configure the SAG device and click **Buy Now**.
 
-    For more information, see [Buy a Smart Access Gateway](../intl.en-US/Pricing/Buy a Smart Access Gateway.md#).
+    For more information, see [Buy a Smart Access Gateway](../reseller.en-US/Pricing/Buy a Smart Access Gateway.md#).
 
     **Note:** In this tutorial, the **SAG-100WM** specification and the **Stand-alone** usage method are selected.
 
@@ -50,16 +50,16 @@ To buy an SAG device, follow these steps:
 
     You can check whether the order is successfully placed on the SAG page. The system will deliver the device within 48 hours after the order is placed. If you do not receive the device within 48 hours, you can open a ticket to check the delivery status.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23799/156376185821242_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23799/156523334021242_en-US.png)
 
 
 ## Step 2: Connect the SAG device {#section_xjs_lrj_l2b .section}
 
-After receiving an SAG device, follow [SAG-100WM user manual](../intl.en-US/Product Introduction/Smart Access Gateway device/SAG-100WM.md#) to check that all accessories are included, and then power on the device. After you start the SAG device, connect the WAN port to the network cable and connect the LAN ports to local clients.
+After receiving an SAG device, follow [SAG-100WM user manual](../reseller.en-US/Product Introduction/Smart Access Gateway device/SAG-100WM.md#) to check that all accessories are included, and then power on the device. After you start the SAG device, connect the WAN port to the network cable and connect the LAN ports to local clients.
 
-In this tutorial, the clients in the Hangzhou and Ningbo branches can be directly connected to Alibaba Cloud through the SAG devices, so you can use the default gateway configuration. If you need to configure the WAN port and LAN ports, see [Configuration guide](../intl.en-US//Configuration guide.md#).
+In this tutorial, the clients in the Hangzhou and Ningbo branches can be directly connected to Alibaba Cloud through the SAG devices, so you can use the default gateway configuration. If you need to configure the WAN port and LAN ports, see [Configuration guide](../reseller.en-US//Configuration guide.md#).
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23682/156376185813738_en-US.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23682/156523334013738_en-US.png)
 
 ## Step 3: Activate the SAG device {#section_lyw_rbk_l2b .section}
 
@@ -83,13 +83,13 @@ Complete these steps to configure the network:
 4.  On the Configure Network page, follow these steps:
     1.  **Private CIDR Block**: Configure the private CIDR blocks used by the local clients to access Alibaba Cloud. Make sure all private CIDR blocks do not conflict with one another.
 
-        In this tutorial, enter 172.16.0.0/12. In this tutorial, each local branch uses the default gateway configuration, so the IP address used by the local client to access Alibaba Cloud is allocated from the 10.10.0.0/12 CIDR block. For more information, see [Configure the network](../intl.en-US/Cloud Connect Network/Smart Access Gateway/Configure the network.md#).
+        In this tutorial, enter 172.16.0.0/12. In this tutorial, each local branch uses the default gateway configuration, so the IP address used by the local client to access Alibaba Cloud is allocated from the 10.10.0.0/12 CIDR block. For more information, see [Configure the network](../reseller.en-US/Cloud Connect Network/Smart Access Gateway/Configure the network.md#).
 
         **Note:** Configuring a 32-bit mask is not supported.
 
     2.  **CCN Instance ID/Name**: Add the SAG instance to the CCN instance. Then, SAG devices in the CCN instance can communicate with one another.
 
-        In this tutorial, the default CCN is used. For more information, see [Cloud Connect Network](../intl.en-US/Cloud Connect Network/Cloud Connect Network.md#).
+        In this tutorial, the default CCN is used. For more information, see [Cloud Connect Network](../reseller.en-US/Cloud Connect Network/Cloud Connect Network.md#).
 
 5.  **Bind CEN Instance**: Select the CEN instance to attach. After the CCN instance is attached to the CEN instance, SAG devices in the CCN instance can communicate with networks \(VPCs and VBRs\) attached to the CEN instance.
 
@@ -111,7 +111,7 @@ To configure the security groups, complete these steps:
 2.  In the left-side navigation pane, click **Instances**.
 3.  Find the target ECS instance in the target VPC, and then choose **More** \> **Network and Security Group** \> **Configure Security Group**.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15407/15637618597646_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15407/15652333417646_en-US.png)
 
 4.  Click **Add Rules** and click **Add Security Group Rule**.
 5.  Configure a security group rule that allows access from local branches.
