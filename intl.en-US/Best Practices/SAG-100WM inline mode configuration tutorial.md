@@ -6,7 +6,7 @@ This tutorial uses a Ningbo branch and a Hangzhou branch as an example to descri
 
 In this tutorial, a company wants to connect local branches in Hangzhou and Ningbo to VPCs hosted in Shanghai and Beijing. Given that the branches and VPCs are all in the same SAG area, you only need to attach the Cloud Connect Network \(CCN\) instance associated with the SAG instances to the Cloud Enterprise Network \(CEN\) instance.
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23682/156523418514251_en-US.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23682/156523428414251_en-US.png)
 
 To connect the local branches to the VPCs, you need to complete the following tasks:
 
@@ -27,7 +27,7 @@ To connect the local branches to the VPCs, you need to complete the following ta
     4.  On the VPC Details page, click **Attach to CEN**, and then select the target CEN instance.
     5.  Repeat the preceding steps to add the VPC in Shanghai to the same CEN instance.
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23682/156523418513745_en-US.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23682/156523428413745_en-US.png)
 
 -   A CCN instance is created. For more information, see [Create a CCN instance](../reseller.en-US/Cloud Connect Network/Create a CCN instance.md#).
 
@@ -50,7 +50,7 @@ To buy an SAG device, follow these steps:
 
     You can check whether the order is successfully placed on the SAG page. The system will deliver the device within 48 hours after the order is placed. If you do not receive the device within 48 hours, you can open a ticket to check the delivery status.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23799/156523418521242_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23799/156523428421242_en-US.png)
 
 
 ## Step 2: Connect the SAG device {#section_xjs_lrj_l2b .section}
@@ -59,7 +59,7 @@ After receiving an SAG device, follow [SAG-100WM user manual](../reseller.en-US/
 
 In this tutorial, the clients in the Hangzhou and Ningbo branches can be directly connected to Alibaba Cloud through the SAG devices, so you can use the default gateway configuration. If you need to configure the WAN port and LAN ports, see [Configuration guide](../reseller.en-US//Configuration guide.md#).
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23682/156523418613738_en-US.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23682/156523428413738_en-US.png)
 
 ## Step 3: Activate the SAG device {#section_lyw_rbk_l2b .section}
 
@@ -83,7 +83,7 @@ Complete these steps to configure the network:
 4.  On the Configure Network page, follow these steps:
     1.  **Private CIDR Block**: Configure the private CIDR blocks used by the local clients to access Alibaba Cloud. Make sure all private CIDR blocks do not conflict with one another.
 
-        In this tutorial, enter 172.16.0.0/12. In this tutorial, each local branch uses the default gateway configuration, so the IP address used by the local client to access Alibaba Cloud is allocated from the 10.10.0.0/12 CIDR block. For more information.
+        In this tutorial, enter 172.16.0.0/12. In this tutorial, each local branch uses the default gateway configuration, so the IP address used by the local client to access Alibaba Cloud is allocated from the 10.10.0.0/12 CIDR block.
 
         **Note:** Configuring a 32-bit mask is not supported.
 
@@ -111,7 +111,7 @@ To configure the security groups, complete these steps:
 2.  In the left-side navigation pane, click **Instances**.
 3.  Find the target ECS instance in the target VPC, and then choose **More** \> **Network and Security Group** \> **Configure Security Group**.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15407/15652341867646_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15407/15652342857646_en-US.png)
 
 4.  Click **Add Rules** and click **Add Security Group Rule**.
 5.  Configure a security group rule that allows access from local branches.
