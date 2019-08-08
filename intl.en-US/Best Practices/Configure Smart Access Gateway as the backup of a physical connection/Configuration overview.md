@@ -2,15 +2,15 @@
 
 This tutorial shows you how to use the Smart Access Gateway \(SAG\) device as the backup link of an existing physical connection to access Alibaba Cloud and build a high-availability hybrid cloud.
 
-## Scenario {#section_kyb_3sy_rfb .section}
+## Scenarios {#section_kyb_3sy_rfb .section}
 
-This tutorial uses the network architecture shown in the following figure as an example. In the example, the on-premises data center is already connected to Alibaba Cloud through a physical connection using Express Connect. To ensure high service availability and avoid unnecessary changes to the network architecture, the Smart Access Gateway \(SAG-1000\) device is connected to a Layer-3 switch by using the one-arm mode and connected to Alibaba Cloud as a backup to the existing physical connection.
+This tutorial uses the network architecture shown in the following figure as an example. In the example, the on-premises data center is already connected to Alibaba Cloud through a physical connection by using Express Connect. To ensure high service availability and avoid unnecessary changes to the network architecture, the Smart Access Gateway \(SAG-1000\) device is connected to a Layer-3 switch by using the one-arm mode and connected to Alibaba Cloud as a backup to the existing physical connection.
 
 **Note:** 
 
--   Currently, only an SAG-1000 device can form active/standby links with a leased line.
+-   Only an SAG-1000 device can form active and standby links with a leased line.
 -   Only access through the physical connection of Cloud Enterprise Network \(CEN\) is supported. Access through Express Connect is not supported.
--   Make sure that Border Gateway Protocol \(BGP\) has been configured for the Virtual Border Router \(VBR\) of the leased line. Link switching due to health checks is not supported.
+-   Make sure that Border Gateway Protocol \(BGP\) has been configured for the Virtual Border Router \(VBR\) of the leased line. If a static route is configured for the VBR, the VBR cannot be used as a backup leased line.
 
 The flow direction of network traffic in this tutorial is as follows:
 
@@ -23,7 +23,7 @@ The flow direction of network traffic in this tutorial is as follows:
     By default, the CEN gives higher priority to routing through the physical connection, rather than through the CCN. More specifically, the traffic is distributed to your on-premises data center through the physical connection. If the physical connection fails, traffic is encrypted and then distributed to Alibaba Cloud \(to the CCN instance\) over the Internet.
 
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/41687/156074302921633_en-US.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/41687/156524250221633_en-US.png)
 
 ## Network planning {#section_ofx_msy_rfb .section}
 
@@ -32,7 +32,7 @@ Before you begin, you must plan the following network configurations and ensure 
 -   The CIDR block of the VPC to connect. In this tutorial, the CIDR block of the VPC is 192.168.0.0/24.
 -   Local server/client IP address
 
-    Plan the IP address of the local server/client according to your needs. In this tutorial, the IP address 192.168.3.0/24 is used.
+    Plan the IP address of the local server/client as needed. In this tutorial, the IP address 192.168.3.0/24 is used.
 
 -   The IP address used by the device to connect to the Layer-3 switches
 
