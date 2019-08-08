@@ -6,7 +6,7 @@
 2.  在左侧导航栏，单击**智能接入网关APP**。
 3.  在智能接入网关APP页面，单击**创建智能接入网关**，购买智能接入网关APP客户端。 
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/129978/156317893044287_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/129978/156527542944287_zh-CN.png)
 
     |参数|说明|
     |--|--|
