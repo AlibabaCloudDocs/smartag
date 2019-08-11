@@ -5,9 +5,6 @@ This topic describe how to view the high availability \(HA\) configuration of a 
 Before you can view the HA configuration of an SAG, the following conditions must be met:
 
 -   The standby usage mode is selected when you purchase the SAG.
-
-    ![](images/51020_en-US.png)
-
 -   The active SAG and standby SAG have the same configurations.
 
 1.  Log on to the [Smart Access Gateway console](https://smartag.console.aliyun.com).
