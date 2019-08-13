@@ -8,13 +8,10 @@ A temporary configuration upgrade can be applied to increase the bandwidth of an
 -   When the restoration time specified for the SAG instance arrives, the instance automatically restores the previous bandwidth.
 
 1.  Log on to the [Smart Access Gateway console](https://smartag.console.aliyun.com).
-2.  In the left-side navigation pane, click **Smart Access Gateway**. On the displayed page, find the target instance, and then click the drop-down list arrow in the **Network Type** column.![Drop-down list arrow](images/50982_en-US.png) 
+2.  In the left-side navigation pane, click **Smart Access Gateway**. On the displayed page, find the target instance, and then click the drop-down list arrow in the **Network Type** column.![Drop-down list arrow](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/817218/156571157350982_en-US.png) 
 
-    ![Network](images/50985_en-US.png)
+    ![Network](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/817218/156571157350985_en-US.png)
 
 3.  Click **Temporary Upgrade** in the **Actions** column.
-4.  On the Temporary Upgrade page, set the peak bandwidth and the restoration time, and then complete the payment. 
-
-    ![Temporary upgrade](images/51003_en-US.png)
-
+4.  On the Temporary Upgrade page, set the peak bandwidth and the restoration time, and then complete the payment.
 
