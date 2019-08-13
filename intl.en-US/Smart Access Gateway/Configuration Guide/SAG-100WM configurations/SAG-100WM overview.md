@@ -38,26 +38,26 @@ The Smart Access Gateway \(SAG\) device is shipped with the following components
 
 -   Front panel
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40483/156527062421278_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40483/156571220121278_en-US.png)
 
 -   Rear panel
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40483/156527062421279_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40483/156571220121279_en-US.png)
 
 
 ## Type 2 \(dimensions: 275 mm × 175 mm × 44.4 mm\) {#section_lqn_c11_ygb .section}
 
 -   Front panel
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40483/156527062439754_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40483/156571220239754_en-US.png)
 
 -   Side panel
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40483/156527062439755_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40483/156571220239755_en-US.png)
 
 -   Rear panel
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40483/156527062539756_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40483/156571220239756_en-US.png)
 
 
 ## Front panel and rear panel {#section_q1k_2vs_j2b .section}
@@ -102,7 +102,7 @@ The front panel and the rear panel of a Type 1 SAG-100WM device are described as
 
         Mini-SIM cards, Micro-SIM cards, and Nano-SIM cards are also called 2FF cards, 3FF cards, and 4FF cards respectively.
 
-        ![](images/52693_en-US.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40483/156571220252693_en-US.png)
 
     -   USB interface
 
@@ -127,5 +127,5 @@ The front panel and the rear panel of a Type 1 SAG-100WM device are described as
 
 The SAG-100WM device connects local clients to Alibaba Cloud through inline mode, which means that the network topology is unchanged.
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/24578/156527062521205_en-US.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/24578/156571220221205_en-US.png)
 
