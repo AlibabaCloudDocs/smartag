@@ -27,6 +27,6 @@ DNAT功能可以将公网IP收到的请求按照自定义的映射规则，转�
 
 6.  单击**确定**。 
 
-    ![DNAT](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/817043/156472549654184_zh-CN.png)
+    ![DNAT](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/817043/156571146454184_zh-CN.png)
 
 
