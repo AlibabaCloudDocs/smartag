@@ -32,17 +32,17 @@ You can install the SAG-1000 device on the cabinet shelf, or attach the device t
 
     1.  Attach one side of the adapter holder to the SAG-1000 device, as shown in the following figure.
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/670023/156571261150167_en-US.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/670023/156571268450167_en-US.png)
 
     2.  Attach the cover to the adapter holder by using screws, as shown in the following figure.
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/670023/156571261150112_en-US.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/670023/156571268450112_en-US.png)
 
     3.  Attach the other side of the adapter holder to the SAG-1000 device, as shown in the following figure.
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/670023/156571261150114_en-US.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/670023/156571268450114_en-US.png)
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/670023/156571261150115_en-US.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/670023/156571268450115_en-US.png)
 
     4.  Use screws to attach the SAG-1000 device to the cabinet horizontally.
 
