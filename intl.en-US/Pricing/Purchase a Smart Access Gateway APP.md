@@ -6,7 +6,7 @@ This topic describes how to purchase a Smart Access Gateway \(SAG\) APP. Only an
 2.  In the left-side navigation pane, click **Smart Access Gateway APP**.
 3.  On the Smart Access Gateway APP page, click **Create SmartAG** to purchase an Alibaba Cloud network client. 
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/129978/156527543744287_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/129978/156571209644287_en-US.png)
 
     |Parameter|Description|
     |---------|-----------|
