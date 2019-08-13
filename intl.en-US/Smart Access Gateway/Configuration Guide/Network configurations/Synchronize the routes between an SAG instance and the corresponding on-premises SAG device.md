@@ -15,6 +15,6 @@ This topic describes how to synchronize the routes between a Smart Access Gatewa
 
         3.  Click **OK**.
     -   Dynamic Routing: The SAG instance and the on-premises SAG device are interconnected through dynamic routing. After you add the on-premises dynamic routes, the BGP or OSPF protocol is run to automatically learn the on-premises routes.
-    ![Add static routing](images/51648_en-US.png)
+    ![Add static routing](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/803490/156571136351648_en-US.png)
 
 
