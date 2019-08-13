@@ -29,22 +29,22 @@ After receiving the Smart Access Gateway \(SAG\) device, check that the followin
 
 -   Front panel
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/24600/156527419421275_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/24600/156571263921275_en-US.png)
 
 -   Rear panel
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/24600/156527419421276_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/24600/156571263921276_en-US.png)
 
 
 ## Type 2 \(size: 241×220×44 mm\) {#section_e11_cll_qgb .section}
 
 -   Front panel
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/24600/156527419438558_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/24600/156571263938558_en-US.png)
 
 -   Rear panel
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/24600/156527419538559_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/24600/156571264038559_en-US.png)
 
 
 The following is an overview about the components of an SAG-1000 device of the Type 1 category. Types 2 device, although different in appearance, have the same functions as Type 1 devices.
@@ -92,5 +92,5 @@ The following is an overview about the components of an SAG-1000 device of the T
 
 The SAG-1000 device is connected to the switch through one-arm mode. This means it can connect local clients to Alibaba Cloud without changing the current network topology.
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/24600/156527419539342_en-US.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/24600/156571264039342_en-US.png)
 
