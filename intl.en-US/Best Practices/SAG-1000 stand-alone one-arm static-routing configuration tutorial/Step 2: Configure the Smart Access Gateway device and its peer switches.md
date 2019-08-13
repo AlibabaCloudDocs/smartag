@@ -19,7 +19,7 @@ To configure the SAG device, follow these steps:
 
     **Note:** The specified service IP address must be able to access the Internet. For one-arm mode, if the service IP address is a private CIDR block, you must enable NAT mapping at the Internet egress or firewall.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/82227/156571060441191_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/82227/156571388541191_en-US.png)
 
     |Configuration|Description|
     |:------------|:----------|
