@@ -12,6 +12,4 @@ This topic describes how to connect to an intranet. You can log on to the Alibab
 
     When Intranet connected is displayed, the connection to the target intranet environment is established.
 
-    ![](images/44352_en-US.png)
-
 
