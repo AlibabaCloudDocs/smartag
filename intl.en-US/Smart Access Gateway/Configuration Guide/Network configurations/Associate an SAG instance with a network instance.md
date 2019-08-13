@@ -19,7 +19,5 @@ This topic describes how to associate a Smart Access Gateway \(SAG\) instance wi
         **Note:** The CCN instance and the SAG instance must be in the same area.
 
     -   **Network Instance**: the network instance to be associated with.
-    ![](images/50933_en-US.png)
-
 6.  Click **OK**.
 
