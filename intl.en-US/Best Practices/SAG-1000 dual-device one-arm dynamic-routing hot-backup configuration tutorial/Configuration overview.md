@@ -6,7 +6,11 @@ This tutorial guides you to connect your headquarters or branches to Alibaba Clo
 
 This tutorial takes the network architecture in the following figure as an example. Two Layer-3 switches form a switch stack and are connected to two Layer-2 switches. Local clients access the Internet through Layer-2 switches.
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23710/156073912013772_en-US.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23710/156577364213772_en-US.png)
+
+As shown in the following figure, two SAG-1000 Smart Access Gateways access Layer-3 switches through one-arm mode to connect local servers to Alibaba Cloud.
+
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23710/156577364213749_en-US.png)
 
 ## Network planning {#section_vk5_441_mfb .section}
 
