@@ -29,23 +29,21 @@
  |
     |**购买时长**|选择购买时长。|
 
-    ![双机备份](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15524/156654912721231_zh-CN.png)
+    ![双机备份](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15524/156655241321231_zh-CN.png)
 
 4.  核对订单信息，然后单击**立即购买**。
 5.  在确认订单对话框，单击 **确认购买**。
 6.  在收货地址对话框，填写网关设备的收货地址等信息，然后单击**去下单**。 
 
-    ![收货地址](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15524/156654912721238_zh-CN.png)
+    ![收货地址](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15524/156655241421238_zh-CN.png)
 
 7.  在支付对话框，单击**确认支付**。 您可以在智能接入网关实例页面查看是否下单成功。智能接入网关会在下单后两天内发货。如果超期，您可以提交工单查看物流状态。
 
-    ![已下单](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15524/156654912721239_zh-CN.png)
+    ![已下单](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15524/156655241421239_zh-CN.png)
 
 
 **相关文档**  
 
 
-[购买指导](cn.zh-CN/.md#)
-
-[添加专线链路](../../../../cn.zh-CN/.md#)
+[添加专线链路](../../../../cn.zh-CN/智能接入网关硬件版/配置指导/管理智能接入网关实例/添加专线链路.md#)
 
