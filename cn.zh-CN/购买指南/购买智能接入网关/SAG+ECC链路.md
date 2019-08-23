@@ -8,11 +8,11 @@
 2.  在左侧导航栏，单击**物理专线连接**\>**高速上云服务**。
 3.  在高速上云服务页面，单击**申请高速上云服务**。 
 
-    ![申请高速上云服务](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/1332542/156654914855384_zh-CN.png)
+    ![申请高速上云服务](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/1332542/156655243655384_zh-CN.png)
 
 4.  在申请高速上云服务页面，编辑名称、IDC地址等相关参数，单击**确定**。 
 
-    ![申请高速上云](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/1332542/156654914855388_zh-CN.png)
+    ![申请高速上云](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/1332542/156655243655388_zh-CN.png)
 
     页面参数配置请参见下表。
 
@@ -25,23 +25,21 @@
 
 5.  阿里云工程师根据申请条件，确认资源，判断申请是否通过。若审批通过，则该高速上云服务实例的申请状态变为**审批通过**。单击**操作**列中的**支付**。 
 
-    ![支付](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/1332542/156654914855389_zh-CN.png)
+    ![支付](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/1332542/156655243655389_zh-CN.png)
 
 6.  在高速上云服务区域中设置地域、类型等信息，在**智能接入网关**区域中设置购买数量。在页面右侧单击**立即购买**。 
 
-    ![设置购买信息](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/1332542/156654914855391_zh-CN.png)
+    ![设置购买信息](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/1332542/156655243655391_zh-CN.png)
 
 7.  在确认订单页面单，击**确认购买**。
 8.  在收货地址对话框设置收件人、收货地址等信息，单击**去下单**。 
 
-    ![收货地址](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/1332542/156654914855413_zh-CN.png)
+    ![收货地址](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/1332542/156655243655413_zh-CN.png)
 
 9.  在支付页面单击**确认支付**。 支付完成后，该高速上云服务实例的申请状态变为**施工中**，专线提供商完成施工后，该高速上云服务实例的申请状态变为**完成**，此时，您可以使用高速上云服务了。
 
 **相关文档**  
 
 
-[购买指导](cn.zh-CN/.md#)
-
-[添加Internet链路](../../../../cn.zh-CN/.md#)
+[添加Internet链路](../../../../cn.zh-CN/智能接入网关硬件版/配置指导/管理智能接入网关实例/添加Internet链路.md#)
 
