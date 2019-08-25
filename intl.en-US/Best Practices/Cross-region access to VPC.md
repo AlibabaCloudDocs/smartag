@@ -6,7 +6,7 @@ This tutorial uses a Beijing branch as an example to describe how to connect loc
 
 For access of local branches in Mainland China, you only need to attach the CCN associated with the SAG device to the CEN in the same area and configure the region connection between the Hangzhou VPC and the US \(Silicon Valley\) VPC.
 
-![Networking solution](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23732/156571374813795_en-US.png)
+![Networking solution](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23732/156674612713795_en-US.png)
 
 To do so, complete the following steps:
 
@@ -40,7 +40,7 @@ To purchase an SAG device, follow these steps:
 2.  Click **Create SmartAG**.
 3.  Configure the SAG device and click **Buy Now**.
 
-    For more information, see [Buy a Smart Access Gateway](../reseller.en-US/Pricing/Buy a Smart Access Gateway.md#).
+    For more information, see [Buy a Smart Access Gateway](../reseller.en-US/Pricing/Catalogue/Buy a Smart Access Gateway.md#).
 
     **Note:** In this tutorial, the **SAG-100WM** specification and the **Stand-alone** usage method are selected.
 
@@ -49,7 +49,7 @@ To purchase an SAG device, follow these steps:
 
     You can check whether the order is successfully placed on the SAG page. The system will deliver the device within 48 hours after the order is placed. If you do not receive the device within 48 hours, you can open a ticket to check the delivery status.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23799/156571374821242_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23799/156674612721242_en-US.png)
 
 
 ## Step 2: Connect the SAG device {#section_xjs_lrj_l2b .section}
@@ -58,7 +58,7 @@ After you receive the SAG device, check whether all accessories are provided acc
 
 In this tutorial, the clients in the Hangzhou and US \(Silicon Valley\) branches can be directly connected to Alibaba Cloud through SAG devices, so you can use the default gateway configurations. If you need to configure the WAN port and LAN ports, see [Step 3: Configure the WAN ports](../reseller.en-US//Step 3: Configure the WAN ports.md#).
 
-![Connect the SAG device](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23682/156571374813738_en-US.png)
+![Connect the SAG device](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23682/156674612713738_en-US.png)
 
 ## Step 3: Activate the SAG device {#section_lyw_rbk_l2b .section}
 
@@ -102,7 +102,7 @@ To associate the CCN instance with a CEN instance, follow these steps:
 3.  Find the target CCN instance, and then click **Bind CEN Instance** in the **Actions** column.
 4.  On the Bind CEN instance page, select the target CEN instance. After the CCN instance is associated with the CEN instance, the SAG devices in the CCN instance can communicate with the network instances \(VPCs and VBRs\) attached to the CEN instance.
 
-    ![Associate a CCN instance with a CEN instance](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/987728/156571374852171_en-US.png)
+    ![Associate a CCN instance with a CEN instance](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/987728/156674612752171_en-US.png)
 
 
 ## Step 6: Configure the CEN {#section_b4k_bvh_mfb .section}
@@ -113,7 +113,7 @@ To connect networks in different regions, you must purchase a bandwidth package 
 2.  In the left-side navigation pane, choose **Quick Links** \> **CEN**.
 3.  On the CEN page, click the **Networks** tab page to check whether the Hangzhou VPC, the US \(Silicon Valley\) VPC, and the CCN are attached to the CEN.
 
-    ![Networks](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23732/156571374814285_en-US.png)
+    ![Networks](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/23732/156674612814285_en-US.png)
 
 4.  Click the **Bandwidth Packages** tab page and click **Buy Bandwidth Package \(Pay-As-You-Go\)** to purchase a Pay-As-You-Go Bandwidth package.
 5.  On the CEN \(Pay-As-You-Go page, configure the bandwidth package.
@@ -149,14 +149,14 @@ To configure a security group, follow these steps:
 2.  In the left-side navigation pane, click **Instances**.
 3.  Find the target ECS instance in the target VPC, and then choose **More** \> **Network and Security Group** \> **Configure Security Group**.
 
-    ![Configure a security group](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15407/15657137487646_en-US.png)
+    ![Configure a security group](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15407/15667461287646_en-US.png)
 
 4.  Click **Add Rules** and click **Add Security Group Rule**.
 5.  Configure a security group rule that allows access from local branches.
 
     The following figure shows the security group configurations in this tutorial. You must enter the private CIDR blocks of the local branches as the authorization objects.
 
-    ![Security group rule](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15407/15657137487648_en-US.png)
+    ![Security group rule](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15407/15667461287648_en-US.png)
 
 
 ## Step 8: Perform an access test {#section_hzm_tdk_l2b .section}
