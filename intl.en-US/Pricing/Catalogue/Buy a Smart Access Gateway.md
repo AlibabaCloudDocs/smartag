@@ -31,15 +31,15 @@ After you purchase a Smart Access Gateway \(SAG\), the system delivers it within
  |
     |**Sub Period**|Select the validity period of purchase.|
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15524/156662119221231_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15524/156674628121231_en-US.png)
 
 4.  Confirm the order information, and then click **Buy Now**.
 5.  On the displayed Address dialog box, enter the shipping address of the SAG device and click **Order Now**. 
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15524/156662119221238_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15524/156674628221238_en-US.png)
 
     You can check whether the order is successfully placed on the SAG page. The system will deliver the device within 48 hours after the order is placed. If you do not receive the device within 48 hours, you can open a ticket to check the delivery status.
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15524/156662119221239_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15524/156674628221239_en-US.png)
 
 
