@@ -14,16 +14,16 @@ SAG-100WM设备适用于小型分支和门店接入阿里云，即插即用，�
 |网络接口|2个GE/FE RJ45 WAN口|
 |3个GE/FE RJ45 LAN口|
 |WiFi|IEEE 802.11 b/g/n，2.4G 300Mbps，终端数20，范围100平方米|
-|4G LTE\(中国大陆\)|LTE FDD:B1,B3,B5,B8|
-|LTE TDD:B38,B39,B40,B41|
-|WCDMA:B1,B5,B8|
-|TD SCDMA:B34,B39|
-|GSM:B3,B8|
-|CDMA EVDO/1X:800M|
-|4G LTE\(海外\)|LTE FDD:B1,B3,B5,B8|
-|WCDMA:B1,B5,B8|
-|GSM:B3,B8|
-|USB|USB 2.0, 500ma|
+|4G LTE（中国大陆）|LTE FDD：B1，B3，B5，B8|
+|LTE TDD：B38，B39，B40，B41|
+|WCDMA：B1，B5，B8|
+|TD SCDMA：B34，B39|
+|GSM：B3，B8|
+|CDMA EVDO/1X：800M|
+|4G LTE（海外）|LTE FDD：B1，B3，B5，B8|
+|WCDMA：B1，B5，B8|
+|GSM：B3，B8|
+|USB|USB 2.0， 500ma|
 
 ## 网关设备配件 {#section_j5t_k5s_j2b .section}
 
@@ -38,31 +38,31 @@ SAG-100WM设备适用于小型分支和门店接入阿里云，即插即用，�
 
 -   前面板
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40483/156527060921278_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40483/156680627321278_zh-CN.png)
 
 -   后面板
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40483/156527060921279_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40483/156680627321279_zh-CN.png)
 
 
 ## 设备二（尺寸：275\*175\*44.4mm） {#section_lqn_c11_ygb .section}
 
 -   前面板
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40483/156527060939754_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40483/156680627339754_zh-CN.png)
 
 -   侧面板
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40483/156527060939755_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40483/156680627339755_zh-CN.png)
 
 -   后面板
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40483/156527060939756_zh-CN.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40483/156680627439756_zh-CN.png)
 
 
 ## 设备介绍 {#section_q1k_2vs_j2b .section}
 
-此处对设备1面板按钮进行示例说明，其他设备除外观外，功能与设备1相同。
+此处对设备一面板按钮进行示例说明，设备二除外观外，功能与设备一相同。
 
 -   前面板：智能接入网关的前面板由5个LED指示灯组成，具体说明如下。
 
@@ -102,7 +102,7 @@ SAG-100WM设备适用于小型分支和门店接入阿里云，即插即用，�
 
         Mini-Sim又叫2FF卡，Micro-Sim又叫3FF卡，Nano-Sim又叫4FF卡，形状如下图所示。
 
-        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40483/156527060952693_zh-CN.png)
+        ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40483/156680627452693_zh-CN.png)
 
     -   USB口
 
@@ -127,5 +127,5 @@ SAG-100WM设备适用于小型分支和门店接入阿里云，即插即用，�
 
 SAG-100WM设备以直挂方式，在不影响您的网络拓扑的情况下，将本地客户端接入阿里云。
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/24578/156527060921205_zh-CN.png)
+![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/24578/156680627421205_zh-CN.png)
 
