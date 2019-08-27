@@ -11,22 +11,13 @@ Before performing the Web configuration for the SAG-100WM device, you must enabl
     2.  In the left-side panel, click **Change Adapter Settings**.
     3.  Right-click the connected network, and then click **Properties**.
     4.  Double-click **Internet Protocol Version 4 \(TCP/IPv4\)**.
-
-        ![TCP/IPv4](images/21208_en-US.png)
-
     5.  Select **Obtain an IP Address Automatically** and **Obtain DNS Server Address Automatically**.
-
-        ![DNS](images/21209_en-US.png)
-
     6.  Click **OK**.
 -   Mac client configuration
     1.  On the desktop, click the **System Preferences** icon, and then click **Network** in the Internet and Network section.
     2.  Click the connected network and then click **Advanced**.
     3.  On the Ethernet configuration page, click the **TCP/IP** tab.
     4.  From the **Configure IPv4** drop-down list, select **Using DHCP**.
-
-        ![DHCP](images/21226_en-US.png)
-
 
 ## Step 2: Set the password upon your first logon {#section_a8o_atv_nph .section}
 
@@ -50,10 +41,7 @@ Before you log on to the Web console, make sure that:
         For example, if the first CIDR block you specified is 192.168.0.0/16, the Web configuration address is 192.168.0.1.
 
     -   If neither the LAN port nor the console is configured, the default address is `192.168.0.1`.
-2.  Set the logon password. 
-
-    ![Web console password](images/21180_en-US.png)
-
+2.  Set the logon password.
 3.  Click **OK**, enter the new password, and log on to the Web console. Keep your logon password securely. If you forget your password, press and hold the RESET button on your device for two seconds and then log on to the Web console to reset the password.
 
     **Note:** 
@@ -86,9 +74,6 @@ The WAN ports of the Smart Access Gateway \(SAG\) device are used for configurin
         **Note:** The specified static IP address and the uplink router device must be in the same CIDR block.
 
     -   PPPoE: Select this mode if you want to access the Internet by using dial-up. You need to enter the PPPoE account name and password provided by the service provider.
-
-        ![WAN port management](images/41150_en-US.png)
-
 5.  Click **OK**.
 
 ## Step 4: Configure the LAN ports {#section_ttc_j0r_3tc .section}
@@ -115,7 +100,7 @@ The LAN ports are used for connecting the local clients.
  |
         |**Password**|Set the Wi-Fi password.|
 
-        ![Wireless mode](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40492/156680600441292_en-US.png)
+        ![Wireless mode](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40492/156687171041292_en-US.png)
 
     -   Ethernet mode
 
@@ -127,13 +112,13 @@ The LAN ports are used for connecting the local clients.
 
             If your local clients directly access Alibaba Cloud by using an SAG device as shown in the following figure, use the default configurations.
 
-            ![Access Alibaba Cloud by using SAG devices](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15409/15668060056822_en-US.png)
+            ![Access Alibaba Cloud by using SAG devices](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15409/15668717116822_en-US.png)
 
         -   Static IP address:
 
             If the IP address of the local client has been configured through the switch as shown in the following figure, use a static IP address.
 
-            ![Static IP address](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40492/156680600521798_en-US.png)
+            ![Static IP address](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40492/156687171121798_en-US.png)
 
             To use a static IP address, you must configure the static IP address and routes:
 
