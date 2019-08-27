@@ -9,7 +9,7 @@ Currently, SAG APP only supports the Windows operating system and Android operat
 |Windows|Windows 7 or later \(32-bit and 64-bit\).|Download and install the [Windows client](http://sdwan-oss-shanghai.oss-cn-shanghai.aliyuncs.com/win_installer/SmartagRelease_1.0.0_20190509235119.exe). Install the client by following the steps recommended by the system.
 
  |
-|Android|Android 5.0 or later.|Scan the following QR code to download and install the smartag-release.apk. ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/96422/156376146443518_en-US.png)
+|Android|Android 5.0 or later.|Scan the following QR code to download and install the smartag-release.apk. ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/96422/156689426243518_en-US.png)
 
  Install the client by following the steps recommended by the system.
 
