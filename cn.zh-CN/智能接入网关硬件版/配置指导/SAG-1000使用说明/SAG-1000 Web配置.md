@@ -15,7 +15,7 @@
 
         **说明：** 确保该IP地址在网关设备的管理网段内（默认管理网段为192.168.0.0/24），并不和其他IP地址冲突。比如192.168.0.99。无需配置网关和DNS。
 
-        ![windows客户端设置](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40454/156680612921109_zh-CN.png)
+        ![windows客户端设置](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40454/156687188221109_zh-CN.png)
 
     6.  单击**确定**。
 -   Mac客户端：为Mac客户端配置静态IP。
@@ -26,7 +26,7 @@
 
         **说明：** 确保该IP地址在网关设备的管理网段内（默认管理网段为192.168.0.0/24），并且不和其他IP地址冲突。比如192.168.0.99。无需配置路由器和DNS。
 
-        ![IOS客户端设置](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40454/156680612921110_zh-CN.png)
+        ![IOS客户端设置](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40454/156687188321110_zh-CN.png)
 
 
 ## 步骤2 首次登录设置密码 {#section_k5v_j7u_n6b .section}
@@ -71,7 +71,7 @@
     |**管理口IP**|指定本地客户端Web接入的管理IP。|
     |**下一跳**|如果选择隔离业务口和管理口，指定管理口的下一跳。|
 
-    ![业务IP管理](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40456/156680612921111_zh-CN.png)
+    ![业务IP管理](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40456/156687188421111_zh-CN.png)
 
 
 ## 步骤4 配置端口和路由 {#section_6g3_yhb_ufb .section}
@@ -106,6 +106,6 @@ SAG-1000设备有6个端口，其中端口0和1为SFP光端口，端口2-5是RJ4
     |**Routerid**|OSPF路由器的ID，建议您直接使用业务IP。|
     |**Area Type**|区域类型默认为nssa。|
 
-    ![端口管理](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40457/156680613021112_zh-CN.png)
+    ![端口管理](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40457/156687188521112_zh-CN.png)
 
 

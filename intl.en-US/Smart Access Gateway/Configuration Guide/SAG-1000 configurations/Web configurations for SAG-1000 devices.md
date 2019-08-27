@@ -15,7 +15,7 @@ Before performing Web configurations on an SAG-1000 device, you must configure t
 
         **Note:** Ensure that the IP address is in the management CIDR block of the SAG device \(the default management CIDR block is 192.168.0.0/24\) and does not conflict with other IP addresses, for example, 192.168.0.99. You do not need to configure the gateway and DNS.
 
-        ![Windows client settings](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40454/156680614121109_en-US.png)
+        ![Windows client settings](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40454/156687189521109_en-US.png)
 
     6.  Click **OK**.
 -   Mac client configuration
@@ -25,8 +25,6 @@ Before performing Web configurations on an SAG-1000 device, you must configure t
     4.  From the **Configure IPv4** drop-down list, select **Manually**, and enter the static IP address and subnet mask to use.
 
         **Note:** Ensure that the IP address is in the management CIDR block of the SAG device \(the default management CIDR block is 192.168.0.0/24\) and does not conflict with other IP addresses, for example, 192.168.0.99. You do not need to configure the router and DNS.
-
-        ![IOS client settings](images/21110_en-US.png)
 
 
 ## Step 2: Set the password upon your first logon {#section_k5v_j7u_n6b .section}
@@ -71,7 +69,7 @@ In the isolation mode, the service traffic and the management traffic do not com
     |**Management port IP:**|The management IP address is used for Web access of the local client.|
     |**Next Hop:**|If you choose to isolate the service port from the management port, specify the next hop of the management port.|
 
-    ![Service IP management](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40456/156680614121111_en-US.png)
+    ![Service IP management](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40456/156687189521111_en-US.png)
 
 
 ## Step 4: Configure ports and routes {#section_6g3_yhb_ufb .section}
@@ -105,7 +103,5 @@ There are six ports on an SAG-1000 device. Port 0 and Port 1 are SFP optical por
  |
     |**Routerid**|The ID of the OSPF router. We recommend that you directly use the service IP address.|
     |**Area Type**|The area type is nssa by default.|
-
-    ![Port management](http://icms-static-translation.oss-cn-hangzhou.aliyuncs.com/SP_20/DNsmartag1813723/images/21112_zh-CN.png?Expires=1566637986&OSSAccessKeyId=LTAIJfoPL6wmrirR&Signature=qz25yUARvpRGAciCUaqNneyOZ%2BE%3D)
 
 
