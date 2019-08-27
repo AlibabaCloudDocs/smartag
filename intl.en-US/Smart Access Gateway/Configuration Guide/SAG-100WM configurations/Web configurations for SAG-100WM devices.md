@@ -100,7 +100,7 @@ The LAN ports are used for connecting the local clients.
  |
         |**Password**|Set the Wi-Fi password.|
 
-        ![Wireless mode](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40492/156687171041292_en-US.png)
+        ![Wireless mode](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40492/156687177941292_en-US.png)
 
     -   Ethernet mode
 
@@ -112,13 +112,13 @@ The LAN ports are used for connecting the local clients.
 
             If your local clients directly access Alibaba Cloud by using an SAG device as shown in the following figure, use the default configurations.
 
-            ![Access Alibaba Cloud by using SAG devices](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15409/15668717116822_en-US.png)
+            ![Access Alibaba Cloud by using SAG devices](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15409/15668717796822_en-US.png)
 
         -   Static IP address:
 
             If the IP address of the local client has been configured through the switch as shown in the following figure, use a static IP address.
 
-            ![Static IP address](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40492/156687171121798_en-US.png)
+            ![Static IP address](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40492/156687177921798_en-US.png)
 
             To use a static IP address, you must configure the static IP address and routes:
 
