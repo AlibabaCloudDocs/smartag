@@ -4,16 +4,12 @@ This topic describes the features and functions of SAG-100WM and SAG-1000. \(The
 
 |Feature|Function|Description|SAG-100WM|SAG-1000|Related documentation|
 |-------|--------|-----------|---------|--------|---------------------|
-|Basic connectivity|Static IP address for the port|Configure a static IP address for the port.|√|√| [SAG-100B configuration guide](../../../../reseller.en-US/sag-100b Configuration Guide/Configuration guide.md#)
-
- [SAG-100WM configuration guide](../../../../reseller.en-US/Smart Access Gateway/Configuration Guide/SAG-100WM configurations/Configuration process.md#)
+|Basic connectivity|Static IP address for the port|Configure a static IP address for the port.|√|√| [SAG-100WM configuration guide](../../../../reseller.en-US/Smart Access Gateway/Configuration Guide/SAG-100WM configurations/Configuration process.md#)
 
  [SAG-1000 configuration guide](../../../../reseller.en-US/Smart Access Gateway/Configuration Guide/SAG-1000 configurations/Configuration process.md#)
 
  |
-|PPPoE connections through WAN port|Access the Internet through broadband \(dial-up mode\).|√|×| [SAG-100B configuration guide](../../../../reseller.en-US/sag-100b Configuration Guide/Configuration guide.md#)
-
- [SAG-100WM configuration guide](../../../../reseller.en-US/Smart Access Gateway/Configuration Guide/SAG-100WM configurations/Configuration process.md#)
+|PPPoE connections through WAN port|Access the Internet through broadband \(dial-up mode\).|√|×| [SAG-100WM configuration guide](../../../../reseller.en-US/Smart Access Gateway/Configuration Guide/SAG-100WM configurations/Configuration process.md#)
 
  |
 |4G support|Access the Internet by using a 4G connection.|√ Built-in LTE
@@ -25,15 +21,13 @@ This topic describes the features and functions of SAG-100WM and SAG-1000. \(The
  [Configuration guide](../../../../reseller.en-US/Smart Access Gateway/Configuration Guide/SAG-1000 configurations/Configuration process.md#)
 
  |
-|LAN port DHCP|Newly established sites automatically obtain the IP address.|√|×|[SAG-100B configuration guide](../../../../reseller.en-US/sag-100b Configuration Guide/Configuration guide.md#) [SAG-100WM configuration guide](../../../../reseller.en-US/Smart Access Gateway/Configuration Guide/SAG-100WM configurations/Configuration process.md#)
+|LAN port DHCP|Newly established sites automatically obtain the IP address.|√|×| [SAG-100WM configuration guide](../../../../reseller.en-US/Smart Access Gateway/Configuration Guide/SAG-100WM configurations/Configuration process.md#)
 
  |
 |Wi-Fi access|Access the Internet through Wi-Fi.|√|×| [SAG-100WM configuration guide](../../../../reseller.en-US/Smart Access Gateway/Configuration Guide/SAG-100WM configurations/Configuration process.md#)
 
  |
-|Static routing|The existing on-premises networks are connected through static routing.|√|√| [SAG-100B configuration guide](../../../../reseller.en-US/sag-100b Configuration Guide/Configuration guide.md#)
-
- [SAG-100WM configuration guide](../../../../reseller.en-US/Smart Access Gateway/Configuration Guide/SAG-100WM configurations/Configuration process.md#)
+|Static routing|The existing on-premises networks are connected through static routing.|√|√| [SAG-100WM configuration guide](../../../../reseller.en-US/Smart Access Gateway/Configuration Guide/SAG-100WM configurations/Configuration process.md#)
 
  [SAG-1000 configuration guide](../../../../reseller.en-US/Smart Access Gateway/Configuration Guide/SAG-1000 configurations/Configuration process.md#)
 
@@ -41,7 +35,7 @@ This topic describes the features and functions of SAG-100WM and SAG-1000. \(The
 |OSPF|Support the OSPF protocol.|×|√| [SAG-1000 Web configuration](../../../../reseller.en-US/Cloud Connect Network/Configure a Smart Access Gateway device/Web configurations for SAG-1000 devices.md#)
 
  |
-|Internet SNAT|Access the Internet through the inline networking mode.|√|×|[SAG-100B inline configuration tutorial](../../../../reseller.en-US/Best Practices/SAG-100B inline mode configuration tutorial.md#) [SAG-100WM inline configuration tutorial](../../../../reseller.en-US/Best Practices/SAG-100WM inline mode configuration tutorial.md#)
+|Internet SNAT|Access the Internet through the inline networking mode.|√|×| [SAG-100WM inline configuration tutorial](../../../../reseller.en-US/Best Practices/SAG-100WM inline mode configuration tutorial.md#)
 
  |
 |Cross-region access to VPC|Access from one point to connect target VPCs around the globe through the intranet.|√|√| [Cross-border access to VPC](../../../../reseller.en-US/Best Practices/Cross-region access to VPC.md#)
@@ -51,10 +45,10 @@ This topic describes the features and functions of SAG-100WM and SAG-1000. \(The
 |Configuration|Zero Touch Provisioning \(ZTP\)|Zero-configuration deployment.|√|×| -
 
  |
-|Networking mode|Inline mode|Newly established sites use an SAG as an egress to access Alibaba Cloud.|√|×|[SAG-100B inline configuration tutorial](../../../../reseller.en-US/Best Practices/SAG-100B inline mode configuration tutorial.md#) [SAG-100WM inline configuration tutorial](../../../../reseller.en-US/Best Practices/SAG-100WM inline mode configuration tutorial.md#)
+|Networking mode|Inline mode|Newly established sites use an SAG as an egress to access Alibaba Cloud.|√|×| [SAG-100WM inline configuration tutorial](../../../../reseller.en-US/Best Practices/SAG-100WM inline mode configuration tutorial.md#)
 
  |
-|One-arm mode|The existing sites access Alibaba Cloud through an SAG without changing the existing network architecture.|×|√|[SAG-100B one-arm mode configuration tutorial](../../../../reseller.en-US/Best Practices/SAG-100B one-arm mode configuration tutorial.md#) [SAG-1000 dual-device one-arm mode configuration tutorial](../../../../reseller.en-US/Best Practices/SAG-1000 dual-device one-arm dynamic-routing hot-backup configuration tutorial/Configuration overview.md#)
+|One-arm mode|The existing sites access Alibaba Cloud through an SAG without changing the existing network architecture.|×|√| [SAG-1000 dual-device one-arm mode configuration tutorial](../../../../reseller.en-US/Best Practices/SAG-1000 dual-device one-arm dynamic-routing hot-backup configuration tutorial/Configuration overview.md#)
 
  |
 |High availability|Physical connection backup|Add an SAG as the backup link of an existing physical connection.|×|√| -
