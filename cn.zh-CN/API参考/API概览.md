@@ -2,7 +2,7 @@
 
 智能接入网关提供以下相关API接口。
 
-## 智能接入网关 {#section_zky_avl_jav .section}
+## 智能接入网关 {#section_tpq_kia_juc .section}
 
 |API|描述|
 |---|--|
@@ -28,7 +28,7 @@
 |[RebootSmartAccessGateway](cn.zh-CN/API参考/智能接入网关/RebootSmartAccessGateway.md)|调用RebootSmartAccessGateway重启智能接入网关实例。|
 |[UnlockSmartAccessGateway](cn.zh-CN/API参考/智能接入网关/UnlockSmartAccessGateway.md)|调用UnlockSmartAccessGateway解锁智能接入网关实例。|
 
-## 云连接网 {#section_zwh_jtx_1th .section}
+## 云连接网 {#section_ezl_y3q_3js .section}
 
 |API|描述|
 |---|--|
@@ -41,7 +41,7 @@
 |[RevokeInstanceFromCbn](cn.zh-CN/API参考/云连接网/RevokeInstanceFromCbn.md)|调用RevokeInstanceFromCbn撤销云企业网对云连接网的授权。|
 |[DescribeGrantRules](cn.zh-CN/API参考/云连接网/DescribeGrantRules.md)|调用DescribeGrantRules查询绑定的云连接网的授权规则。|
 
-## 访问控制 {#section_oxg_9ep_cdu .section}
+## 访问控制 {#section_fb8_mnv_mol .section}
 
 |API|描述|
 |---|--|
@@ -56,7 +56,7 @@
 |[CreateACL](cn.zh-CN/API参考/访问控制/CreateACL.md)|调用CreateACL创建访问控制。|
 |[DescribeACLAttribute](cn.zh-CN/API参考/访问控制/DescribeACLAttribute.md)|调用DescribeACLAttribute批量查询访问控制，需要增加Name参数，支持按照Name过滤。|
 
-## 智能接入网关APP {#section_use_gug_zmd .section}
+## 智能接入网关APP {#section_qwe_5po_y8o .section}
 
 |API|描述|
 |---|--|
@@ -71,4 +71,19 @@
 |[DescribeUserOnlineClients](cn.zh-CN/API参考/智能接入网关APP/DescribeUserOnlineClients.md)|调用DescribeUserOnlineClients根据用户名和智能接入网关APP实例ID查询指定用户在线连接列表。|
 |[DescribeSagOnlineClientStatistics](cn.zh-CN/API参考/智能接入网关APP/DescribeSagOnlineClientStatistics.md)|调用DescribeSagOnlineClientStatistics查询当前用户智能接入网关APP实例在线连接数据。|
 |[DescribeUserFlowStatistics](cn.zh-CN/API参考/智能接入网关APP/DescribeUserFlowStatistics.md)|调用DescribeUserOnlineClients查询指定智能接入网关APP实例下用户的流量统计。|
+
+## 流日志 {#section_olz_fqz_qls .section}
+
+|API|描述|
+|---|--|
+|[CreateFlowLog](cn.zh-CN/API参考/流日志/CreateFlowLog.md)|调用CreateFlowlog创建一个流日志。|
+|[ModifyFlowLogAttribute](cn.zh-CN/API参考/流日志/ModifyFlowLogAttribute.md)|调用ModifyFlowLogAttribute编辑流日志实例。|
+|[DescribeFlowLogs](cn.zh-CN/API参考/流日志/DescribeFlowLogs.md)|调用DescribeFlowLogs查询流日志。|
+|[DeleteFlowLog](cn.zh-CN/API参考/流日志/DeleteFlowLog.md)|调用DeleteFlowLog删除一个流日志实例。|
+|[ActiveFlowLog](cn.zh-CN/API参考/流日志/ActiveFlowLog.md)|调用ActiveFlowLog启动流日志。|
+|[DeactiveFlowLog](cn.zh-CN/API参考/流日志/DeactiveFlowLog.md)|调用DeactiveFlowLog停止流日志。|
+|[AssociateFlowLog](cn.zh-CN/API参考/流日志/AssociateFlowLog.md)|调用AssociateFlowLog绑定智能接入网关实例。|
+|[DisassociateFlowLog](cn.zh-CN/API参考/流日志/DisassociateFlowLog.md)|调用DisassociateFlowLog解绑智能接入网关实例。|
+|[DescribeFlowLogSags](cn.zh-CN/API参考/流日志/DescribeFlowLogSags.md)|调用DescribeFlowLogSags查询流日志绑定的智能接入网关实例。|
+|[DescribeUnbindFlowLogSags](cn.zh-CN/API参考/流日志/DescribeUnbindFlowLogSags.md)|调用DescribeUnbindFlowLogSags查询未绑定流日志的智能接入网关实例。|
 
