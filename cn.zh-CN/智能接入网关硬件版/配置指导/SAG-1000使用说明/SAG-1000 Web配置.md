@@ -15,7 +15,7 @@
 
         **说明：** 确保该IP地址在网关设备的管理网段内（默认管理网段为192.168.0.0/24），并不和其他IP地址冲突。例如192.168.0.99。无需配置网关和DNS。
 
-        ![固定IP](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/1069025/156819149659420_zh-CN.png)
+        ![固定IP](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/1069025/156819195359420_zh-CN.png)
 
     6.  单击**确定**。
 -   Mac客户端：为Mac客户端配置静态IP。
@@ -26,7 +26,7 @@
 
         **说明：** 确保该IP地址在网关设备的管理网段内（默认管理网段为192.168.0.0/24），并且不和其他IP地址冲突。例如192.168.0.99。无需配置路由器和DNS。
 
-        ![MAC静态IP](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/1069025/156819149659421_zh-CN.png)
+        ![MAC静态IP](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/1069025/156819195359421_zh-CN.png)
 
 
 ## 步骤2 首次登录设置密码 {#section_k5v_j7u_n6b .section}
@@ -73,7 +73,7 @@
     |**管理口IP**|指定本地客户端Web接入的管理IP。|
     |**下一跳**|如果选择隔离业务口和管理口，指定管理口的下一跳。|
 
-    ![业务IP管理](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/1069025/156819149659423_zh-CN.png)
+    ![业务IP管理](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/1069025/156819195359423_zh-CN.png)
 
 
 ## 步骤4 配置端口和路由 {#section_6g3_yhb_ufb .section}
@@ -115,11 +115,11 @@
 
     下图为OSPF路由配置示例。
 
-    ![配置端口路由信息](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40457/156819149621112_zh-CN.png)
+    ![配置端口路由信息](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40457/156819195321112_zh-CN.png)
 
     下图为BGP路由配置示例。
 
-    ![BGP](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40457/156819149755566_zh-CN.png)
+    ![BGP](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40457/156819195355566_zh-CN.png)
 
 
 ## 步骤5 PING管理（可选） {#section_uj8_ks6_2wk .section}
@@ -130,7 +130,7 @@
 2.  在Web配置首页，单击**设置**。
 3.  单击**PING管理**。
 4.  在PING管理页面，输入目标地址（域名或者IP）和源地址，设置包个数和包长。
-5.  单击**开始**即可开始PING测试，单击**停止**即可停止PING测试。![PING管理](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/1280310/156819149754952_zh-CN.png)
+5.  单击**开始**即可开始PING测试，单击**停止**即可停止PING测试。![PING管理](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/1280310/156819195354952_zh-CN.png)
 
 
 
@@ -142,7 +142,7 @@
 2.  在Web配置首页单击**设置**。
 3.  单击**Traceroute管理**。
 4.  在Traceroute管理页面，输入目标地址（域名或者IP）和源地址。
-5.  单击**开始**进行Traceroute测试，单击**停止**停止Trceroute测试。![Traceroute管理](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/1280323/156819149754953_zh-CN.png)
+5.  单击**开始**进行Traceroute测试，单击**停止**停止Trceroute测试。![Traceroute管理](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/1280323/156819195354953_zh-CN.png)
 
 
 
