@@ -14,7 +14,7 @@
  智能接入网关的区域按国家划分，目前仅支持中国大陆区域。
 
  |
-    |**实例类型**| 支持不同的网关设备的硬件规格，不同规格的网关设备的配置也不同，详情参见[设备简介](../../../../cn.zh-CN/产品简介/智能接入网关硬件版设备/设备简介.md#)。
+    |**实例类型**| 支持不同的网关设备的硬件规格，不同规格的网关设备的配置也不同，详情参见[设备简介](../../../../intl.zh-CN/产品简介/智能接入网关硬件版设备/设备简介.md#)。
 
  |
     |购买数量|     -   购买一台，表示购买单机，一台设备对应一个智能接入网关实例。
@@ -29,21 +29,21 @@
  |
     |**购买时长**|选择购买时长。|
 
-    ![双机备份](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15524/156655241321231_zh-CN.png)
+    ![双机备份](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15524/156818450821231_zh-CN.png)
 
 4.  核对订单信息，然后单击**立即购买**。
 5.  在确认订单对话框，单击 **确认购买**。
 6.  在收货地址对话框，填写网关设备的收货地址等信息，然后单击**去下单**。 
 
-    ![收货地址](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15524/156655241421238_zh-CN.png)
+    ![收货地址](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15524/156818450821238_zh-CN.png)
 
 7.  在支付对话框，单击**确认支付**。 您可以在智能接入网关实例页面查看是否下单成功。智能接入网关会在下单后两天内发货。如果超期，您可以提交工单查看物流状态。
 
-    ![已下单](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15524/156655241421239_zh-CN.png)
+    ![已下单](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15524/156818450821239_zh-CN.png)
 
 
 **相关文档**  
 
 
-[添加专线链路](../../../../cn.zh-CN/智能接入网关硬件版/配置指导/管理智能接入网关实例/添加专线链路.md#)
+[添加专线链路](../../../../intl.zh-CN/智能接入网关硬件版/配置指导/管理智能接入网关实例/添加专线链路.md#)
 
