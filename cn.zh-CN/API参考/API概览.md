@@ -2,7 +2,7 @@
 
 智能接入网关提供以下相关API接口。
 
-## 智能接入网关 {#section_tpq_kia_juc .section}
+## 智能接入网关 {#section_fov_1eq_qmx .section}
 
 |API|描述|
 |---|--|
@@ -27,8 +27,14 @@
 |[DeleteDnatEntry](cn.zh-CN/API参考/智能接入网关/DeleteDnatEntry.md)|调用DeleteDnatEntry删除指定智能接入网关实例绑定的DNAT条目。|
 |[RebootSmartAccessGateway](cn.zh-CN/API参考/智能接入网关/RebootSmartAccessGateway.md)|调用RebootSmartAccessGateway重启智能接入网关实例。|
 |[UnlockSmartAccessGateway](cn.zh-CN/API参考/智能接入网关/UnlockSmartAccessGateway.md)|调用UnlockSmartAccessGateway解锁智能接入网关实例。|
+|[ModifySmartAccessGatewayUpBandwidth](cn.zh-CN/API参考/智能接入网关/ModifySmartAccessGatewayUpBandwidth.md)|调用ModifySmartAccessGatewayUpBandwidth修改智能接入网关参数实例。|
+|[BindVbr](cn.zh-CN/API参考/智能接入网关/BindVbr.md)|调用BindVbr绑定边界路由器。|
+|[GrantSagInstanceToCcn](cn.zh-CN/API参考/智能接入网关/GrantSagInstanceToCcn.md)|调用GrantSagInstanceToCcn跨账号授权智能接入网关实例可以加入云连接网CCN。|
+|[DescribeGrantSagRules](cn.zh-CN/API参考/智能接入网关/DescribeGrantSagRules.md)|调用DescribeGrantSagRules查询授权智能接入网关规则。|
+|[RevokeSagInstanceFromCcn](cn.zh-CN/API参考/智能接入网关/RevokeSagInstanceFromCcn.md)|调用RevokeSagInstanceFromCcn从云连接网撤销智能接入网关实例的加入授权。|
+|[ModifySagRemoteAccess](cn.zh-CN/API参考/智能接入网关/ModifySagRemoteAccess.md)|调用ModifySagRemoteAccess修改智能接入网关设备的远程访问IP。|
 
-## 云连接网 {#section_ezl_y3q_3js .section}
+## 云连接网 {#section_dbn_veb_t4c .section}
 
 |API|描述|
 |---|--|
@@ -41,7 +47,7 @@
 |[RevokeInstanceFromCbn](cn.zh-CN/API参考/云连接网/RevokeInstanceFromCbn.md)|调用RevokeInstanceFromCbn撤销云企业网对云连接网的授权。|
 |[DescribeGrantRules](cn.zh-CN/API参考/云连接网/DescribeGrantRules.md)|调用DescribeGrantRules查询绑定的云连接网的授权规则。|
 
-## 访问控制 {#section_fb8_mnv_mol .section}
+## 访问控制 {#section_gzj_ikb_w8y .section}
 
 |API|描述|
 |---|--|
@@ -56,7 +62,7 @@
 |[CreateACL](cn.zh-CN/API参考/访问控制/CreateACL.md)|调用CreateACL创建访问控制。|
 |[DescribeACLAttribute](cn.zh-CN/API参考/访问控制/DescribeACLAttribute.md)|调用DescribeACLAttribute批量查询访问控制，需要增加Name参数，支持按照Name过滤。|
 
-## 智能接入网关APP {#section_qwe_5po_y8o .section}
+## 智能接入网关APP {#section_t96_wxp_vpp .section}
 
 |API|描述|
 |---|--|
@@ -72,7 +78,7 @@
 |[DescribeSagOnlineClientStatistics](cn.zh-CN/API参考/智能接入网关APP/DescribeSagOnlineClientStatistics.md)|调用DescribeSagOnlineClientStatistics查询当前用户智能接入网关APP实例在线连接数据。|
 |[DescribeUserFlowStatistics](cn.zh-CN/API参考/智能接入网关APP/DescribeUserFlowStatistics.md)|调用DescribeUserOnlineClients查询指定智能接入网关APP实例下用户的流量统计。|
 
-## 流日志 {#section_olz_fqz_qls .section}
+## 流日志 {#section_4ac_9kw_opn .section}
 
 |API|描述|
 |---|--|
