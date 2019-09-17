@@ -7,7 +7,7 @@ You can add access control list \(ACL\) rules to a Smart Access Gateway instance
 3.  On the ACL page, click **Create ACL**.
 4.  Configure the name of the ACL, and then return to the ACL page. 
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40706/156527255940769_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40706/156871063640769_en-US.png)
 
 5.  Click the ID of the ACL instance or **Configure Rules** in the **Actions** column.
 6.  In the left-side navigation pane, click **ACL Rules** and then click **Add Rule** to add an ACL rule to the ACL instance. 
@@ -38,7 +38,7 @@ You can add access control list \(ACL\) rules to a Smart Access Gateway instance
 7.  Click **OK**.
 8.  After the ACL rule is configured, click **Add Instances** in the **Actions** column to add Smart Access Gateway instances that use the ACL rule. 
 
-    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40706/156527256041272_en-US.png)
+    ![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/40706/156871063641272_en-US.png)
 
 9.  Click **Save**. To remove an instance, click the target instance and then click **Remove** in the **Actions** column.
 
