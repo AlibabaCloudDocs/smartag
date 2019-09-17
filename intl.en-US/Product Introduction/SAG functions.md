@@ -32,9 +32,7 @@ This topic describes the features and functions of SAG-100WM and SAG-1000. \(The
  [SAG-1000 configuration guide](../../../../reseller.en-US/Smart Access Gateway/Configuration Guide/SAG-1000 configurations/Configuration process.md#)
 
  |
-|OSPF|Support the OSPF protocol.|×|√| [SAG-1000 Web configuration](../../../../reseller.en-US/Cloud Connect Network/Configure a Smart Access Gateway device/Web configurations for SAG-1000 devices.md#)
-
- |
+|OSPF|Support the OSPF protocol.|×|√|[Web configurations for SAG-1000 devices](../../../../reseller.en-US/Smart Access Gateway/Configuration Guide/SAG-1000 configurations/Web configurations for SAG-1000 devices.md#)|
 |Internet SNAT|Access the Internet through the inline networking mode.|√|×| [SAG-100WM inline configuration tutorial](../../../../reseller.en-US/Best Practices/SAG-100WM inline mode configuration tutorial.md#)
 
  |
