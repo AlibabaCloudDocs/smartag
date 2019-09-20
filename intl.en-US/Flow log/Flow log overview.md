@@ -1,21 +1,25 @@
 # Flow log overview {#concept_1829996 .concept}
 
-This topic provides an overview of the flow log function of Smart Access Gateway \(SAG\). A flow log is used to capture the traffic data of SAG instances. After you enable the flow log function, you can use the data aggregated in flow logs to monitor traffic flows, troubleshoot network faults, analyze service trends, and optimize your services.
+This topic provides an overview of the flow log function of Smart Access Gateway \(SAG\). A flow log is used to capture the traffic data of SAG instances. You can use the data aggregated in flow logs to monitor traffic flows, troubleshoot network faults, analyze service trends, and optimize your services.
 
-**Note:** The flow log function is supported only by the SAG-1000 device.
+**Note:** The flow log function is supported only by SAG-1000 devices.
 
-## Background information {#section_cjy_i8l_qd2 .section}
+## Types of flow logs {#section_cjy_i8l_qd2 .section}
 
-You can specify the SAG instances of which the traffic data you want to capture. The following flow logs can be used to store captured data:
+The following two types of flow logs can be used to store captured data:
 
--   SLS flow logs: The captured traffic data is stored in Alibaba Cloud Log Service.
--   NetFlow flow logs: The captured traffic data is stored in your NetFlow server.
+-   SLS flow logs
 
-SLS flow logs store the captured traffic data in Alibaba Cloud Log Service, where you can view and analyze the traffic data. The SLS flow log function is currently in the beta testing phase. During this phase, you are only charged for the storage and retrieval of traffic data in Log Service.
+    SLS flow logs store the captured traffic data in Alibaba Cloud Log Service, where you can view and analyze the traffic data. The SLS flow log function is currently in the beta testing phase. During this phase, you are only charged for the storage and retrieval of traffic data in Log Service.
 
-The traffic data captured by the SLS flow log function is written to Log Service as flow log records. Each flow log record captures specified traffic data in a specified capture window. During this period, data is aggregated and then released to the flow log record.
+    The traffic data captured by the SLS flow log function is written to Log Service as flow log records. Each flow log record captures specified traffic data in a capture window. When the capture window is active, data is aggregated and then released to the flow log record.
 
-NetFlow flow logs encapsulate the captured traffic data into NetFlow packets based on the NetFlow protocol and then transmit the packets to your NetFlow server, where you can view and analyze the traffic data.
+-   NetFlow flow logs
+
+    NetFlow flow logs encapsulate the captured traffic data into NetFlow packets based on the NetFlow protocol and then transmit the packets to your NetFlow server, where you can view and analyze the traffic data.
+
+
+## Fields of flow logs {#section_c8f_ehi_o87 .section}
 
 The following table describes the fields of a flow log record.
 
@@ -48,18 +52,18 @@ The following table describes the fields of a flow log record.
 
 The following figure shows the process of configuring the flow log function.
 
-![Flow log configuration process](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/1448964/156879569457129_en-US.png)
+![Flow log configuration process](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/1448964/156895653657129_en-US.png)
 
-1.  Create a flow log.
+1.  Create a flow log
 
     You can choose to create an SLS flow log or a NetFlow flow log by selecting the storage location of the flow log. For more information, see [Create a flow log](intl.en-US/Flow log/Create a flow log.md#).
 
-2.  Associate the flow log with an SAG instance.
+2.  Associate the flow log with one or more SAG instances
 
-    To record the traffic data of an SAG instance, you must associate a flow log with the SAG instance after you create the flow log, For more information, see.[Associate an SAG instance](intl.en-US/Flow log/Associate an SAG instance.md#)
+    To record the traffic data of an SAG instance, you must associate a flow log with the SAG instance after you create the flow log. For more information, see [Associate an SAG instance](intl.en-US/Flow log/Associate an SAG instance.md#).
 
-3.  View the flow log.
+3.  View the flow log
 
-    After associating the flow log with an SAG instance, you can view the flow log. By analyzing the captured traffic data in the flow log, you can monitor the traffic flows, optimize costs, and troubleshoot network faults. For more information, see [View a flow log](intl.en-US/Flow log/View a flow log.md#).
+    After associating the flow log with an SAG instance, you can view the flow log. By analyzing the captured traffic data in the flow log, you can monitor traffic flows, optimize costs, and troubleshoot network faults. For more information, see [View a flow log](intl.en-US/Flow log/View a flow log.md#).
 
 
