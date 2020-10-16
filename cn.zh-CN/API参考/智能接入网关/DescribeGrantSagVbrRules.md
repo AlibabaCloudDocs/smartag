@@ -16,7 +16,7 @@
 |RegionId|String|是|cn-shanghai|智能接入网关实例所在地域ID。 |
 |SmartAGId|String|是|sag-0nnteglltw6z4b\*\*\*\*|智能接入网关实例ID。 |
 |VbrInstanceId|String|是|vbr-bp13gtbhdp0pfqg6s\*\*\*\*|边界路由器实例ID。 |
-|PageNumber|Integer|否|1|分页查询时的页码。默认为**1**。 |
+|PageNumber|Integer|否|1|分页查询时的页码。默认值为**1**。 |
 |PageSize|Integer|否|10|分页查询时每页的条目数。默认值为**10**。 |
 
 ## 返回数据
