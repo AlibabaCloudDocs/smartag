@@ -1,6 +1,6 @@
 # RoamClientUser
 
-Enables roaming for SAG APP clients. After roaming is enabled, the clients can access their private networks across areas.
+Enables roaming for SAG APP clients. After roaming is enabled, the clients can access their private networks across regions.
 
 ## Prerequisites
 
@@ -37,6 +37,7 @@ Sample requests
 http(s)://[Endpoint]/? Action=RoamClientUser
 &OriginRegionId=cn-shanghai
 &OriginSmartAGId=sag-m9uhqekwnqcnyy****
+&RegionId=cn-hangzhou
 &TargetSmartAGId=sag-ghwa10ko6ndwug****
 &UserName=test1
 &<Common request parameters>
