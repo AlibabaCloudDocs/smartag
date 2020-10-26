@@ -37,6 +37,7 @@
 http(s)://[Endpoint]/?Action=RoamClientUser
 &OriginRegionId=cn-shanghai
 &OriginSmartAGId=sag-m9uhqekwnqcnyy****
+&RegionId=cn-hangzhou
 &TargetSmartAGId=sag-ghwa10ko6ndwug****
 &UserName=test1
 &<公共请求参数>
