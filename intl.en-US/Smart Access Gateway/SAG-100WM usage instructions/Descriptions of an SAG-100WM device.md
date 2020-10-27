@@ -41,8 +41,8 @@ SAG-100WM provides two models of devices that have different specifications. The
 |The power indicator|DC 12V|DC 12 V|
 |Power consumption|12 W|12 W|
 |Network interfaces|Two GE/FE RJ45 WAN ports|One GE/FE RJ45 WAN ports|
-|Three GE/FE RJ45 WAN ports|One WAN/LAN reusable port \(port 2\)|
-|Three GE/FE RJ45 WAN ports|
+|Three GE/FE RJ45 LAN ports|One WAN/LAN reusable port \(port 2\)|
+|Three GE/FE RJ45 LAN ports|
 |WIFI|-   2.4 GHz and supports IEEE 802.11 b/g/n
 -   Supports at most 20 terminals
 -   Signal covers 100 square meters
