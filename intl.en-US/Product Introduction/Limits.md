@@ -1,16 +1,16 @@
-# Limits {#concept_c4h_dhs_j2b .concept}
+# Limits
 
-The following table describes the maximum limits of different functions of Smart Access Gateway.
+This topic describes the limits on using Smart Access Gateway \(SAG\).
 
-|Item|Limit|
-|:---|:----|
-|The number of Smart Access Gateway instances under each account|500|
-|The number of CCN instances under each account|10|
-|The number of private CIDR blocks per Smart Access Gateway instance|5|
-|The number of CCN instances that can be attached to one Smart Access Gateway instance|1|
-|The number of CEN instances that can be attached to one CCN instance|1|
-|The number of access control lists associated with a Smart Access Gateway instance|1**Note:** This limit cannot be adjusted.
-
-|
-|The number of terminals that can connect to the SAG-100WM device through Wi-Fi|20|
+|Service|Item|
+|:------|:---|
+|The maximum number of SAG instances that can be created under an individual Alibaba Cloud account|500. To request a quota increase, [submit a ticket](https://workorder.console.aliyun.com/console.htm?spm=a2c8b.12571063.0.0.6c3a1f74GNUcri#/ticket/add?productCode=smartag&commonQuestionId=3317&isSmart=true).|
+|The maximum number of Cloud Connect Network \(CCN\) instances that can be created under an individual Alibaba Cloud account|10. To request a quota increase, [submit a ticket](https://workorder.console.aliyun.com/console.htm?spm=a2c8b.12571063.0.0.6c3a1f74GNUcri#/ticket/add?productCode=smartag&commonQuestionId=3317&isSmart=true).|
+|The maximum number of CIDR blocks of private networks that can be associated with an SAG instance|5. To request a quota increase, [submit a ticket](https://workorder.console.aliyun.com/console.htm?spm=a2c8b.12571063.0.0.6c3a1f74GNUcri#/ticket/add?productCode=smartag&commonQuestionId=3317&isSmart=true).|
+|The maximum number of CCN instances that can be associated with an SAG instance|1.|
+|The maximum number of Cloud Enterprise Network \(CEN\) instances that can be associated with a CCN instance|1.|
+|The maximum number of access control lists \(ACLs\) that can be associated with an SAG instance|1.|
+|The maximum number of rules supported by an ACL|50. To request a quota increase, [submit a ticket](https://workorder.console.aliyun.com/console.htm?spm=a2c8b.12571063.0.0.6c3a1f74GNUcri#/ticket/add?productCode=smartag&commonQuestionId=3317&isSmart=true).|
+|The maximum number of ACLs that can be created under an individual Alibaba Cloud account|10. To request a quota increase, [submit a ticket](https://workorder.console.aliyun.com/console.htm?spm=a2c8b.12571063.0.0.6c3a1f74GNUcri#/ticket/add?productCode=smartag&commonQuestionId=3317&isSmart=true).|
+|The maximum number of terminals that can be connected to an SAG-100WM device over Wi-Fi|20.|
 
