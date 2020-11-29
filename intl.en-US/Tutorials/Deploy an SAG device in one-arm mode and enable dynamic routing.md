@@ -2,28 +2,28 @@
 
 This topic describes how to deploy a Smart Access Gateway \(SAG\) device in one-arm mode and enable static routing to connect the private networks of headquarters or office branches to Alibaba Cloud.
 
--   A Virtual Private Cloud \(VPC\) network is created. For more information, see [Create a VPC](/intl.en-US/VPCs and VSwitches/VPC management/Create a VPC.md).
--   A Cloud Enterprise Network \(CEN\) instance is created and associated with the VPC network. For more information, see [Create a CEN instance]().
+-   A virtual private cloud \(VPC\) is created. For more information, see [Create a VPC](/intl.en-US/VPCs and VSwitches/VPC management/Create a VPC.md).
+-   A Cloud Enterprise Network \(CEN\) instance is created and associated with the VPC. For more information, see [Create a CEN instance]().
 
-In this example, a company has created a VPC network in the China \(Beijing\) region and deployed services in the VPC network. The company needs to connect its private network to Alibaba Cloud to access resources on Alibaba Cloud. An SAG-1000 device is deployed in the private network in one-arm mode. This deployment mode does not change the existing network topology.
+In this example, a company has created a VPC in the China \(Beijing\) region and deployed services in the VPC. The company needs to connect its private network to Alibaba Cloud to access resources on Alibaba Cloud. An SAG-1000 device is deployed in the private network in one-arm mode. This deployment mode does not change the existing network topology.
 
-![Architecture](https://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/en-US/9355670061/p132809.png)
+![Architecture](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/9355670061/p132809.png)
 
 ## Subnetting
 
 The following CIDR blocks are used in this example. When you allocate CIDR blocks based on your actual requirements, make sure that the CIDR blocks do not overlap with each other.
 
-|Node|Subnetting|
+|Node|CIDR block|
 |----|----------|
 |Private networks|Workloads: 172.16.0.0/12.|
 |WAN port \(port 5\) of the SAG device: 192.168.100.1/30. IP address of the gateway: 192.168.100.2.|
 |Port G11 of the Layer 3 switch: 192.168.100.2/30.|
 |Port G1 of the Internet-facing router: 192.168.80.1/30. Port G2 of the Layer 3 switch: 192.168.80.2/30. |
-|VPC network in the China \(Beijing\) region|10.0.0.0/16|
+|VPC in the China \(Beijing\) region|10.0.0.0/16|
 
 ## Procedure
 
-![Procedure](https://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/en-US/9355670061/p146825.png)
+![Procedure](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/9355670061/p146825.png)
 
 ## Step 1: Purchase an SAG device
 
@@ -60,11 +60,11 @@ After you place an order in the SAG console, Alibaba Cloud delivers the SAG devi
 
 You can check whether the order has been placed on the Smart Access Gateway page. After the order is placed, it will be shipped within two business days. If your order is not shipped as expected, you can [submit a ticket](https://workorder-intl.console.aliyun.com/?spm=5176.15120809.nav-right.dticket.130266ebEB92in#/ticket/add/?productId=1308) to query the shipping status.
 
-![The order status](https://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/en-US/5323660061/p101651.png)
+![The order status](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/5323660061/p101651.png)
 
 ## Step 2: Activate the SAG devices
 
-After you receive the SAG device, check whether you have received all the accessories. For more information, see [Descriptions of an SAG-1000 device](/intl.en-US/Smart Access Gateway/SAG-1000 configurations/Descriptions of an SAG-1000 device.md).
+After you receive the SAG device, check whether you have received all the accessories. For more information, see [Descriptions of an SAG-1000 device](/intl.en-US/Smart Access Gateway/SAG-1000 usage instructions/Descriptions of an SAG-1000 device.md).
 
 1.  Log on to the [SAG console](https://smartag.console.aliyun.com/).
 
@@ -101,7 +101,7 @@ Before you begin, make sure that the device is activated, the 4G network works a
 
     5.  In the Configure WAN \(Port 5\) dialog box, set the following parameters and click **OK**.
 
-        ![WAN (Port 5)](https://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/en-US/2172240061/p77418.png)
+        ![WAN (Port 5)](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/2172240061/p77418.png)
 
         -   **Connection Type**: Select **Static IP**.
         -   **Priority**: **1** is selected by default.
@@ -123,7 +123,7 @@ Before you begin, make sure that the device is activated, the 4G network works a
 
         Enter the CIDR block used to route network traffic from Alibaba Cloud to the private network. 172.16.0.0/12 is used in this example.
 
-        ![On-premises route 2](https://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/en-US/2172240061/p77167.png)
+        ![On-premises route 2](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/2172240061/p77167.png)
 
 
 ## Step 4: Configure switches and Internet-facing routers
@@ -139,7 +139,7 @@ In this step, you must configure the peer switch and Internet-facing router for 
     ip address 192.168.100.2 255.255.255.252 #The IP address of the peer switch of the SAG device  
     
     
-    ip route 10.0.0.0 255.255.0.0 192.168.100.1 #The route to the VPC network in the China (Beijing) region
+    ip route 10.0.0.0 255.255.0.0 192.168.100.1 #The route to the VPC in the China (Beijing) region
      
     ip route 0.0.0.0 0.0.0.0 192.168.80.1 #The route to the Internet       
     
@@ -176,7 +176,7 @@ After you configure the SAG device, you must set up network connections to conne
 
         The name must be 2 to 100 characters in length, and can contain digits, underscores \(\_\), and hyphens \(-\). It must start with a letter or a Chinese character.
 
-        ![Create a CCN instance](https://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/en-US/6323660061/p76961.png)
+        ![Create a CCN instance](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/6323660061/p76961.png)
 
 2.  Associate the SAG instance with the CCN instance.
 
@@ -188,7 +188,7 @@ After you configure the SAG device, you must set up network connections to conne
 
     4.  On the Network Instance Details tab, click **Attach Network**, select the CCN instance, and then click **OK**.
 
-        ![Attach a network](https://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/en-US/6323660061/p132840.png)
+        ![Attach a network](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/6323660061/p132840.png)
 
 3.  Associate the CCN instance with a CEN instance.
 
@@ -200,7 +200,7 @@ After you configure the SAG device, you must set up network connections to conne
 
     3.  In the Bind CEN Instance pane, select **Existing CEN**, select the CEN instance that you want to associate with the CCN instance, and then click **OK**.
 
-        ![Associate with a CEN instance](https://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/en-US/6323660061/p63012.png)
+        ![Associate with a CEN instance](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/6323660061/p63012.png)
 
 4.  Create a security group rule.
 
@@ -209,5 +209,5 @@ After you configure the SAG device, you must set up network connections to conne
 
 ## Step 6: Test the connectivity
 
-After you complete the configurations in the preceding steps, access cloud resources deployed in the VPC network from a client in your private network to test the connectivity.
+After you complete the configurations in the preceding steps, access cloud resources deployed in the VPC from a client in your private network to test the connectivity.
 
