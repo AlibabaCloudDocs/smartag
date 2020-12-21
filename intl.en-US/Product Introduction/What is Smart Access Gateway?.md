@@ -1,48 +1,61 @@
-# What is Smart Access Gateway? {#concept_i2w_zgs_j2b .concept}
+# What is Smart Access Gateway?
 
-Smart Access Gateway is an all-in-one solution for connecting local branches to the Alibaba Cloud. With Smart Access Gateway, enterprises can access Alibaba Cloud through the Internet using a fully encrypted connection, allowing businesses to experience a more intelligent, more reliable, and more secure network. Both Smart Access Gateway and Smart Access Gateway \(Software\) are provided. Smart Access Gateway is a physical device used for site-to-site connection by using a leased line, a broadband link, or a 4G link. Smart Access Gateway \(Software\) is used for point-to-site connection.
+Smart Access Gateway \(SAG\) is a software-defined wide area network \(SD-WAN\) solution developed by Alibaba Cloud based on cloud-native technologies. SAG provides a more intelligent, reliable, and secure approach for enterprises to migrate their workloads to Alibaba Cloud.
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15401/15616295426804_en-US.png)
+## Product models
 
-## Components {#section_fdf_cls_j2b .section}
+You can implement SAG by using one of the following methods:
 
--   Smart Access Gateway instance
+-   **SAG devices**: client-premises equipment \(CPE\) devices that support site-to-site connections.
 
-    A Smart Access Gateway instance is the logic mapping of a Smart Access Gateway device or a Smart Access Gateway \(Software\) client. You can operate the device or the software client by managing the instance in the console.
+    You can deploy SAG devices in on-premises data centers, office branches, and stores to connect their private networks to Alibaba Cloud. SAG provides two device models: SAG-100WM and SAG-1000.
 
--   Smart Access Gateway device
+    -   **SAG-100WM devices** can be placed on desks and in extra-low voltage boxes. You can connect broadband and 4G networks to the WAN ports, and wired and Wi-Fi networks to the LAN ports. The maximum bandwidth of encrypted private networks supported by SAG-100WM devices is 50 Mbit/s \(the packet length in the performance test is 512 bytes\). SAG-100WM devices are suitable for quickly connecting small office branches and stores to Alibaba Cloud.
+    -   **SAG-1000 devices** can be placed on server racks. You can connect a hybrid network that consists of leased lines, broadband networks, and 4G networks to the WAN ports, and wired networks to the LAN ports. The maximum bandwidth of encrypted private networks supported by SAG-1000 devices is 500 Mbit/s \(the packet length in the performance test is 512 bytes\). SAG-1000 devices are suitable for connecting on-premises data centers and large office branches to Alibaba Cloud.
+-   **SAG vCPE**:
+    -   **SAG vCPE**: supports site-to-site connections.
 
-    Smart Access Gateway provides devices that are used by local branches to access. After you complete the payment, Alibaba Cloud sends the device to you. You can view the delivery status of the device, and then configure and manage the device through the console. For more information, see [Device introduction](reseller.en-US/Product Introduction/Smart Access Gateway device/Device overview.md#).
+        SAG vCPE is an image that can be deployed on a cloud instance. You can deploy the SAG vCPE image on an Alibaba Cloud Edge Node Service \(ENS\) instance or an Amazon Web Services \(AWS\) instance. After you deploy the SAG vCPE image on a server, the server functions as a virtual CPE device. The bandwidth of private networks for encrypted connections can reach 300 Mbit/s and higher \(the packet length in the performance test is 1024 bytes\). This allows you to connect private networks to Alibaba Cloud in a more flexible way.
 
-    **Note:** Only Smart Access Gateway corresponds to a device.
+    -   **SAG APP**: supports point-to-site connections.
 
--   Alibaba Cloud network client
-
-    End users of Smart Access Gateway \(Software\) can achieve mobile access to an intranet through an Alibaba Cloud network client.
-
--   Cloud Connect Network
-
-    Cloud Connect Network \(CCN\) is another important component of Smart Access Gateway. It is a device access matrix composed of Alibaba Cloud distributed Smart Access Gateways.
-
-    You can add multiple Smart Access Gateway devices to a CCN instance and then attach the CCN instance to a Cloud Enterprise Network \(CEN\) instance to connect the local branches to the Alibaba Cloud.
-
-    The CCN instance and the Smart Access Gateway instances to be added must be in the same area. If the CCN areas and CEN areas are the same, the local branch can directly access Alibaba Cloud without additional configurations required. For more information, see [Cloud Connect Network](../../../../reseller.en-US/User Guide/Cloud Connect Network/Cloud Connect Network.md#).
-
--   Express Cloud Connect
-
-    Express Cloud Connect is a service for connecting to the cloud that features high reliability, high performance, high speed and low latency. It is based on the capabilities of Smart Access Gateway and built-in routing encapsulation technology, and is integrated with one or more physical connections provided by carriers. For more information, see [../../../../dita-oss-bucket/SP\_72/DNEXPRESSCONNECT19100664/EN-US\_TP\_162666.md\#](../../../../reseller.en-US/Express Cloud Connect (Beta)/Activate Express Cloud Connect.md#).
+        You can install SAG APP in devices such as PCs and mobile phones. Supported operating systems include Windows \(7, XP, and 10\), macOS \(10.11.1 and later\), Android \(5.0 and later\), and iOS \(9.0 and later\).
 
 
-## Scenarios of Smart Access Gateway {#section_vxm_pwg_4fb .section}
+## Framework
 
-Smart Access Gateway connects organizations \(such as local data centers, branches, and outlets\) to Alibaba Cloud, allowing you to implement highly scalable services and easily establish a hybrid cloud.
+The following figure shows how you can use SAG devices to connect on-premises data centers, office branches, and stores to Alibaba Cloud. You can also use SAG APP to connect PCs and mobile phones to Alibaba Cloud. For other branches, you can connect them to Alibaba Cloud by using SAG vCPE. Cross-region Cloud Enterprise Network \(CEN\) instances allow your private networks, such as virtual private clouds \(VPCs\) that are deployed in different regions, on-premises data centers, office branches, and mobile devices, to communicate with each other.
 
-![](http://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/15401/156162954221212_en-US.png)
+![Architecture](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/2528280061/p143348.png)
 
-## Scenarios of Smart Access Gateway \(Software\) {#section_ayw_6oc_hrl .section}
+|Component|Description|
+|---------|-----------|
+|SAG devices|CPE devices.|
+|SAG vCPE|Virtual CPE devices.|
+|SAG APP|An application that can be installed on client devices.|
+|CCN|A matrix of Alibaba Cloud distributed gateways.|
+|CEN|Alibaba Cloud cross-region networks.|
+|VPC|Private networks deployed in Alibaba Cloud regions.|
 
-Smart Access Gateway \(Software\) enables Alibaba Cloud network clients to access Alibaba Cloud through dial-up. It is suitable for the following scenarios:
+## Benefits
 
--   Mobile working and remote O&M.
--   Test before purchasing a device.
+SAG is an SD-WAN architecture developed based on cloud-native technologies. Compared with legacy SD-WAN architectures, SAG offers the following benefits:
+
+-   Zero touch provisioning \(ZTP\) and centralized management and maintenance
+
+    SAG provides a control plane based on software-defined networking \(SDN\). Similar to managing VPCs and Elastic Compute Service \(ECS\) instances, you can manage SAG devices in the SAG and Cloud Monitor consoles, or by calling the SAG API.
+
+-   Hybrid networks
+
+    SAG provides a data plane based on private WANs on Alibaba Cloud. You can connect private networks to Alibaba Cloud through a hybrid network that consists of leased lines, broadband networks, and 4G networks. This increases the utilization of leased lines and improves network performance.
+
+-   Integration of networks and cloud services
+
+    An architecture that integrates the cloud, networks, and edge:
+
+    -   Automatic protocol negotiation between local and cloud VPNs. No additional configuration is required.
+    -   Quick access from private networks to Alibaba Cloud services
+    -   End-to-end security policies for both local and cloud workloads
+
+![Architecture](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/1188280061/p143345.png)
 
