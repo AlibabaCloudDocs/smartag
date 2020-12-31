@@ -44,7 +44,7 @@
 |RuleConfigErrorList|Array of RuleConfigErrorList| |DPI配置异常的信息列表。 |
 |DpiGroupIds|List|1|配置异常的应用组ID列表。
 
- 您可以通过[ListDpiGroups](~~ListDpiGroups~~)查询应用组ID及其包含的应用信息。 |
+ 您可以通过[ListDpiGroups](~~196754~~)查询应用组ID及其包含的应用信息。 |
 |DpiSignatureIds|List|1|配置异常的应用ID列表。
 
  您可以通过[ListDpiSignatures](~~196630~~)查询应用ID及其对应的应用信息。 |
