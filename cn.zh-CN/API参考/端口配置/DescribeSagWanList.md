@@ -1,6 +1,6 @@
 # DescribeSagWanList
 
-调用DescribeSagWanList获取设备WAN有线配置信息。
+调用DescribeSagWanList查询智能接入网关设备WAN口配置信息。
 
 ## 调试
 
@@ -15,18 +15,18 @@
  取值：**DescribeSagWanList**。 |
 |RegionId|String|是|cn-shanghai|智能接入网关实例地域ID。 |
 |SmartAGId|String|是|sag-whfn\*\*\*\*|智能接入网关实例ID。 |
-|SmartAGSn|String|是|sag32a30\*\*\*\*|绑定的智能接入网关设备序列号。 |
+|SmartAGSn|String|是|sag32a30\*\*\*\*|智能接入网关设备序列号。 |
 
 ## 返回数据
 
 |名称|类型|示例值|描述|
 |--|--|---|--|
 |RequestId|String|CE6642D4-21EB-4168-9BF9-F217953F9892|请求ID。 |
-|TaskStates|Array| |查询任务信息状态。 |
+|TaskStates|Array of TaskState| |查询任务信息及状态。 |
 |CreateTime|String|1586834861000|查询任务创建时间。 |
 |ErrorCode|String|200|错误码。200标识查询任务成功。 |
 |ErrorMessage|String|Successful|错误信息。Successful标识查询任务成功。 |
-|State|String|Succeed|异步任务状态：
+|State|String|Succeed|查询任务状态：
 
  -   **Initialized**：查询任务初始化。
 -   **Offline**：智能接入网关设备离线未下发查询任务，智能接入网关设备上线后会继续下发。
@@ -37,26 +37,34 @@
 -   **HardwareError**：由于设备原因查询任务下发失败。
 -   **TaskNotExist**：查询任务不存在。
 -   **OfflineNotConfiged**：智能接入网关设备离线未下发查询任务，智能接入网关设备上线后也不会下发。 |
-|Wans|Array| |WAN端口信息列表。 |
+|Wans|Array of Wan| |WAN口配置信息列表。 |
+|BandWidth|Integer|50|WAN口的限速带宽。单位：Mbps。 |
 |Gateway|String|192.XX.XX.1|网关IP地址。 |
-|IP|String|172.XX.XX.1|WAN端口IP地址。 |
-|IPType|String|STATIC|WAN端口连接类型：
+|IP|String|172.XX.XX.1|WAN口IP地址。 |
+|IPType|String|STATIC|WAN口连接类型：
 
  -   **DHCP**：通过DHCP协议动态获取IP地址，进而访问互联网。
 -   **STATIC**：通过静态指定IP地址，进而访问互联网。
 -   **PPPOE**：通过拨号方式接入互联网。 |
-|Mask|String|255.255.255.240|WAN端口掩码。 |
-|PortName|String|1|WAN端口名称。 |
-|Priority|Integer|1|WAN端口优先级。
+|ISP|String|CT|WAN口连接的运营商链路。
 
- 数值范围：**-1**，**1~50**，数值越小优先级越高。
+ -   **CT**：电信
+-   **CM**：移动
+-   **CU**：联通
+-   **Other**：其他 |
+|Mask|String|255.255.255.240|WAN口IP地址掩码。 |
+|PortName|String|1|WAN口所属的端口号。 |
+|Priority|Integer|1|WAN口优先级。
+
+ 数值范围：**-1**或**1~50**，数值越小优先级越高。
 
  **说明：** 优先级为**-1**时，表示端口不启用流量转发。 |
-|TrafficState|String|active|WAN端口流量状态。
+|TrafficState|String|active|WAN口流量状态。
 
- -   **active**：表示当前WAN端口进行转发流量。
--   **standby**：表示当前WAN端口不进行流量转发。 |
+ -   **active**：表示当前WAN端口为主端口，优先进行转发流量。
+-   **standby**：表示当前WAN端口为备端口，在主端口故障后进行流量转发。 |
 |Username|String|Usernamexx|PPPOE账号。 |
+|Weight|Integer|100|WAN口权重。 |
 
 ## 示例
 
@@ -136,11 +144,11 @@ http(s)://smartag.cn-shanghai.aliyuncs.com/?Action=DescribeSagWanList
 |500|SmartAccessGatewayNotActivated|The specified Smart Access Gateway has not been activated.|该智能接入网关尚未激活，请先激活该实例。|
 |403|SmartAccessGatewayNotOnline|The specified smart access gateway is not online.|该智能接入网关当前不是在线状态，无法完成操作。|
 |500|SmartAccessGatewayOffline|The request cannot be completed. The Smart Access Gateway is offline.|智能接入网关离线，请求无法完成。|
-|400|InstanceNotExit|The specified instance does not exist.|指定的实例不存在|
+|400|InstanceNotExit|The specified instance does not exist.|指定的实例不存在。|
 |400|ConfigUnsynchronized|The network configuration is not synchronized.|网络配置未同步|
-|403|FeatureNotSupport|The current edition of the smart access gateway does not support this feature.|智能接入网关当前版本不支持该功能特性|
-|403|FeatureNotSupportForActiveSmartAG|The current edition of the active smart access gateway does not support this feature.|主智能接入网关的当前版本不支持该功能特性|
-|403|FeatureNotSupportForStandBySmartAG|The current edition of the standby smart access gateway does not support this feature.|备智能接入网关的当前版本不支持该功能特性|
+|403|FeatureNotSupport|The current edition of the smart access gateway does not support this feature.|智能接入网关当前版本不支持该功能特性。|
+|403|FeatureNotSupportForActiveSmartAG|The current edition of the active smart access gateway does not support this feature.|主智能接入网关的当前版本不支持该功能特性。|
+|403|FeatureNotSupportForStandBySmartAG|The current edition of the standby smart access gateway does not support this feature.|备智能接入网关的当前版本不支持该功能特性。|
 |400|Sag.PortRoleInvalid|The port role is invalid.|设备端口角色不正确|
 |400|Sag.PortMgtError|The role of a management port cannot be changed.|管理口角色不能修改。|
 
