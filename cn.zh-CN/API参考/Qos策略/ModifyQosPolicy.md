@@ -1,6 +1,8 @@
 # ModifyQosPolicy
 
-调用ModifyQosPolicy修改QoS策略五元组规则配置信息。
+调用ModifyQosPolicy修改五元组规则。
+
+****
 
 ## 调试
 
@@ -13,45 +15,21 @@
 |Action|String|否|ModifyQosPolicy|要执行的操作。
 
  取值：**ModifyQosPolicy**。 |
-|QosId|String|是|qos-djhgg\*\*\*\*\*\*\*\*\*\*\*|QoS策略的实例ID。 |
-|QosPolicyId|String|是|qospy-427m9fo6wkh\*\*\*\*\*\*\*\*\*|QoS策略五元组规则实例ID。 |
-|RegionId|String|是|cn-hangzhou|QoS策略实例所属的地域ID。 |
-|Priority|Integer|否|3|设置QoS策略五元组规则所属的限速规则的优先级。
+|QosId|String|是|qos-djhgg\*\*\*\*\*\*\*\*\*\*\*|Qos策略的实例ID。 |
+|QosPolicyId|String|是|qospy-427m9fo6wkh\*\*\*\*\*\*\*\*\*|Qos规则的五元组实例ID。 |
+|RegionId|String|是|cn-hangzhou|Qos策略实例所属的地域ID。 |
+|Priority|Integer|否|3|设置限速策略的优先级，数值越小，优先级越高，同优先级时先下发的规则优先生效。
 
- 优先级范围：**1~3**。数值越小，优先级越高。 |
-|SourceCidr|String|否|10.10.10.0/24|源网段。
-
- 源网段格式为CIDR格式。例如：192.168.1.0/24。 |
-|DestCidr|String|否|10.10.20.0/24|目的网段。
-
- 目的网段格式为CIDR格式。例如：192.168.10.0/24。 |
-|IpProtocol|String|否|tcp|QoS策略五元组规则应用的协议类型。
-
- QoS策略五元组规则支持的协议类型，请以控制台为准。 |
-|SourcePortRange|String|否|1/200|源端口范围。
-
- 取值范围：**-1**，**1**~**65535**。
-
- 源端口范围格式例如：1/200、80/80，其中-1/-1代表不限制端口。 |
-|DestPortRange|String|否|300/400|目的端口范围。
-
- 取值范围：**-1**，**1**~**65535**。
-
- 目的端口范围格式例如：1/200、80/80，其中-1/-1代表不限制端口。 |
-|StartTime|String|否|2019-07-14T16:41:33+0800|QoS策略五元组规则生效开始时间。 |
-|EndTime|String|否|2019-09-14T16:41:33+0800|QoS策略五元组规则生效结束时间。 |
-|Description|String|否|docdesc|QoS策略五元组规则的描述。
-
- 长度为1~512个字符，以大小写字母或中文开头，可包含数字、下划线（\_）或短划线（-）。 |
-|Name|String|否|doctest|QoS策略五元组规则名称。
-
- 长度为2~100个字符，以大小写字母或中文开头，可包含数字、短划线（-）或下划线（\_）。 |
-|DpiSignatureIds.N|RepeatList|否|1|应用ID列表。
-
- 您可以通过[ListDpiSignatures](~~196630~~)查询应用ID及其对应的应用信息。N的最大值为**10**。 |
-|DpiGroupIds.N|RepeatList|否|20|应用组ID列表。
-
- 您可以通过[ListDpiGroups](~~ListDpiGroups~~)查询应用组ID及其包含的应用信息。N的最大值为**10**。 |
+ 优先级范围：1~7。 |
+|SourceCidr|String|否|10.10.10.9/24|源网段。 |
+|DestCidr|String|否|10.10.20.9/12|目的网段。 |
+|IpProtocol|String|否|tcp|传输层协议。 |
+|SourcePortRange|String|否|80/80|源端口范围。 |
+|DestPortRange|String|否|80/80|目的端口范围。 |
+|StartTime|String|否|2019-07-14T16:41:33+0800|五元组规则生效开始时间。 |
+|EndTime|String|否|2019-09-14T16:41:33+0800|五元组规则生效结束时间。 |
+|Description|String|否|docdesc|五元组规则描述。 |
+|Name|String|否|doctest|五元组规则名称。长度为2-100，必须以大小字母或中文开头，可包含数字，"-","\_"。 |
 
 ## 返回数据
 
@@ -76,9 +54,9 @@ http(s)://[Endpoint]/?Action=ModifyQosPolicy
 `XML` 格式
 
 ```
-<ModifyQosPolicyRespon>
-  <RequestId>551CD836-9E46-4F2C-A167-B4363180A647</RequestId>
-</ModifyQosPolicyRespon>
+<ModifyQosPolicyResponse>
+	  <RequestId>551CD836-9E46-4F2C-A167-B4363180A647</RequestId>
+    </ModifyQosPolicyResponse>
 ```
 
 `JSON` 格式
@@ -109,7 +87,7 @@ http(s)://[Endpoint]/?Action=ModifyQosPolicy
 |403|InternalError|An internal server error occurred.|内部服务错误|
 |400|InvalidId.Qos|The specified QosId is invalid.|您输入的参数"QosId"不合法。|
 |400|NotSupportedProtocol|The specified protocol of the QoS policy is not supported.|Qos规则不支持该协议。|
-|403|InvalidPortRange|The specified port range is invalid.|您输入的端口范围不合法。|
+|403|InvalidPortRange|The specified port range is invalid.|您输入的端口范围不合法|
 |400|InvalidParameter.Name|The specified Name is invalid.|您输入的参数"Name"不合法。|
 
 访问[错误中心](https://error-center.aliyun.com/status/product/Smartag)查看更多错误码。
