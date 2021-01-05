@@ -7,7 +7,7 @@ the SAG app supports the following operating systems: Windows, macOS, Android, a
 |Operating system|Supported version|Download and installation description|
 |----------------|-----------------|-------------------------------------|
 |Windows|Supports Windows 7 and later \(32-bit and 64-bit\).|To download the SAG app for Windows, click [SAG app for Windows](http://sdwan-oss-shanghai.oss-cn-shanghai.aliyuncs.com/win_installer/windows_latest_en.html). After you download the SAG app, follow the steps recommended by the operating system to install the SAG app. |
-|Android|Supports Android 5.0 to Android 9.0. Android 10.0 is to be supported soon.|Scan the following QR code to download the SAG app installation file through a browser. ![QR code for Android on Alibaba Cloud International site](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/8864673061/p128702.png)
+|Android|Supports Android 5.0 to Android 9.0. Android 10.0 is to be supported soon.|Scan the following QR code to download the SAG app installation file through a browser. ![QR code for Android on Alibaba Cloud International site](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/9459389061/p128702.png)
 
 After you download the SAG app, follow the steps recommended by the operating system to install the SAG app. |
 |macOS|-   Version 10.11.1 and later: You can download the SAG app from the App Store.
