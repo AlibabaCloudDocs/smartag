@@ -1,6 +1,6 @@
 # DescribeSagVbrRelations
 
-调用DescribeSagVbrRelations查询指定边界路由器（VBR）实例是否在指定地域下绑定有智能接入网关实例。
+调用DescribeSagVbrRelations查询指定边界路由器（VBR）实例是否绑定有智能接入网关实例。
 
 ## 调试
 
@@ -13,7 +13,7 @@
 |Action|String|是|DescribeSagVbrRelations|系统规定参数。取值：DescribeSagVbrRelations。 |
 |VbrInstanceIds.N|RepeatList|是|vbr-bp15ihkk93ezxppkd\*\*\*\*|边界路由器实例ID。可以一次查询多个边界路由器实例，N取值最大为**20**。 |
 |VbrRegionId|String|是|cn-hangzhou|边界路由器实例所属地域ID。 |
-|RegionId|String|否|cn-shanghai|要查询的智能接入网关实例所属地域ID。 |
+|RegionId|String|否|cn-shanghai|智能接入网关地域ID。 |
 
 ## 返回数据
 
@@ -21,7 +21,7 @@
 |--|--|---|--|
 |RequestId|String|17D79124-104A-42DB-8FCA-CE2957CD1723|请求ID。 |
 |SagVbrRelations|Array of SagVbrRelation| |绑定信息。 |
-|SagInstanceId|String|vbr-bp15ihkk93ezxppk\*\*\*\*|智能接入网关实例ID。 |
+|SagInstanceId|String|sag-0nnteglltw6z4b\*\*\*\*|智能接入网关实例ID。 |
 |SagUid|String|168840151212121212|智能接入网关实例所属账号UID。 |
 |VbrInstanceId|String|vbr-bp15ihkk93ezxppk\*\*\*\*|边界路由器实例ID。 |
 
@@ -46,7 +46,7 @@ http(s)://[Endpoint]/?Action=DescribeSagVbrRelations
   <SagVbrRelations>
         <VbrInstanceId>vbr-bp15ihkk93ezxppkd****</VbrInstanceId>
         <SagInstanceId>sag-0nnteglltw6z4b****</SagInstanceId>
-        <SagUid>1688401512121212</SagUid>
+        <SagUid>16884015</SagUid>
   </SagVbrRelations>
 </DescribeSagVbrRelationsResponse>
 ```
@@ -60,7 +60,7 @@ http(s)://[Endpoint]/?Action=DescribeSagVbrRelations
 		{
 			"VbrInstanceId": "vbr-bp15ihkk93ezxppkd****",
 			"SagInstanceId": "sag-0nnteglltw6z4b****",
-			"SagUid": "1688401512121212"
+			"SagUid": "16884015"
 		}
 	]
 }
@@ -70,7 +70,7 @@ http(s)://[Endpoint]/?Action=DescribeSagVbrRelations
 
 |HttpCode|错误码|错误信息|描述|
 |--------|---|----|--|
-|403|Forbidden|User not authorized to operate on the specified resource.|用户没有操作此资源的权限|
+|403|Forbidden|User not authorized to operate on the specified resource.|用户没有操作此资源的权限。|
 |400|Param.InvalidVersionComparator|The specified version comparison operator is invalid.|非法的版本比较操作值。|
 |400|InvalidRegionID|The specified regionId does not exist.|指定的RegionId不存在|
 
