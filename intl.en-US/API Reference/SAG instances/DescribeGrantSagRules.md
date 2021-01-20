@@ -1,6 +1,6 @@
 # DescribeGrantSagRules
 
-You can call this operation to query rules that authorize a Smart Access Gateway \(SAG\) instance to communicate with Cloud Connect Network \(CCN\) instances that are under other Alibaba Cloud accounts.
+Queries the permission information about a specified Smart Access Gateway \(SAG\) instance.
 
 ## Debugging
 
@@ -15,24 +15,32 @@ You can call this operation to query rules that authorize a Smart Access Gateway
  Set the value to **DescribeGrantSagRules**. |
 |RegionId|String|Yes|cn-hangzhou|The ID of the region where the SAG instance is deployed. |
 |SmartAGId|String|Yes|sag-hdg\*\*\*\*\*\*\*\*\*\*\*\*\*|The ID of the SAG instance. |
-|PageNumber|Integer|No|1|The number of the page to return. Default value: **1**. |
-|PageSize|Integer|No|10|The number of entries to return on each page. Default value: **10**. Maximum value: **50**. |
+|PageNumber|Integer|No|1|The number of the page to return.
+
+ Default value: **1**. |
+|PageSize|Integer|No|10|The number of entries to return on each page.
+
+ Default value: **10**. Maximum value: **50**. |
 
 ## Response parameters
 
 |Parameter|Type|Example|Description|
 |---------|----|-------|-----------|
-|GrantRules|Array| |The rule that authorizes the SAG instance to communicate with a CCN instance under another Alibaba Cloud account. |
+|GrantRules|Array of GrantRule| |The permission information about the SAG instance. |
 |GrantRule| | | |
 |CcnInstanceId|String|ccn-hd\*\*\*\*\*\*\*\*\*\*|The ID of the CCN instance. |
-|CcnUid|Long|13323444243434|The UID of the Alibaba Cloud account that owns the CCN instance. |
-|CreateTime|Long|156576751700|The time when the rule was created. |
-|InstanceId|String|1688401595963306|The UID of the Alibaba Cloud account that owns the SAG instance. |
+|CcnUid|Long|123456|The user ID \(UID\) of the Alibaba Cloud account to which the CCN instance belongs. |
+|CreateTime|Long|156576751700|The timestamp when the permissions were granted. |
+|GrantTrafficService|Boolean|false|Indicates whether the CCN instance is granted permissions to manage network traffic from the SAG instance.
+
+ -   **true**: granted
+-   **false**: not granted |
+|InstanceId|String|123455|The ID of the region where the SAG instance is deployed. |
 |SmartAGId|String|sag-hdhgn\*\*\*\*\*|The ID of the SAG instance. |
 |PageNumber|Integer|2|The page number of the returned page. |
 |PageSize|Integer|10|The number of entries returned per page. |
 |RequestId|String|6E1674AC-083C-4031-B047-7A66E418E0C6|The ID of the request. |
-|TotalCount|Integer|2|The total number of rules. |
+|TotalCount|Integer|2|The total number of entries returned. |
 
 ## Examples
 
@@ -51,41 +59,43 @@ Sample success responses
 
 ```
 <DescribeGrantSagRulesResponse>
-	  <GrantRules>
-		    <GrantRule>
-			      <CcnInstanceId>ccn-4dwoqcqu******</CcnInstanceId>
-			      <CcnUid>1688401595963306</CcnUid>
-			      <CreateTime>1565767517000</CreateTime>
-			      <InstanceId>1688401595963306</InstanceId>
-			      <SmartAGId>sag-7sc8ib3noaov*****</SmartAGId>
-		    </GrantRule>
-	  </GrantRules>
-	  <PageNumber>1</PageNumber>
-	  <PageSize>10</PageSize>
-	  <RequestId>25B3FD03-DC56-4B88-8730-273485FAE0DC</RequestId>
-	  <TotalCount>1</TotalCount>
-    </DescribeGrantSagRulesResponse>
+  <TotalCount>1</TotalCount>
+  <RequestId>72CD8E55-CAC3-416B-9E18-5FF60D991713</RequestId>
+  <PageSize>10</PageSize>
+  <PageNumber>1</PageNumber>
+  <GrantRules>
+        <GrantRule>
+              <InstanceId>16884015959****</InstanceId>
+              <GrantTrafficService>false</GrantTrafficService>
+              <CcnInstanceId>ccn-al2yjgtmsls4cu****</CcnInstanceId>
+              <CreateTime>1609382634000</CreateTime>
+              <CcnUid>13439858877****</CcnUid>
+              <SmartAGId>sag-0ep6gx9wjvly4m****</SmartAGId>
+        </GrantRule>
+  </GrantRules>
+</DescribeGrantSagRulesResponse>
 ```
 
 `JSON` format
 
 ```
 {
-    "GrantRules":{
-        "GrantRule":[
-            {
-                "CcnInstanceId":"ccn-4dwoqcqu******",
-                "CcnUid":1688401595963306,
-                "CreateTime":1565767517000,
-                "InstanceId":1688401595963306,
-                "SmartAGId":"sag-7sc8ib3noaov*****"
-            }
-        ]
-    },
-    "PageNumber":1,
-    "PageSize":10,
-    "RequestId":"25B3FD03-DC56-4B88-8730-273485FAE0DC",
-    "TotalCount":1
+	"TotalCount": 1,
+	"RequestId": "72CD8E55-CAC3-416B-9E18-5FF60D991713",
+	"PageSize": 10,
+	"PageNumber": 1,
+	"GrantRules": {
+		"GrantRule": [
+			{
+				"InstanceId": "16884015959****",
+				"GrantTrafficService": false,
+				"CcnInstanceId": "ccn-al2yjgtmsls4cu****",
+				"CreateTime": 1609382634000,
+				"CcnUid": "13439858877****",
+				"SmartAGId": "sag-0ep6gx9wjvly4m****"
+			}
+		]
+	}
 }
 ```
 
