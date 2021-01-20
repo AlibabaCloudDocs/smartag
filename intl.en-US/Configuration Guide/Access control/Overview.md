@@ -25,7 +25,7 @@ You can create one or more ACL rules for an ACL. By default, the system filters 
 
 1.  Create an ACL.
 
-    For more information, see [Manage ACLs](/intl.en-US/Configuration Guide/Access control/Create an ACL rule.md).
+    For more information, see [Manage ACLs](/intl.en-US/Configuration Guide/Access control/Manage ACLs.md).
 
 2.  Create ACL rules.
 
