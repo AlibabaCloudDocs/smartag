@@ -8,8 +8,8 @@ After you create a quality of service \(QoS\) policy, you can check the status o
 
 You must meet the following requirements before you can check the status of QoS rules:
 
--   A QoS policy is created. For more information, see [Manage QoS policies](/intl.en-US/Configuration Guide/QoS policies/Create a QoS policy.md).
--   The QoS policy is associated with a Smart Access Gateway \(SAG\) instance. For more information, see [Associate with or disassociate from an SAG instance](/intl.en-US/Configuration Guide/QoS policies/Apply a QoS policy to an SAG instance.md).
+-   A QoS policy is created. For more information, see [Manage QoS policies](/intl.en-US/Configuration Guide/QoS policies/Manage QoS policies.md).
+-   The QoS policy is associated with a Smart Access Gateway \(SAG\) instance. For more information, see [Associate with or disassociate from an SAG instance](/intl.en-US/Configuration Guide/QoS policies/Associate with or disassociate from an SAG instance.md).
 
 1.  Log on to the [SAG console](https://smartag.console.aliyun.com).
 
