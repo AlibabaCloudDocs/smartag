@@ -1,134 +1,113 @@
-# DescribeGrantRules {#doc_api_Smartag_DescribeGrantRules .reference}
+# DescribeGrantRules
 
-Queries the authorization rules of the associated CCN instance.
+Queries the permission information about a Cloud Connect Network \(CCN\) instance.
 
-## Debug {#api_explorer .section}
+## Debugging
 
-[Use OpenAPI Explorer to perform debug operations and generate SDK code examples.](https://api.aliyun.com/#product=Smartag&api=DescribeGrantRules&type=RPC&version=2018-03-13)
+[OpenAPI Explorer automatically calculates the signature value. For your convenience, we recommend that you call this operation in OpenAPI Explorer. OpenAPI Explorer dynamically generates the sample code of the operation for different SDKs.](https://api.aliyun.com/#product=Smartag&api=DescribeGrantRules&type=RPC&version=2018-03-13)
 
-## Request parameters {#parameters .section}
+## Request parameters
 
-|Parameter|Type|Required?|Example value|Description|
-|---------|----|---------|-------------|-----------|
-|RegionId|String|Yes|cn-shanghai|The ID of the region to which the CEN instance belongs.
+|Parameter|Type|Required|Example|Description|
+|---------|----|--------|-------|-----------|
+|Action|String|No|DescribeGrantRules|The operation that you want to perform.
 
- |
-|Action|String|No|DescribeGrantRules|The name of this action. Value: **DescribeGrantRules**.
+ Set the value to **DescribeGrantRules**. |
+|RegionId|String|Yes|cn-shanghai|The ID of the region where the CCN instance is deployed. |
+|AssociatedCcnId|String|No|ccn-n2935s1mnwv8i\*\*\*\*\*|The ID of the CCN instance. |
+|PageSize|Integer|No|10|The number of entries to return on each page.
 
- |
-|AssociatedCcnId|String|No|ccn-n2935s1mnwv8i\*\*\*\*\*|The ID of the associated CCN instance.
+ Default value: **10**. Maximum value: **50**. |
+|PageNumber|Integer|No|1|The number of the page to return.
 
- |
-|PageNumber|String|No|1|The page number. Default value: **1**.
+ Default value: **1**. |
 
- |
-|PageSize|String|No|10|The number of rows per page. Default value: **10**. Maximum value: **50**.
+## Response parameters
 
- |
+|Parameter|Type|Example|Description|
+|---------|----|-------|-----------|
+|GrantRules|Array of GrantRule| |The information about the permissions. |
+|GrantRule| | | |
+|CcnInstanceId|String|ccn-n2935s1mnwv8i\*\*\*\*\*|The ID of the CCN instance. |
+|CcnUid|Long|213213|The user ID \(UID\) of the Alibaba Cloud account to which the CCN instance belongs. |
+|CenInstanceId|String|cen-0jtu0bcbika5b5\*\*\*\*|The ID of the Cloud Enterprise Network \(CEN\) instance. |
+|CenUid|Long|213213|The UID of the Alibaba Cloud account to which the CEN instance belongs. |
+|GmtCreate|Long|1563439920000|The timestamp when the permissions were granted. |
+|GmtModified|Long|1563439920000|The timestamp when the permissions were modified. |
+|GrantRuleId|String|18313265-d988-406c-965d-3e110ff\*\*\*\*\*|The ID of the permission. |
+|GrantTrafficService|Boolean|false|Indicates whether the CEN instance is granted permissions to manage network traffic from the CCN instance. Valid values:
 
-## Response parameters {#resultMapping .section}
+ -   **true**: granted
+-   **false**: not granted |
+|RegionId|String|cn-shanghai|The ID of the region where the CCN instance is deployed. |
+|PageNumber|Integer|1|The page number of the returned page. |
+|PageSize|Integer|10|The number of entries returned per page. |
+|RequestId|String|FA579C2D-84A0-4BA1-B9C3-1E5A3B15F1B6|The ID of the request. |
+|TotalCount|Integer|1|The total number of entries returned. |
 
-|Parameter|Type|Example value|Description|
-|---------|----|-------------|-----------|
-|GrantRules| | |The authorization list.
+## Examples
 
- |
-|CcnInstanceId|String|ccn-n2935s1mnwv8i\*\*\*\*\*|The ID of the CCN instance.
-
- |
-|CcnUid|Long|213213|The user ID of the CCN instance.
-
- |
-|CenInstanceId|String|3213214|The ID of the CEN instance.
-
- |
-|CenUid|Long|213213|The user ID of the CEN instance.
-
- |
-|GmtCreate|Long|1563439920000|The long-format timestamp of the rule creation. If the priorities of two rules are the same, the smaller timestamp takes effect first.
-
- |
-|GmtModified|Long|1563439920000|The long-format timestamp of the last rule modification. If the priorities of two rules are the same, the smaller timestamp takes effect first.
-
- |
-|GrantRuleId|String|18313265-d988-406c-965d-3e110ff\*\*\*\*\*|The ID of the authorization rule instance.
-
- |
-|RegionId|String|cn-shanghai|The ID of the region.
-
- |
-|PageNumber|Integer|1|The page number.
-
- |
-|PageSize|Integer|10|The page size.
-
- |
-|RequestId|String|FA579C2D-84A0-4BA1-B9C3-1E5A3B15F1B6| The ID of the request.
-
- |
-|TotalCount|Integer|1|The total number of records.
-
- |
-
-## Examples {#demo .section}
-
-Request example
-
-``` {#request_demo}
-
-http(s)://[Endpoint]/? Action=DescribeGrantRules
-&RegionId=cn-shanghai
-&<CommonParameters>
+Sample requests
 
 ```
+http(s)://[Endpoint]/? Action=DescribeGrantRules
+&RegionId=cn-shanghai
+&<Common request parameters>
+```
 
-Response example
+Sample success responses
 
 `XML` format
 
-``` {#xml_return_success_demo}
+```
 <DescribeGrantRulesResponse>
-	  <PageNumber>1</PageNumber>
-	  <GrantRules>
-		    <GrantRule>
-			      <GrantRuleId>18313265-d988-406c-965d-3e110ff*****</GrantRuleId>
-			      <CenUid>213213</CenUid>
-			      <CcnInstanceId>ccn-n2935s1mnwv8i*****</CcnInstanceId>
-			      <CenInstanceId>3213214</CenInstanceId>
-			      <RegionId>cn-shanghai</RegionId>
-			      <GmtCreate>1563439920000</GmtCreate>
-			      <GmtModified>1563439920000</GmtModified>
-		    </GrantRule>
-	  </GrantRules>
-	  <TotalCount>1</TotalCount>
-	  <PageSize>10</PageSize>
-	  <RequestId>FA579C2D-84A0-4BA1-B9C3-1E5A3B15F1B6</RequestId>
+  <TotalCount>1</TotalCount>
+  <RequestId>22B1031D-4367-46D6-879E-49ECD28B12D3</RequestId>
+  <PageSize>10</PageSize>
+  <PageNumber>0</PageNumber>
+  <GrantRules>
+        <GrantRule>
+              <GmtCreate>1609392288000</GmtCreate>
+              <CenUid>1343985887****</CenUid>
+              <GrantTrafficService>false</GrantTrafficService>
+              <CcnInstanceId>ccn-5ldtbj8i7nh6pp****</CcnInstanceId>
+              <GrantRuleId>3a9bfd9f-48df-41ea-ad88****</GrantRuleId>
+              <CenInstanceId>cen-voitp3yy1xlta8****</CenInstanceId>
+              <GmtModified>1609392288000</GmtModified>
+              <CcnUid>168840159596****</CcnUid>
+              <RegionId>cn-shanghai</RegionId>
+        </GrantRule>
+  </GrantRules>
 </DescribeGrantRulesResponse>
 ```
 
 `JSON` format
 
-``` {#json_return_success_demo}
+```
 {
-	"PageNumber":1,
-	"GrantRules":{
-		"GrantRule":[
+	"TotalCount": 1,
+	"RequestId": "22B1031D-4367-46D6-879E-49ECD28B12D3",
+	"PageSize": 10,
+	"PageNumber": 0,
+	"GrantRules": {
+		"GrantRule": [
 			{
-				"GrantRuleId":"18313265-d988-406c-965d-3e110ff*****",
-				"CenUid":213213,
-				"CcnInstanceId":"ccn-n2935s1mnwv8i*****",
-				"CenInstanceId":"3213214",
-				"RegionId":"cn-shanghai",
-				"GmtCreate":1563439920000,
-				"GmtModified":1563439920000
+				"GmtCreate": 1609392288000,
+				"CenUid": "1343985887****",
+				"GrantTrafficService": false,
+				"CcnInstanceId": "ccn-5ldtbj8i7nh6pp****",
+				"GrantRuleId": "3a9bfd9f-48df-41ea-ad88****",
+				"CenInstanceId": "cen-voitp3yy1xlta8****",
+				"GmtModified": 1609392288000,
+				"CcnUid": "168840159596****",
+				"RegionId": "cn-shanghai"
 			}
 		]
-	},
-	"TotalCount":1,
-	"PageSize":10,
-	"RequestId":"FA579C2D-84A0-4BA1-B9C3-1E5A3B15F1B6"
+	}
 }
 ```
 
-## Errors { .section}
+## Error codes
+
+For a list of error codes, visit the [API Error Center](https://error-center.alibabacloud.com/status/product/Smartag).
 
