@@ -1,62 +1,70 @@
 # DescribeSagWanList
 
-Queries the wired WAN configurations of a Smart Access Gateway \(SAG\) device.
+Queries the WAN port settings of a Smart Access Gateway \(SAG\) device.
 
 ## Debugging
 
-[OpenAPI Explorer automatically calculates the signature value. For your convenience, we recommend that you call this operation in OpenAPI Explorer. OpenAPI Explorer dynamically generates a sample code of the operation for different SDKs.](https://api.aliyun.com/#product=Smartag&api=DescribeSagWanList&type=RPC&version=2018-03-13)
+[OpenAPI Explorer automatically calculates the signature value. For your convenience, we recommend that you call this operation in OpenAPI Explorer. OpenAPI Explorer dynamically generates the sample code of the operation for different SDKs.](https://api.aliyun.com/#product=Smartag&api=DescribeSagWanList&type=RPC&version=2018-03-13)
 
 ## Request parameters
 
-|Parameter|Type|Required|Example|Description |
-|---------|----|--------|-------|------------|
+|Parameter|Type|Required|Example|Description|
+|---------|----|--------|-------|-----------|
 |Action|String|No|DescribeSagWanList|The operation that you want to perform.
 
  Set the value to **DescribeSagWanList**. |
 |RegionId|String|Yes|cn-shanghai|The ID of the region where the SAG instance is deployed. |
 |SmartAGId|String|Yes|sag-whfn\*\*\*\*|The ID of the SAG instance. |
-|SmartAGSn|String|Yes|sag32a30\*\*\*\*|The serial number of the SAG device associated with the SAG instance. |
+|SmartAGSn|String|Yes|sag32a30\*\*\*\*|The serial number \(SN\) of the SAG device. |
 
 ## Response parameters
 
 |Parameter|Type|Example|Description|
 |---------|----|-------|-----------|
 |RequestId|String|CE6642D4-21EB-4168-9BF9-F217953F9892|The ID of the request. |
-|TaskStates|Array| |The state of the query task. |
+|TaskStates|Array of TaskState| |The status of and information about the query task. |
 |CreateTime|String|1586834861000|The time when the query task was created. |
-|ErrorCode|String|200|The error code. Indicates that the query task is successful. |
-|ErrorMessage|String|Successful|The error message. Indicates that the query task is successful. |
-|State|String|Succeed|The state of the query task. Valid values:
+|ErrorCode|String|200|The error code returned to the query task. A value of 200 indicates that the query task is successful. |
+|ErrorMessage|String|Successful|The error message returned to the query task. A value of Successful indicates that the query task is successful. |
+|State|String|Succeed|The status of the query task. Valid values:
 
  -   **Initialized**: The query task is initialized.
--   **Offline**: The SAG device is disconnected from Alibaba Cloud and Alibaba Cloud has not assigned the query task to the SAG device. When the SAG device is connected to Alibaba Cloud, Alibaba Cloud continues to assign the query task to the SAG device.
+-   **Offline**: The SAG device is disconnected from Alibaba Cloud and Alibaba Cloud has not assigned the query task to the SAG device. After the SAG device is connected to Alibaba Cloud, Alibaba Cloud assigns the query task to the SAG device.
 -   **Succeed**: Alibaba Cloud has assigned the query task to the SAG device.
 -   **Processing**: Alibaba Cloud is assigning the query task to the SAG device.
--   **VersionNotSupport**: not supported by the current version of the SAG device.
--   **BuildRequestError**: not supported by the control and management center in the cloud.
+-   **VersionNotSupport**: The query task is not supported by the current version of the SAG device.
+-   **BuildRequestError**: The query task is not supported by the controller of the SAG device.
 -   **HardwareError**: Alibaba Cloud failed to assign the query task to the SAG device because the SAG device is faulty.
 -   **TaskNotExist**: The query task does not exist.
--   **OfflineNotConfiged**: The SAG device is disconnected from Alibaba Cloud and Alibaba Cloud has not assigned the query task to the SAG device. When the SAG device is connected to Alibaba Cloud, Alibaba Cloud does not assign the query task to the SAG device. |
-|Wans|Array| |The information list of the WAN port. |
+-   **OfflineNotConfiged**: The SAG device is disconnected from Alibaba Cloud and Alibaba Cloud has not assigned the query task to the SAG device. Alibaba Cloud does not assign the query task to the SAG device even after the SAG device is connected to Alibaba Cloud. |
+|Wans|Array of Wan| |The settings of the WAN port. |
+|BandWidth|Integer|50|The bandwidth cap of the WAN port. Unit: Mbit/s. |
 |Gateway|String|192.XX.XX.1|The IP address of the gateway. |
 |IP|String|172.XX.XX.1|The IP address of the WAN port. |
-|IPType|String|STATIC|WAN port. Valid values:
+|IPType|String|STATIC|The connection type of the WAN port. Valid values:
 
- -   **DHCP**: dynamically obtains an IP address through the Dynamic Host Configuration Protocol \(DHCP\) to access the Internet.
--   **STATIC**: uses a specified IP address to access the Internet.
--   **PPPOE**: uses dial-up connections to access the Internet. |
-|Mask|String|255.255.255.240|The subnet gateway of the IP address of the WAN port. |
-|PortName|String|1|The name of the WAN port. |
+ -   **DHCP**: The WAN port connects to the Internet through an IP address that is dynamically assigned by the Dynamic Host Configuration Protocol \(DHCP\) server.
+-   **STATIC**: The WAN port connects to the Internet through a static IP address.
+-   **PPPOE**: The WAN port connects to the Internet through dial-up connections. |
+|ISP|String|CT|The Internet service provider \(ISP\) that is used by the WAN port. Valid values:
+
+ -   **CT**: China Telecom
+-   **CM**: China Mobile
+-   **CU**: China Unicom
+-   **Other**: Other ISPs |
+|Mask|String|255.255.255.240|The subnet mask of the WAN port IP address. |
+|PortName|String|1|The number of the WAN port. |
 |Priority|Integer|1|The priority of the WAN port.
 
- Valid values: **-1** or **1 to 50**. A smaller number indicates a higher priority.
+ Valid values: **-1** and **1 to 50**. A smaller number represents a higher priority.
 
- **Note:** If the value is **-1**, data transfer is disabled on the WAN port. |
-|TrafficState|String|active|The status of data transfer on the WAN port.
+ **Note:** A value of **-1** indicates that the WAN port is not used to forward network traffic. |
+|TrafficState|String|active|The status of data transfer on the WAN port. Valid values:
 
- -   **active**: Data transfer is enabled on the WAN port.
--   **standby**: Data transfer is disabled on the WAN port. |
-|Username|String|Usernamexx|The PPPoE account. |
+ -   **active**: The WAN port is the active port for data transfer.
+-   **standby**: The WAN port is a standby port. If the active port is down, data transfer is switched to the WAN port. |
+|Username|String|Usernamexx|The username of the PPPoE account. |
+|Weight|Integer|100|The weight of the WAN port. |
 
 ## Examples
 
@@ -131,13 +139,13 @@ Sample success responses
 |HttpCode|Error code|Error message|Description|
 |--------|----------|-------------|-----------|
 |400|SAG.InstanceNoFound|The specified SAG instance does not exist.|The error message returned because the specified SAG instance does not exist.|
-|400|SAG.SoftwareNotSupport|The specified SAG software edition instance does not support ACL.|The error message returned because the SAG APP instance does not support ACLs.|
+|400|SAG.SoftwareNotSupport|The specified SAG software edition instance does not support ACL.|The error message returned because the SAG APP instance does not support access control lists \(ACLs\).|
 |500|SmartAccessGatewayInArrears|The specified Smart Access Gateway has expired.|The error message returned because the specified SAG instance has expired. Renew the SAG instance first.|
 |500|SmartAccessGatewayNotActivated|The specified Smart Access Gateway has not been activated.|The error message returned because the specified SAG instance has not been activated. Activate the SAG instance first.|
 |403|SmartAccessGatewayNotOnline|The specified smart access gateway is not online.|The error message returned because the specified SAG device is not connected to Alibaba Cloud and the system failed to process the request.|
 |500|SmartAccessGatewayOffline|The request cannot be completed. The Smart Access Gateway is offline.|The error message returned because the specified SAG device is not connected to Alibaba Cloud and the system failed to process the request.|
-|400|InstanceNotExit|The specified instance does not exist.|The error message returned because the specified SAG instance does not exist.|
-|400|ConfigUnsynchronized|The network configuration is not synchronized.|The error message returned because the network configurations are not synchronized.|
+|400|InstanceNotExit|The specified instance does not exist.|The error message returned because the specified instance does not exist.|
+|400|ConfigUnsynchronized|The network configuration is not synchronized.|The error message returned because the network configurations are not synchronized between the SAG instance and the SAG device.|
 |403|FeatureNotSupport|The current edition of the smart access gateway does not support this feature.|The error message returned because the current version of the specified SAG instance does not support this feature.|
 |403|FeatureNotSupportForActiveSmartAG|The current edition of the active smart access gateway does not support this feature.|The error code returned because the current version of the active SAG device does not support this feature.|
 |403|FeatureNotSupportForStandBySmartAG|The current edition of the standby smart access gateway does not support this feature.|The error code returned because the current version of the standby SAG device does not support this feature.|
