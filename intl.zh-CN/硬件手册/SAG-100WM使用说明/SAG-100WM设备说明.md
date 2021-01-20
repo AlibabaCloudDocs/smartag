@@ -4,43 +4,45 @@ SAG-100WM设备适用于将门户或小型分支机构接入阿里云，满足�
 
 ## 设备规格
 
-SAG-100WM提供两种规格的设备。两种设备外观结构和规格略有不同，可提供的功能相同。功能详情请参见[硬件功能说明](/intl.zh-CN/硬件手册/硬件功能说明.md)。
+SAG-100WM提供两种规格的设备。两种设备外观结构和规格略有不同，可提供的功能相同。更多信息，请参见[硬件功能说明](/intl.zh-CN/硬件手册/硬件功能说明.md)。
 
 -   **设备一（尺寸：180 mm\*110 mm\*30 mm）**
     -   **前面板**
 
-        ![](https://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/zh-CN/4745700061/p21278.png)
+        ![](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/4745700061/p21278.png)
 
     -   **后面板**
 
-        ![](https://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/zh-CN/3936922951/p21279.png)
+        ![](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/3936922951/p21279.png)
 
 -   **设备二（尺寸：240 mm\*148 mm\*28 mm）**
     -   **前面板**
 
-        ![](https://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/zh-CN/2559101061/p66684.png)
+        ![](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/2559101061/p66684.png)
 
     -   **侧面板**
 
-        ![](https://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/zh-CN/2559101061/p66686.png)
+        ![](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/2559101061/p66686.png)
 
     -   **后面板**
 
-        ![](https://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/zh-CN/2559101061/p66687.png)
+        ![](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/2559101061/p66687.png)
 
 
 |属性|SAG-100WM规格|
 |设备一|设备二|
 |:-|:----------|
 |:--|:--|
-|性能（512字节）|加密私网带宽可达50 Mbps|加密私网带宽可达50 Mbps|
+|转发性能（512字节）|加密私网带宽可达50 Mbps|加密私网带宽可达50 Mbps|
 |工作环境|室内环境，无风扇设计|室内环境，无风扇设计|
 |结构尺寸|180 mm\*110 mm\*30 mm|240 mm\*148 mm\*28 mm|
 |工作温度|0 ℃～45 ℃|0 ℃～45 ℃|
 |存储温度|-40 ℃～70 ℃|-20 ℃～70 ℃|
-|电源|DC 12V|DC 12 V|
+|电源|DC 12 V|DC 12 V|
 |功耗|12 W|12 W|
-|网络接口|2个GE/FE RJ45 WAN口|1个GE/FE RJ45 WAN口|
+|网络接口|2个GE/FE RJ45 WAN口**说明：** 设备一的两个WAN口处于桥接状态，只支持同时使用一个WAN口。
+
+|1个GE/FE RJ45 WAN口|
 |3个GE/FE RJ45 LAN口|1个WAN/LAN复用端口（端口2）|
 |3个GE/FE RJ45 LAN口|
 |WIFI|-   2.4 GHz频段，可支持IEEE 802.11 b/g/n
@@ -83,7 +85,7 @@ SAG-100WM提供两种规格的设备。两种设备外观结构和规格略有�
     -   熄灭：设备未接电。
 |×|√|
     |设备端口状态灯说明|
-    |RJ45黄灯|表示网卡连接状态和速率指示：    -   长亮：以太网端口工作在1000Base-T模式。
+    |RJ45黄灯|表示网卡工作模式：    -   长亮：以太网端口工作在1000Base-T模式。
     -   熄灭：以太网端口工作在10/100Base-T模式。
 |√|√|
     |RJ45绿灯|表示网卡连接状态和速率指示：    -   长亮：以太网已连接。
@@ -103,11 +105,11 @@ SAG-100WM提供两种规格的设备。两种设备外观结构和规格略有�
 
         内嵌式SIM卡，只支持Mini-Sim卡，Micro-Sim和Nano-Sim卡无法直接使用。如果需要使用Micro-Sim和Nano-Sim卡，需要使用卡框，不能用卡套，使用卡套容易导致卡拔不出来。
 
-        SAG-100WM设备随机携带的是三切卡，即同时支持了Mini-Sim，Micro-Sim和Nano-Sim卡，您如果需要换卡，可以使用三切卡的卡框。
+        SAG-100WM设备随机携带的是三切卡，即同时支持了Mini-Sim、Micro-Sim和Nano-Sim卡，您如果需要换卡，可以使用三切卡的卡框。
 
         Mini-Sim又叫2FF卡，Micro-Sim又叫3FF卡，Nano-Sim又叫4FF卡，形状如下图所示。
 
-        ![](https://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/zh-CN/8401620061/p52693.png)
+        ![](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/zh-CN/8401620061/p52693.png)
 
     -   USB口
 
@@ -127,8 +129,8 @@ SAG-100WM提供两种规格的设备。两种设备外观结构和规格略有�
 
         **说明：**
 
-        -   如果您SAG-100WM设备运行的软件版本为1.0系列版本，则该复用端口类型默认为LAN口。
-        -   如果您SAG-100WM设备运行的软件版本为2.0系列版本，则该复用端口类型默认为WAN口。
+        -   如果您的SAG-100WM设备运行的软件版本为1.0系列版本，则该复用端口类型默认为LAN口。
+        -   如果您的SAG-100WM设备运行的软件版本为2.0系列版本，则该复用端口类型默认为WAN口。
     -   DC电源接口
 
         电源接口位于设备的后面板。接入电源需为12 V直流电。
@@ -138,10 +140,7 @@ SAG-100WM提供两种规格的设备。两种设备外观结构和规格略有�
 
 ## 设备配件
 
-在收到SAG-100WM型号的设备后，您将收到以下配件：
+您在智能接入网关管理控制台购买设备后，您除了收到一台SAG-100WM型号的设备外，您还将收到一根电源线。
 
--   一台智能接入网关设备（SAG-100WM）
--   一根电源线
-
-**说明：** 如果发现有配件短缺或损坏的情况，请及时与阿里云售后联系。SAG-100WM支持两种规格设备随机发货。
+**说明：** 请检查您收到的设备以及设备配件，如果发现有配件短缺或损坏的情况，请及时与阿里云售后联系。SAG-100WM支持两种规格设备随机发货。
 
