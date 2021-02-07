@@ -1,6 +1,6 @@
 # DescribeDeviceAutoUpgradePolicy
 
-调用DescribeDeviceAutoUpgradePolicy查看智能接入网关设备自动升级策略。
+调用DescribeDeviceAutoUpgradePolicy查看智能接入网关设备运行软件的升级策略。
 
 ## 调试
 
@@ -15,7 +15,11 @@
  取值：**DescribeDeviceAutoUpgradePolicy**。 |
 |RegionId|String|是|cn-shanghai|智能接入网关实例所属的地域ID。 |
 |SerialNumber|String|是|sage62x022502\*\*\*\*|智能接入网关设备序列号。 |
-|SmartAGId|String|是|sag-1um5x5nwhilymw\*\*\*\*|智能接入网关实例ID。 |
+|SmartAGId|String|是|sag-kxe2cv7hot7qrv\*\*\*\*|智能接入网关实例ID。 |
+|VersionType|String|否|Device|要查看的软件类型：
+
+ -   **Device**：表示智能接入网关设备运行的操作系统软件。
+-   **Dpi**：表示智能接入网关设备运行的应用特征库软件。 |
 
 ## 返回数据
 
@@ -24,12 +28,15 @@
 |CronExpression|String|0 0 4 1/1 \* ?|升级开始时间。升级开始时间使用cron表达式。
 
  例如：`0 0 4 1/1 * ?`表示从每月第一天上午4时开始，每天执行升级操作。 |
-|Duration|String|60|升级时间段。取值范围：**30~120**。
+|Duration|String|60|升级时间段。
+
+ 取值范围：**30~120**。
 
  单位：分钟。 |
-|RequestId|String|E38E950D-28A4-4C41-9428-A8908EC6AE5C|请求ID。 |
+|Jitter|String|5|升级时间的上下偏差。单位：分钟。 |
+|RequestId|String|0E20FBB8-BCFC-4F5E-BD94-77FF6A2133D0|请求ID。 |
 |SerialNumber|String|sage62x022502\*\*\*\*|智能接入网关设备序列号。 |
-|SmartAGId|String|sag-1um5x5nwhilymw\*\*\*\*|智能接入网关实例ID。 |
+|SmartAGId|String|sag-kxe2cv7hot7qrv\*\*\*\*|智能接入网关实例ID。 |
 |TimeZone|String|Asia/Shanghai|时区。 |
 |UpgradeType|String|scheduled|升级类型。
 
@@ -51,7 +58,7 @@ http(s)://[Endpoint]/?Action=DescribeDeviceAutoUpgradePolicy
 
 正常返回示例
 
-`XML` 格式
+`XML`格式
 
 ```
 <DescribeDeviceAutoUpgradePolicyResponse>
@@ -65,7 +72,7 @@ http(s)://[Endpoint]/?Action=DescribeDeviceAutoUpgradePolicy
 </DescribeDeviceAutoUpgradePolicyResponse>
 ```
 
-`JSON` 格式
+`JSON`格式
 
 ```
 {
