@@ -2,24 +2,24 @@
 
 This topic describes how to use Smart Access Gateway \(SAG\) along with Cloud Enterprise Network \(CEN\) to connect on-premises clients to Alibaba Cloud. This way, the clients can access Object Storage Service \(OSS\) buckets through CEN.
 
--   A Virtual Private Network \(VPC\) network is deployed in the China \(Shanghai\) region. For more information, see [Create a VPC](/intl.en-US/VPCs and VSwitches/VPC management/Create a VPC.md).
+-   A Virtual Private Network \(VPC\) network is deployed in the China \(Shanghai\) region. For more information, see [Create a VPC](/intl.en-US/VPCs and vSwitchs/Create a VPC.md).
 -   A CEN instance is created and associated with the VPC network in the China \(Shanghai\) region. For more information, see [Create a CEN instance]().
 
 Cloud services refer to Alibaba Cloud services, such as OSS, Log Service, and Data Transmission Service \(DTS\), that use the CIDR block 100.64.0.0/10 to provide services. You can use SAG to connect on-premises clients to Alibaba Cloud and then access cloud services through CEN.
 
 OSS is a secure, cost-effective, and highly reliable cloud storage service provided by Alibaba Cloud. You can store large amounts of data in OSS buckets. OSS buckets are accessible through their endpoints. Endpoints refer to internal network connections between Alibaba Cloud services that are deployed in different regions. If you access an OSS bucket through its endpoint, no data transfer fees are incurred. The following figure shows how on-premises clients of a company are connected to Alibaba Cloud and access OSS buckets through their endpoints. The company has created a VPC network in the China \(Shanghai\) region and plans to activate OSS in this region. The company needs to store sensitive data in OSS buckets and allow employees to download the data through the endpoints of the OSS buckets. To meet the preceding requirements while minimizing expenses, the company plans to connect on-premises clients to Alibaba Cloud through the SAG app.
 
-![How on-premises clients are connected to Alibaba Cloud](https://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/en-US/8706631061/p165144.png)
+![How on-premises clients are connected to Alibaba Cloud](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/8706631061/p165144.png)
 
 ## Configuration procedure
 
-![Configuration procedure](https://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/en-US/8706631061/p165699.png)
+![Configuration procedure](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/8706631061/p165699.png)
 
 ## Step 1: Purchase OSS
 
 You can deploy OSS through multiple methods. This procedure demonstrates how to deploy OSS in the OSS console. For more information, see [What is OSS?](/intl.en-US/Product Introduction/What is OSS?.md)
 
-1.  Activate OSS. For more information, see [Activate OSS](/intl.en-US/Quick Start/Sign up for OSS.md).
+1.  Activate OSS. For more information, see [Activate OSS](/intl.en-US/Console User Guide/Sign up for OSS.md).
 
 2.  Create an OSS bucket.
 
@@ -69,7 +69,7 @@ You can deploy OSS through multiple methods. This procedure demonstrates how to 
 
 4.  Set permissions on the object.
 
-    For data security, the bucket is set to private in this example. Therefore, permissions on a specific object must be manually granted to users that need to access the object. The following example demonstrates how to grant read-only permissions on an image file to all users. You can set permissions on objects based on your business requirements. For more information, see [Use bucket policies to authorize other users to access OSS resources](/intl.en-US/Console User Guide/Upload, download, and manage objects/Use bucket policies to authorize other users to access OSS resources.md).
+    For data security, the bucket is set to private in this example. Therefore, permissions on a specific object must be manually granted to users that need to access the object. The following example demonstrates how to grant read-only permissions on an image file to all users. You can set permissions on objects based on your business requirements. For more information, see [Add bucket policies](/intl.en-US/Console User Guide/Upload, download, and manage objects/Add bucket policies.md).
 
     1.  On the **Files** tab, click **Authorize**.
 
@@ -81,7 +81,7 @@ You can deploy OSS through multiple methods. This procedure demonstrates how to 
         -   **Resource Paths**: SHOSS.jpg is specified in this example.
         -   **Accounts**: **Anonymous Accounts** is selected in this example.
         -   **Authorized Operation**: **Read Only** is selected in this example.
-        ![OSS-Set the image file to read-only](https://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/en-US/0360201061/p165522.png)
+        ![OSS-Set the image file to read-only](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/0360201061/p165522.png)
 
 
 ## Step 2: Connect on-premises clients to Alibaba Cloud
@@ -99,7 +99,7 @@ In this step, you must purchase an SAG APP instance, set up network connections,
         -   **Region and Zone**: Select the area where you want to create the SAG APP instance. **Mainland China** is selected in this example.
         -   **Number of Client Accounts**: Specify the number of client accounts that can be added to the SAG APP instance. Typically, you need to create an account for each user that needs to log on to the SAG app. The default value 10 is used in this example.
 
-            **Note:** You can purchase 5 to 1,000 client accounts for each SAG APP instance. Pricing is tiered and based on the number of client accounts. For more information, see [Billing and pricing of SAG APP](/intl.en-US/Smart Access Gateway APP/Billing and pricing of SAG APP.md).
+            **Note:** You can purchase 5 to 1,000 client accounts for each SAG APP instance. Pricing is tiered and based on the number of client accounts. For more information, see [Billing and pricing of the SAG app](/intl.en-US/Smart Access Gateway APP/Billing and pricing of the SAG app.md).
 
         -   **Data Plan Per Account**: The amount of free data usage allocated to each client account per month. The data transfer plan cannot be shared among different accounts and remains effective only within the month. By default, 5 GB of data usage is offered to each client account per month.
         -   **Billing Method When Data Plan is Exhausted**: If the actual data usage of an account exceeds the data transfer plan, the excess data is charged based on the pay-as-you-go billing method.
@@ -174,11 +174,11 @@ In this step, you must purchase an SAG APP instance, set up network connections,
 
 5.  Connect the client to Alibaba Cloud.
 
-    1.  After you create a client account, click **Download Now** to go to the page that provides instructions on how to download and install the SAG app. For more information, see [Install SAG APP](/intl.en-US/Smart Access Gateway APP/User guide for end users/Install SAG APP.md).
+    1.  After you create a client account, click **Download Now** to go to the page that provides instructions on how to download and install the SAG app. For more information, see [Install the SAG app](/intl.en-US/Smart Access Gateway APP/User guide for end users/Install the SAG app.md).
 
     2.  After the SAG app is installed on a client, the client can log on to the SAG app with the client account and connect to Alibaba Cloud. For more information, see [Connect to Alibaba Cloud](/intl.en-US/Smart Access Gateway APP/User guide for end users/Connect to an intranet environment.md).
 
-    ![Connect to Alibaba Cloud](https://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/en-US/0360201061/p166079.png)
+    ![Connect to Alibaba Cloud](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/0360201061/p166079.png)
 
 
 ## Step 3: Configure routes to OSS
@@ -191,7 +191,7 @@ In this step, you must configure routes to OSS in the CEN console. After routes 
 
 3.  On the AnnyTunnel tab, click **SetAnyTunnelService**.
 
-    ![AnyTunnel](https://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/en-US/0360201061/p96967.png)
+    ![AnyTunnel](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/0360201061/p96967.png)
 
 4.  In the SetAnyTunnelService pane, set the following parameters:
 
@@ -203,7 +203,7 @@ In this step, you must configure routes to OSS in the CEN console. After routes 
         -   100.98.110.0/24
         -   100.98.169.0/24
         -   100.118.102.0/24
-        For more information, see [Regions and OSS endpoints in VPCs](/intl.en-US/Developer Guide/Endpoint/Regions and endpoints.md).
+        For more information, see [OSS internal endpoints and VIP address ranges](/intl.en-US/Developer Guide/Endpoint/OSS internal endpoints and VIP address ranges.md).
 
     -   **Host Region**: Select the region where OSS is deployed. **China \(Shanghai\)** is selected in this example.
     -   **Host VPC**: From the drop-down list, select a VPC network that is attached to the CEN instance.
@@ -218,7 +218,7 @@ In this step, you must configure routes to OSS in the CEN console. After routes 
 
         The description must be 2 to 256 characters in length, and can contain digits, hyphens \(-\), underscore \(\_\), and periods \(.\). It must start with a letter or a Chinese character and cannot start with `http://` or `https://`.
 
-    ![OSS-AnyTunnel](https://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/en-US/0360201061/p165539.png)
+    ![OSS-AnyTunnel](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/0360201061/p165539.png)
 
 5.  Click **OK**.
 
