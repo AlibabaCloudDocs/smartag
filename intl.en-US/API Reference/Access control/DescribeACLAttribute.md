@@ -1,6 +1,6 @@
 # DescribeACLAttribute
 
-You can call this operation to query multiple access control list \(ACL\) rules in an ACL.
+Queries an access control list \(ACL\).
 
 ## Debugging
 
@@ -14,56 +14,83 @@ You can call this operation to query multiple access control list \(ACL\) rules 
 
  Set the value to **DescribeACLAttribute**. |
 |AclId|String|Yes|acl-ohlexqptfhy\*\*\*\*\*\*|The ID of the ACL. |
-|RegionId|String|Yes|cn-hangzhou|The ID of the region to which the ACL belongs. |
-|PageSize|Integer|No|10|The number of entries returned on each page. Maximum value: **50**. Default value: **10**. |
-|PageNumber|Integer|No|2|The number of the page to return. Pages start from page 1. Default value: **1**. |
-|Direction|String|No|out|Specifies whether the ACL rule controls inbound or outbound access requests.
+|RegionId|String|Yes|cn-hangzhou|The ID of the region where the ACL is deployed. |
+|PageSize|Integer|No|10|The number of entries to return on each page.
 
- Valid values: **in or out**. |
+ Valid values: **1** to **50**.
+
+ Default value: **10**. |
+|PageNumber|Integer|No|1|The number of the page to return. Default value: **1**. |
+|Direction|String|No|out|The direction in which the ACL rule is applied. Valid values:
+
+ -   **in**: The ACL rule controls inbound network traffic of the on-premises network that is associated with the SAG instance.
+-   **out**: The ACL rule controls outbound network traffic of the on-premises network that is associated with the SAG instance. |
 |Order|String|No|1255444444|The ID of the order. |
-|Name|String|No|doctest|The name of the ACL to be queried.
+|Name|String|No|doctest|The name of the ACL.
 
- The name must be 2 to 100 characters in length, and can contain digits, periods \(.\), underscores \(\_\), and hyphens \(-\). It must start with a letter or Chinese character. |
+ The name must be 2 to 100 characters in length, and can contain digits, periods \(.\), underscores \(\_\), and hyphens \(-\). It must start with a letter. |
 
 ## Response parameters
 
 |Parameter|Type|Example|Description|
 |---------|----|-------|-----------|
-|RequestId|String|8F62CE77-FBA2-4F8D-AED9-0A02814EDA69|The ID of the request. |
-|TotalCount|Integer|3|The total number of entries returned. |
-|PageNumber|Integer|1|The number of the page to return. Pages start from page 1. Default value: **1**. |
-|PageSize|Integer|10|The number of entries returned per page. |
-|Acrs|Array| |The ACL rule information returned. |
+|Acrs|Array of Acr| |The information about the ACL rules that belong to the ACL. |
+|Acr| | | |
+|AclId|String|acl-7louazbja80bmgxxxx|The ID of the ACL. |
 |AcrId|String|acr-gxzxj5w9qqdf1cxxxx|The ID of the ACL rule. |
-|Description|String|The ACL rule|The description of the ACL rule. The description must be **1 to 512** characters in length. |
-|Direction|String|out|Specifies whether the ACL rule controls inbound or outbound access requests.
+|Description|String|Description|The description of the ACL rule.
 
- Valid values: **in or out**. |
-|SourceCidr|String|0.0.0.0/0|The source IP address range specified in the ACL rule. CIDR blocks and IPv4 addresses are supported.
+ The description must be **1 to 512** characters in length. |
+|DestCidr|String|0.0.0.0/0|The range of the destination IP addresses.
 
- Default value: **0.0.0.0/0**. |
-|DestCidr|String|0.0.0.0/0|The destination IP address range specified in the ACL rule. CIDR blocks and IPv4 addresses are supported.
+ Set this parameter in CIDR notation. Example: 192.168.10.0/24. |
+|DestPortRange|String|10000/20000|The range of the destination ports.
 
- Default value: **0.0.0.0/0**. |
-|IpProtocol|String|UDP|The User Datagram Protocol \(UDP\). The value is not case-sensitive. |
-|SourcePortRange|String|30000/40000|The range of the source port. |
-|DestPortRange|String|10000/20000|The range of the destination port. |
-|Policy|String|drop|Access permissions:
+ Valid values: **-1** and **1** to **65535**.
 
- -   **accept**: access permissions granted.
--   **drop**: access permissions denied. |
+ Set the destination port range in one of the following formats: 1/200 or 80/80. A value of -1/-1 indicates that all ports are available. |
+|Direction|String|out|The direction in which the ACL rule is applied. Valid values:
+
+ -   **in**: The ACL rule controls inbound network traffic of the on-premises network that is associated with the SAG instance.
+-   **out**: The ACL rule controls outbound network traffic of the on-premises network that is associated with the SAG instance. |
+|DpiGroupIds|List|20|The IDs of application groups that match the current ACL rule.
+
+ You can call the [ListDpiGroups](~~196754~~) operation to query application group IDs and information. |
+|DpiSignatureIds|List|1|The IDs of applications that match the current ACL rule.
+
+ You can call the [ListDpiSignatures](~~196630~~) operation to query application IDs and information. |
+|GmtCreate|Long|1580821597000|The timestamp when the ACL rule was created.
+
+ The timestamp is in Long format. If ACL rules have the same priority, the one with the smallest timestamp prevails. |
+|IpProtocol|String|UDP|The protocol that is applied to the ACL rule.
+
+ The supported protocols provided in this topic are for reference only. The actual protocols in the SAG console shall prevail. The value is not case-sensitive. |
+|Name|String|doctest|The name of the ACL.
+
+ The name must be 2 to 100 characters in length, and can contain digits, periods \(.\), underscores \(\_\), and hyphens \(-\). It must start with a letter. |
+|Policy|String|drop|The action policy of the ACL rule. Valid values:
+
+ -   **accept**: allows the network traffic.
+-   **drop**: blocks the network traffic. |
 |Priority|Integer|70|The priority of the ACL rule.
 
- Valid values: **1 to 100**. Default value: **1**. |
-|GmtCreate|Long|1580821597000|The time when the ACL rule was created. It is a long type timestamp. When timestamps are assigned the same priority, the timestamp with the smallest value prevails. |
-|AclId|String|acl-7louazbja80bmgxxxx|The ID of the ACL. |
+ Valid values:**1 to 100**. |
+|SourceCidr|String|0.0.0.0/0|The range of the source IP addresses.
+
+ Set this parameter in CIDR notation. Example: 192.168.1.0/24. |
+|SourcePortRange|String|30000/40000|The range of the source ports.
+
+ Valid values: **-1** and **1** to **65535**.
+
+ Set the destination port range in one of the following formats: 1/200 or 80/80. A value of -1/-1 indicates that all ports are available. |
 |Type|String|WAN|The type of the ACL rule:
 
- -   **LAN**: private networks.
--   **WAN**: public networks. |
-|Name|String|doctest|The name of the ACL rule.
-
- The name must be 2 to 100 characters in length, and can contain digits, periods \(.\), underscores \(\_\), and hyphens \(-\). It must start with a letter or Chinese character. |
+ -   **LAN**: The ACL rule controls traffic of private IP addresses.
+-   **WAN**: The ACL rule controls traffic of public IP addresses. |
+|PageNumber|Integer|1|The page number of the returned page. |
+|PageSize|Integer|10|The number of entries returned per page. |
+|RequestId|String|8F62CE77-FBA2-4F8D-AED9-0A02814EDA69|The ID of the request. |
+|TotalCount|Integer|3|The total number of entries returned. |
 
 ## Examples
 
@@ -73,12 +100,12 @@ Sample requests
 http(s)://[Endpoint]/? Action=DescribeACLAttribute
 &AclId=acl-ohlexqptfhy******
 &RegionId=cn-hangzhou
-&<Common request parameter>
+&<Common request parameters>
 ```
 
 Sample success responses
 
-`XML` format
+`XML` fomat
 
 ```
 <DescribeACLAttribute>
@@ -86,28 +113,28 @@ Sample success responses
   <Acrs>
         <Acr>
               <IpProtocol>TCP</IpProtocol>
-              <SourceCidr>10.10.3.0/24</SourceCidr>
+              <SourceCidr>10.XX.XX.0/24</SourceCidr>
               <SourcePortRange>1/65535</SourcePortRange>
-              <AclId>acl-7louazbja80bmgxxxx</AclId>
-              <AcrId>acr-yjf99p2ffhw6cvxxxx</AcrId>
+              <AclId>acl-7louazbja80bmg****</AclId>
+              <AcrId>acr-yjf99p2ffhw6cv****</AcrId>
               <Type>WAN</Type>
               <Policy>drop</Policy>
               <DestPortRange>15000/15000</DestPortRange>
-              <DestCidr>39.104.89.0/24</DestCidr>
+              <DestCidr>39.XX.XX.0/24</DestCidr>
               <GmtCreate>1580821598000</GmtCreate>
               <Direction>out</Direction>
               <Priority>49</Priority>
         </Acr>
         <Acr>
               <IpProtocol>TCP</IpProtocol>
-              <SourceCidr>0.0.0.0/0</SourceCidr>
+              <SourceCidr>11.XX.XX.0/8</SourceCidr>
               <SourcePortRange>1/65535</SourcePortRange>
-              <AclId>acl-7louazbja80bmgxxxx</AclId>
-              <AcrId>acr-8jety1pnvardayxxxx</AcrId>
+              <AclId>acl-7louazbja80bmg****</AclId>
+              <AcrId>acr-8jety1pnvarday****</AcrId>
               <Type>WAN</Type>
               <Policy>accept</Policy>
               <DestPortRange>1/65535</DestPortRange>
-              <DestCidr>0.0.0.0/0</DestCidr>
+              <DestCidr>12.XX.XX.0/8</DestCidr>
               <GmtCreate>1580821597000</GmtCreate>
               <Direction>out</Direction>
               <Priority>50</Priority>
@@ -116,12 +143,12 @@ Sample success responses
               <IpProtocol>UDP</IpProtocol>
               <SourceCidr>0.0.0.0/0</SourceCidr>
               <SourcePortRange>30000/40000</SourcePortRange>
-              <AclId>acl-7louazbja80bmgxxxx</AclId>
-              <AcrId>acr-gxzxj5w9qqdf1cxxxx</AcrId>
+              <AclId>acl-7louazbja80bmg****</AclId>
+              <AcrId>acr-gxzxj5w9qqdf1c****</AcrId>
               <Type>WAN</Type>
               <Policy>drop</Policy>
               <DestPortRange>10000/20000</DestPortRange>
-              <DestCidr>0.0.0.0/0</DestCidr>
+              <DestCidr>12.XX.XX.0/8</DestCidr>
               <GmtCreate>1580821597000</GmtCreate>
               <Direction>out</Direction>
               <Priority>70</Priority>
@@ -142,28 +169,28 @@ Sample success responses
 		"Acr": [
 			{
 				"IpProtocol": "TCP",
-				"SourceCidr": "10.10.3.0/24",
+				"SourceCidr": "10.XX.XX.0/24",
 				"SourcePortRange": "1/65535",
-				"AclId": "acl-7louazbja80bmgxxxx",
-				"AcrId": "acr-yjf99p2ffhw6cvxxxx",
+				"AclId": "acl-7louazbja80bmg****",
+				"AcrId": "acr-yjf99p2ffhw6cv****",
 				"Type": "WAN",
 				"Policy": "drop",
 				"DestPortRange": "15000/15000",
-				"DestCidr": "39.104.89.0/24",
+				"DestCidr": "39.XX.XX.0/24",
 				"GmtCreate": 1580821598000,
 				"Direction": "out",
 				"Priority": 49
 			},
 			{
 				"IpProtocol": "TCP",
-				"SourceCidr": "0.0.0.0/0",
+				"SourceCidr": "11.XX.XX.0/8",
 				"SourcePortRange": "1/65535",
-				"AclId": "acl-7louazbja80bmgxxxx",
-				"AcrId": "acr-8jety1pnvardayxxxx",
+				"AclId": "acl-7louazbja80bmg****",
+				"AcrId": "acr-8jety1pnvarday****",
 				"Type": "WAN",
 				"Policy": "accept",
 				"DestPortRange": "1/65535",
-				"DestCidr": "0.0.0.0/0",
+				"DestCidr": "12.XX.XX.0/8",
 				"GmtCreate": 1580821597000,
 				"Direction": "out",
 				"Priority": 50
@@ -172,12 +199,12 @@ Sample success responses
 				"IpProtocol": "UDP",
 				"SourceCidr": "0.0.0.0/0",
 				"SourcePortRange": "30000/40000",
-				"AclId": "acl-7louazbja80bmgxxxx",
-				"AcrId": "acr-gxzxj5w9qqdf1cxxxx",
+				"AclId": "acl-7louazbja80bmg****",
+				"AcrId": "acr-gxzxj5w9qqdf1c****",
 				"Type": "WAN",
 				"Policy": "drop",
 				"DestPortRange": "10000/20000",
-				"DestCidr": "0.0.0.0/0",
+				"DestCidr": "12.XX.XX.0/8",
 				"GmtCreate": 1580821597000,
 				"Direction": "out",
 				"Priority": 70
@@ -194,11 +221,11 @@ Sample success responses
 
 |HttpCode|Error code|Error message|Description|
 |--------|----------|-------------|-----------|
-|403|Forbidden|User not authorized to operate on the specified resource.|The error code returned because you do not have the permission to manage the resource.|
-|403|MissingParameter|The input parameter is missing, please check your input.|The error code returned because a request parameter is not set. Check the request parameters.|
-|403|InvalidParameter|The specified parameter is invalid.|The error code returned because a specified parameter is invalid.|
-|403|InvalidId.ACL|The specified ACL ID is invalid.|The error code returned because the specified ACL ID is invalid.|
-|403|InternalError|An internal server error occurred.|The error code returned because an internal server error occurred.|
+|403|Forbidden|User not authorized to operate on the specified resource.|The error message returned because you do not have the permissions to manage the specified resource.|
+|403|MissingParameter|The input parameter is missing, please check your input.|The error message returned because one or more required parameters are not set. Check whether you have set all required parameters.|
+|403|InvalidParameter|The specified parameter is invalid.|The error message returned because a parameter is set to an invalid value.|
+|403|InvalidId.ACL|The specified ACL ID is invalid.|The error message returned because the specified ACL ID is invalid.|
+|403|InternalError|An internal server error occurred.|The error message returned because an internal server error occurred.|
 
 For a list of error codes, visit the [API Error Center](https://error-center.alibabacloud.com/status/product/Smartag).
 
