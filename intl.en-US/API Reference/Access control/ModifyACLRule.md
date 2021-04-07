@@ -1,6 +1,6 @@
 # ModifyACLRule
 
-You can call this operation to modify an access control list \(ACL\) rule.
+Modifies an access control list \(ACL\) rule.
 
 ## Debugging
 
@@ -12,94 +12,129 @@ You can call this operation to modify an access control list \(ACL\) rule.
 |---------|----|--------|-------|-----------|
 |Action|String|No|ModifyACLRule|The operation that you want to perform.
 
- Set the value to **ModifyACLRule.** |
-|AclId|String|Yes|acl-xhwhyuo43l0n\*\*\*\*\*\*\*|The ID of the ACL to which the ACL rule to be modified belongs. |
-|AcrId|String|Yes|acr-u98qztgtgvhb\*\*\*\*\*\*\*\*|The ID of the ACL rule to be modified. |
-|RegionId|String|Yes|cn-hangzhou|The ID of the region to which the ACL rule to be modified belongs. |
-|Description|String|No|test|The description of the rule. The description must be 1 to 512 characters in length. |
-|Direction|String|No|in|Specifies whether the ACL rule controls inbound or outbound access requests.
+ Set the value to **ModifyACLRule**. |
+|AclId|String|Yes|acl-xhwhyuo43l0n\*\*\*\*\*\*\*|The ID of the ACL to which the ACL rule belongs. |
+|AcrId|String|Yes|acr-u98qztgtgvhb\*\*\*\*\*\*\*\*|The ID of the ACL rule.
 
- Valid values: **in or out**. |
-|SourceCidr|String|No|0.0.0.0/0|The source IP address range specified in the ACL rule. CIDR blocks and IPv4 addresses are supported.
+ You can call the [DescribeACLAttribute](~~114017~~)operation to query the IDs of ACL rules that belong to the current ACL. |
+|RegionId|String|Yes|cn-hangzhou|The ID of the region where the ACL is deployed. |
+|Description|String|No|test|The description of the ACL rule.
 
- Default value: **0.0.0.0/0**. |
-|DestCidr|String|No|0.0.0.0/0|The destination IP address range specified in the ACL rule. CIDR blocks and IPv4 addresses are supported.
+ The description must be**1**to**512**characters in length. |
+|Direction|String|No|in|The direction in which the ACL rule is applied. Valid values:
 
- Default value: **0.0.0.0/0**. |
-|IpProtocol|String|No|tcp|The Transmission Control Protocol. The value is not case-sensitive. |
-|SourcePortRange|String|No|80/80|The range of the source port. |
-|DestPortRange|String|No|80/80|The range of the destination port. |
-|Policy|String|No|accept|Access permissions:
+ -   **in**: The ACL rule controls inbound network traffic of the on-premises network that is associated with the SAG instance.
+-   **out**: The ACL rule controls outbound network traffic of the on-premises network that is associated with the SAG instance. |
+|SourceCidr|String|No|192.168.1.0/24|The range of the source IP addresses.
 
- -   **accept**: access permissions granted.
--   **drop**: access permissions denied. |
-|Priority|Integer|No|2|The priority of the ACL rule. Valid values: 1 to 100.
+ Set this parameter in CIDR notation. Example: 192.168.1.0/24. |
+|DestCidr|String|No|192.168.10.0/24.|The range of the destination IP addresses.
 
- Default value: 1. |
-|Type|String|No|LAN|The type of the ACL rule:
+ Set this parameter in CIDR notation. Example: 192.168.10.0/24. |
+|IpProtocol|String|No|tcp|The protocol that is applied to the ACL rule.
 
- -   **LAN**: private networks.
--   **WAN**: public networks. |
-|Name|String|No|doctest|The name of the ACL rule. The name must be 2 to 100 characters in length, and can contain digits, periods \(.\), underscores \(\_\), and hyphens \(-\). It must start with a letter or Chinese character. |
+ The supported protocols provided in this topic are for reference only. The actual protocols in the SAG console shall prevail. The value is not case-sensitive. |
+|SourcePortRange|String|No|80/80|The range of the source ports.
+
+ Valid values: **-1** and **1** to **65535**.
+
+ Set the source port range in one of the following formats: 1/200 or 80/80. A value of -1/-1 indicates that all ports are available. |
+|DestPortRange|String|No|80/80|The range of the destination ports.
+
+ Valid values: **-1** and **1** to **65535**.
+
+ Set the destination port range in one of the following formats: 1/200 or 80/80. A value of -1/-1 indicates that all ports are available. |
+|Policy|String|No|accept|The action policy of the ACL rule. Valid values:
+
+ -   **accept**: allows the network traffic.
+-   **drop**: blocks the network traffic. |
+|Priority|Integer|No|2|The priority of the ACL rule.
+
+ A smaller value indicates a higher priority. If rules have the same priority, whichever applied to the SAG devices earlier takes effect.
+
+ Valid values: **1 to 100**. |
+|Type|String|No|LAN|The type of the ACL rule. Valid values:
+
+ -   **LAN**: The ACL rule controls traffic of private IP addresses.
+-   **WAN**: The ACL rule controls traffic of public IP addresses. |
+|Name|String|No|doctest|The name of the ACL rule.
+
+ The name must be 2 to 100 characters in length, and can contain digits, periods \(.\), underscores \(\_\), and hyphens \(-\). It must start with a letter. |
+|DpiSignatureIds.N|RepeatList|No|1|The IDs of applications.
+
+ You can call the [ListDpiSignatures](~~196630~~) operation to query application IDs and information. Maximum value of N: **10**. |
+|DpiGroupIds.N|RepeatList|No|20|The IDs of application groups.
+
+ You can call the [ListDpiGroups](~~196754~~) operation to query application group IDs and information. Maximum value of N: **10**. |
 
 ## Response parameters
 
 |Parameter|Type|Example|Description|
 |---------|----|-------|-----------|
+|AclId|String|acl-xhwhyuo43l0n\*\*\*\*\*\*|The ID of the ACL to which the ACL rule belongs. |
+|AcrId|String|acr-u98qztgtgvhb8\*\*\*\*\*\*|The ID of the ACL rule. |
+|Description|String|test|The description of the ACL rule.
+
+ The description must be**1**to**512**characters in length. |
+|DestCidr|String|192.168.10.0/24|The range of the destination IP addresses.
+
+ Set this parameter in CIDR notation. Example: 192.168.10.0/24. |
+|DestPortRange|String|80/80|The range of the destination ports. |
+|Direction|String|in|The direction in which the ACL rule is applied. Valid values:
+
+ -   **in**: The ACL rule controls inbound network traffic of the on-premises network that is associated with the SAG instance.
+-   **out**: The ACL rule controls outbound network traffic of the on-premises network that is associated with the SAG instance. |
+|DpiGroupIds|List|20|The IDs of application groups. |
+|DpiSignatureIds|List|1|The IDs of applications. |
+|GmtCreate|Long|1553777700000|The timestamp when the ACL rule was created.
+
+ The timestamp is in Long format. If ACL rules have the same priority, the one with the smallest timestamp prevails. |
+|IpProtocol|String|tcp|The protocol that is applied to the ACL rule. |
+|Name|String|doctest|The name of the ACL rule. |
+|Policy|String|drop|The action policy of the ACL rule. Valid values:
+
+ -   **accept**: allows the network traffic.
+-   **drop**: blocks the network traffic. |
+|Priority|Integer|2|The priority of the ACL rule.
+
+ A smaller value indicates a higher priority. If rules have the same priority, whichever applied to the SAG devices earlier takes effect. |
 |RequestId|String|9B0F1C25-389E-4E78-9392-E89F8531F87C|The ID of the request. |
-|AcrId|String|acr-u98qztgtgvhb8\*\*\*\*\*\*|The ID of the ACL modified rule. |
-|AclId|String|acl-xhwhyuo43l0n\*\*\*\*\*\*|The ID of the ACL to which the modified ACL rule belongs. |
-|Description|String|test|The description of the rule. The description must be 1 to 512 characters in length. |
-|Direction|String|in|Specifies whether the ACL rule controls inbound or outbound access requests. Valid values: **in or out**. |
-|SourceCidr|String|0.0.0.0/0|The source IP address range specified in the ACL rule. CIDR blocks and IPv4 addresses are supported.
+|SourceCidr|String|192.168.1.0/24|The range of the source IP addresses.
 
- Default value: **0.0.0.0/0**. |
-|DestCidr|String|0.0.0.0/0|The destination IP address range specified in the ACL rule. CIDR blocks and IPv4 addresses are supported.
-
- Default value: **0.0.0.0/0**. |
-|IpProtocol|String|tcp|The Transmission Control Protocol. The value is not case-sensitive. |
-|SourcePortRange|String|80/80|The range of the source port. |
-|DestPortRange|String|80/80|The range of the destination port. |
-|Policy|String|drop|Access permissions:
-
- -   **accept**: access permissions granted.
--   **drop**: access permissions denied. |
-|Priority|Integer|2|The priority. Valid values: 1 to 100.
-
- Default value: 1. |
-|GmtCreate|Long|1553777700000|The time when the ACL rule was created. It is a long type timestamp. When timestamps are assigned the same priority, the timestamp with the smallest value prevails. |
-|Name|String|doctest|The name of the ACL rule. The name must be 2 to 100 characters in length, and can contain digits, periods \(.\), underscores \(\_\), and hyphens \(-\). It must start with a letter or Chinese character. |
+ Set this parameter in CIDR notation. Example: 192.168.1.0/24. |
+|SourcePortRange|String|80/80|The range of the source ports. |
 
 ## Examples
 
 Sample requests
 
 ```
-http(s)://[Endpoint]/? AclId=acl-xhwhyuo43l0n*******
+http(s)://[Endpoint]/? Action=ModifyACLRule
+&AclId=acl-xhwhyuo43l0n*******
 &AcrId=acr-u98qztgtgvhb********
 &RegionId=cn-hangzhou
-&<Common request parameter>
+&<Common request parameters>
 ```
 
 Sample success responses
 
-`XML` format
+`XML` fomat
 
 ```
-<ModifyACLRule>
-      <AcrId>acr-u98qztgtgvhb87****</AcrId>
-	  <GmtCreate>1553777700000</GmtCreate>
-	  <Direction>out</Direction>
-	  <Priority>1</Priority>
-	  <IpProtocol>TCP</IpProtocol>
-	  <SourceCidr>192.168.3.0/24</SourceCidr>
-	  <SourcePortRange>1/65535</SourcePortRange>
-	  <AclId>acl-xhwhyuo43l0n2b****</AclId>
-	  <Policy>drop</Policy>
-	  <RequestId>9B0F1C25-389E-4E78-9392-E89F8531F87C</RequestId>
-	  <DestPortRange>1/65535</DestPortRange>
-	  <DestCidr>10.0.0.1/32</DestCidr>
-    </ModifyACLRule>
+<ModifyACLRuleResponse>
+  <AcrId>acr-u98qztgtgvhb87****</AcrId>
+  <GmtCreate>1553777700000</GmtCreate>
+  <Direction>out</Direction>
+  <Priority>1</Priority>
+  <IpProtocol>TCP</IpProtocol>
+  <SourceCidr>192.168.1.0/24</SourceCidr>
+  <SourcePortRange>1/65535</SourcePortRange>
+  <AclId>acl-xhwhyuo43l0n2b****</AclId>
+  <Policy>drop</Policy>
+  <RequestId>9B0F1C25-389E-4E78-9392-E89F8531F87C</RequestId>
+  <DestPortRange>1/65535</DestPortRange>
+  <DestCidr>192.168.10.0/24</DestCidr>
+</ModifyACLRuleResponse>
 ```
 
 `JSON` format
@@ -111,13 +146,13 @@ Sample success responses
     "Direction": "out", 
     "Priority": 1, 
     "IpProtocol": "TCP", 
-    "SourceCidr": "192.168.3.0/24", 
+    "SourceCidr": "192.168.1.0/24", 
     "SourcePortRange": "1/65535", 
     "AclId": "acl-xhwhyuo43l0n2b****", 
     "Policy": "drop", 
     "RequestId": "9B0F1C25-389E-4E78-9392-E89F8531F87C", 
     "DestPortRange": "1/65535", 
-    "DestCidr": "10.0.0.1/32"
+    "DestCidr": "192.168.10.0/24"
 }
 ```
 
@@ -125,20 +160,20 @@ Sample success responses
 
 |HttpCode|Error code|Error message|Description|
 |--------|----------|-------------|-----------|
-|403|Forbidden|User not authorized to operate on the specified resource.|The error code returned because you do not have the permission to manage the resource.|
-|403|MissingParameter|The input parameter is missing, please check your input.|The error code returned because a request parameter is not set. Check the request parameters.|
-|403|InvalidDescription|Description not valid.|The error code returned because the length of the description exceeds the upper limit.|
-|403|InvalidParameter|The specified parameter is invalid.|The error code returned because a specified parameter is invalid.|
-|403|FeatureNotSupport|The current edition of the smart access gateway does not support this feature.|The error code returned because the current version of the Smart Access Gateway \(SAG\) device does not support this feature.|
-|403|FeatureNotSupportForActiveSmartAG|The current edition of the active smart access gateway does not support this feature.|The error code returned because the current version of the active SAG device does not support this feature.|
-|403|FeatureNotSupportForStandBySmartAG|The current edition of the standby smart access gateway does not support this feature.|The error code returned because the current version of the standby SAG device does not support this feature.|
-|403|NotSupportedProtocol|The specified protocol of the ACL rule is not supported.|The error code returned because the specified protocol type of the ACL rule is not supported.|
-|403|InvalidId.ACL|The specified ACL ID is invalid.|The error code returned because the specified ACL ID is invalid.|
-|403|InvalidId.ACR|The specified ACL rule ID is invalid.|The error code returned because the specified ACL rule ID is invalid.|
-|403|InvalidPortRange|The specified port range is invalid.|The error code returned because the specified port range is invalid.|
-|403|InternalError|An internal server error occurred.|The error code returned because an internal server error occurred.|
-|400|ACL.NoSupportWanType|An SAG 1000 device does not support a WAN ACL.|The error code returned because an SAG-1000 device does not support a WAN ACL rule.|
-|400|ACL.InvalidType|The specified ACL type is invalid.|The error code returned because the specified ACL rule type is invalid.|
+|403|Forbidden|User not authorized to operate on the specified resource.|The error message returned because you do not have the permissions to manage the specified resource.|
+|403|MissingParameter|The input parameter is missing, please check your input.|The error message returned because one or more required parameter are not set. Check whether you have set all required parameters.|
+|403|InvalidDescription|Description not valid.|The error message returned because the length of the description exceeds the upper limit.|
+|403|InvalidParameter|The specified parameter is invalid.|The error message returned because a parameter is set to an invalid value.|
+|403|FeatureNotSupport|The current edition of the smart access gateway does not support this feature.|The error message returned because the current version of the specified SAG instance does not support this feature.|
+|403|FeatureNotSupportForActiveSmartAG|The current edition of the active smart access gateway does not support this feature.|The error message returned because the current version of the active SAG device does not support this feature.|
+|403|FeatureNotSupportForStandBySmartAG|The current edition of the standby smart access gateway does not support this feature.|The error message returned because the current version of the standby SAG device does not support this feature.|
+|403|NotSupportedProtocol|The specified protocol of the ACL rule is not supported.|The error message returned because the specified protocol type of the ACL rule is not supported.|
+|403|InvalidId.ACL|The specified ACL ID is invalid.|The error message returned because the specified ACL ID is invalid.|
+|403|InvalidId.ACR|The specified ACL rule ID is invalid.|The error message returned because the specified ACL rule ID is invalid.|
+|403|InvalidPortRange|The specified port range is invalid.|The error message returned because the specified port range is invalid.|
+|403|InternalError|An internal server error occurred.|The error message returned because an internal server error occurred.|
+|400|ACL.NoSupportWanType|An SAG 1000 device does not support a WAN ACL.|The error message returned because an SAG-1000 device does not support WAN ACL rules.|
+|400|ACL.InvalidType|The specified ACL type is invalid.|The error message returned because the specified ACL rule type is invalid.|
 
 For a list of error codes, visit the [API Error Center](https://error-center.alibabacloud.com/status/product/Smartag).
 
