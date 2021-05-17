@@ -13,7 +13,7 @@ The SAG app is billed based on the following rules:
     -   If n \> 100: Fees per month = \(n-100\) × 5.42 + 100 × 6.96. Unit: USD.
     -   If n ≤ 100: Fees per month = n × 6.96. Unit: USD.
 -   After the 5 GB data transfer plan is exhausted, you can purchase a subscription data transfer plan for the exceeded amount.
-    -   Subscription data transfer plans offer multiple specifications. The validity period of each data transfer plan is one month. For more information about pricing, see[Table 2](#table_hxx_14d_6pe).
+    -   Subscription data transfer plans offer multiple specifications. The validity period of each data transfer plan is one month. For more information about pricing, see [Table 2](#table_hxx_14d_6pe).
     -   A subscription data transfer plan is shared by all the SAG app instances and client accounts that are under the same Alibaba Cloud account that has purchased the subscription.
 -   If the data transfer plan is exhausted, you can select the pay-as-you-go billing method for the exceeded amount. Pay-as-you-go bills are generated on a daily basis. For more information about pricing, see [Table 3](#table_tos_bd6_5w6).
 -   The 5 GB data transfer plan provided to each client account cannot be shared.
