@@ -12,7 +12,7 @@ Queries authorization information about Smart Access Gateway \(SAG\) instances a
 |---------|----|--------|-------|-----------|
 |Action|String|No|DescribeGrantSagVbrRules|The operation that you want to perform.
 
-Set the value to**DescribeGrantSagVbrRules**. |
+Set the value to **DescribeGrantSagVbrRules**. |
 |RegionId|String|Yes|cn-shanghai|The ID of the region where the SAG instance is deployed. |
 |SmartAGId|String|Yes|sag-0nnteglltw6z4b\*\*\*\*|The ID of the SAG instance. |
 |VbrInstanceId|String|Yes|vbr-bp13gtbhdp0pfqg6s\*\*\*\*|The ID of the VBR. |
