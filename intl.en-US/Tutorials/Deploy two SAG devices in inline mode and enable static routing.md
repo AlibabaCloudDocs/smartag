@@ -8,7 +8,7 @@ The following figure shows the topology of the private network. A Layer 3 switch
 
 ## Prerequisites
 
--   A virtual private cloud \(VPC\) is created in the China \(Beijing\) region. For more information, see [Create a VPC](/intl.en-US/VPCs and VSwitches/VPC management/Create a VPC.md).
+-   A virtual private cloud \(VPC\) is created in the China \(Beijing\) region. For more information, see [Work with VPCs](/intl.en-US/VPCs and vSwitchs/Work with VPCs.md).
 -   A Cloud Enterprise Network \(CEN\) instance is created and associated with the VPC in the China \(Beijing\) region. For more information, see [Create a CEN instance]().
 
 ## Subnetting
@@ -115,7 +115,7 @@ Device 1 is used in this example. Repeat this step to configure the ports of Dev
 
 4.  In the left-side navigation tree, click **Manage LAN Ports**.
 
-5.  In the LAN \(Port 4\) section, click**Edit**.
+5.  In the LAN \(Port 4\) section, click **Edit**.
 
 6.  In the Configure LAN \(Port 4\) dialog box, set the following parameters and click**OK**.
 
@@ -133,7 +133,7 @@ Device 1 is used in this example. Repeat this step to configure the ports of Dev
 
 8.  In the WAN \(Port 5\) section, click**Settings**.
 
-9.  In the Configure WAN \(Port 5\) dialog box, set the following parameters and click**OK**.
+9.  In the Configure WAN \(Port 5\) dialog box, set the following parameters and click **OK**.
 
     Device 1:
 
@@ -162,7 +162,7 @@ Device 1 is used in this example. Repeat this step to configure a routing method
 
 3.  In the left-side navigation tree, click **Methods to Synchronize with On-premises Routes**.
 
-4.  Select **Static Routing**, click**Add Static Route** to add a CIDR block, and then click**OK**.
+4.  Select **Static Routing**, click **Add Static Route** to add a CIDR block, and then click **OK**.
 
     Enter the CIDR block used to route network traffic from Alibaba Cloud to the private network. 172.16.0.0/12 is used in this example.
 
@@ -170,7 +170,7 @@ Device 1 is used in this example. Repeat this step to configure a routing method
 
 5.  On the instance details page, click the **Device Management** tab.
 
-6.  In the left-side navigation tree, click **Manage Routes** and then click**Add Static Route**.
+6.  In the left-side navigation tree, click **Manage Routes** and then click **Add Static Route**.
 
 7.  In the Add Static Route dialog box, add a static route that routes traffic from Alibaba Cloud to the private network.
 
