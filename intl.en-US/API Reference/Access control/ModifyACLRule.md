@@ -12,60 +12,60 @@ Modifies an access control list \(ACL\) rule.
 |---------|----|--------|-------|-----------|
 |Action|String|No|ModifyACLRule|The operation that you want to perform.
 
- Set the value to **ModifyACLRule**. |
+Set the value to **ModifyACLRule**. |
 |AclId|String|Yes|acl-xhwhyuo43l0n\*\*\*\*\*\*\*|The ID of the ACL to which the ACL rule belongs. |
 |AcrId|String|Yes|acr-u98qztgtgvhb\*\*\*\*\*\*\*\*|The ID of the ACL rule.
 
- You can call the [DescribeACLAttribute](~~114017~~)operation to query the IDs of ACL rules that belong to the current ACL. |
+You can call the [DescribeACLAttribute](~~114017~~) operation to query the IDs of ACL rules that belong to the current ACL. |
 |RegionId|String|Yes|cn-hangzhou|The ID of the region where the ACL is deployed. |
 |Description|String|No|test|The description of the ACL rule.
 
- The description must be**1**to**512**characters in length. |
+The description must be**1**to**512**characters in length. |
 |Direction|String|No|in|The direction in which the ACL rule is applied. Valid values:
 
- -   **in**: The ACL rule controls inbound network traffic of the on-premises network that is associated with the SAG instance.
+-   **in**: The ACL rule controls inbound network traffic of the on-premises network that is associated with the SAG instance.
 -   **out**: The ACL rule controls outbound network traffic of the on-premises network that is associated with the SAG instance. |
 |SourceCidr|String|No|192.168.1.0/24|The range of the source IP addresses.
 
- Set this parameter in CIDR notation. Example: 192.168.1.0/24. |
+Set this parameter in CIDR notation. Example: 192.168.1.0/24. |
 |DestCidr|String|No|192.168.10.0/24.|The range of the destination IP addresses.
 
- Set this parameter in CIDR notation. Example: 192.168.10.0/24. |
+Set this parameter in CIDR notation. Example: 192.168.10.0/24. |
 |IpProtocol|String|No|tcp|The protocol that is applied to the ACL rule.
 
- The supported protocols provided in this topic are for reference only. The actual protocols in the SAG console shall prevail. The value is not case-sensitive. |
+The supported protocols provided in this topic are for reference only. The actual protocols in the SAG console shall prevail. The value is not case-sensitive. |
 |SourcePortRange|String|No|80/80|The range of the source ports.
 
- Valid values: **-1** and **1** to **65535**.
+Valid values: **-1** and **1** to **65535**.
 
- Set the source port range in one of the following formats: 1/200 or 80/80. A value of -1/-1 indicates that all ports are available. |
+Set the source port range in one of the following formats: 1/200 or 80/80. A value of -1/-1 indicates that all ports are available. |
 |DestPortRange|String|No|80/80|The range of the destination ports.
 
- Valid values: **-1** and **1** to **65535**.
+Valid values: **-1** and **1** to **65535**.
 
- Set the destination port range in one of the following formats: 1/200 or 80/80. A value of -1/-1 indicates that all ports are available. |
+Set the destination port range in one of the following formats: 1/200 or 80/80. A value of -1/-1 indicates that all ports are available. |
 |Policy|String|No|accept|The action policy of the ACL rule. Valid values:
 
- -   **accept**: allows the network traffic.
+-   **accept**: allows the network traffic.
 -   **drop**: blocks the network traffic. |
 |Priority|Integer|No|2|The priority of the ACL rule.
 
- A smaller value indicates a higher priority. If rules have the same priority, whichever applied to the SAG devices earlier takes effect.
+A smaller value indicates a higher priority. If rules have the same priority, whichever applied to the SAG devices earlier takes effect.
 
- Valid values: **1 to 100**. |
+Valid values: **1 to 100**. |
 |Type|String|No|LAN|The type of the ACL rule. Valid values:
 
- -   **LAN**: The ACL rule controls traffic of private IP addresses.
+-   **LAN**: The ACL rule controls traffic of private IP addresses.
 -   **WAN**: The ACL rule controls traffic of public IP addresses. |
 |Name|String|No|doctest|The name of the ACL rule.
 
- The name must be 2 to 100 characters in length, and can contain digits, periods \(.\), underscores \(\_\), and hyphens \(-\). It must start with a letter. |
+The name must be 2 to 100 characters in length, and can contain digits, periods \(.\), underscores \(\_\), and hyphens \(-\). It must start with a letter. |
 |DpiSignatureIds.N|RepeatList|No|1|The IDs of applications.
 
- You can call the [ListDpiSignatures](~~196630~~) operation to query application IDs and information. Maximum value of N: **10**. |
+You can call the [ListDpiSignatures](~~196630~~) operation to query application IDs and information. Maximum value of N: **10**. |
 |DpiGroupIds.N|RepeatList|No|20|The IDs of application groups.
 
- You can call the [ListDpiGroups](~~196754~~) operation to query application group IDs and information. Maximum value of N: **10**. |
+You can call the [ListDpiGroups](~~196754~~) operation to query application group IDs and information. Maximum value of N: **10**. |
 
 ## Response parameters
 
@@ -75,33 +75,33 @@ Modifies an access control list \(ACL\) rule.
 |AcrId|String|acr-u98qztgtgvhb8\*\*\*\*\*\*|The ID of the ACL rule. |
 |Description|String|test|The description of the ACL rule.
 
- The description must be**1**to**512**characters in length. |
+The description must be**1**to**512**characters in length. |
 |DestCidr|String|192.168.10.0/24|The range of the destination IP addresses.
 
- Set this parameter in CIDR notation. Example: 192.168.10.0/24. |
+Set this parameter in CIDR notation. Example: 192.168.10.0/24. |
 |DestPortRange|String|80/80|The range of the destination ports. |
 |Direction|String|in|The direction in which the ACL rule is applied. Valid values:
 
- -   **in**: The ACL rule controls inbound network traffic of the on-premises network that is associated with the SAG instance.
+-   **in**: The ACL rule controls inbound network traffic of the on-premises network that is associated with the SAG instance.
 -   **out**: The ACL rule controls outbound network traffic of the on-premises network that is associated with the SAG instance. |
 |DpiGroupIds|List|20|The IDs of application groups. |
 |DpiSignatureIds|List|1|The IDs of applications. |
 |GmtCreate|Long|1553777700000|The timestamp when the ACL rule was created.
 
- The timestamp is in Long format. If ACL rules have the same priority, the one with the smallest timestamp prevails. |
+The timestamp is in Long format. If ACL rules have the same priority, the one with the smallest timestamp prevails. |
 |IpProtocol|String|tcp|The protocol that is applied to the ACL rule. |
 |Name|String|doctest|The name of the ACL rule. |
 |Policy|String|drop|The action policy of the ACL rule. Valid values:
 
- -   **accept**: allows the network traffic.
+-   **accept**: allows the network traffic.
 -   **drop**: blocks the network traffic. |
 |Priority|Integer|2|The priority of the ACL rule.
 
- A smaller value indicates a higher priority. If rules have the same priority, whichever applied to the SAG devices earlier takes effect. |
+A smaller value indicates a higher priority. If rules have the same priority, whichever applied to the SAG devices earlier takes effect. |
 |RequestId|String|9B0F1C25-389E-4E78-9392-E89F8531F87C|The ID of the request. |
 |SourceCidr|String|192.168.1.0/24|The range of the source IP addresses.
 
- Set this parameter in CIDR notation. Example: 192.168.1.0/24. |
+Set this parameter in CIDR notation. Example: 192.168.1.0/24. |
 |SourcePortRange|String|80/80|The range of the source ports. |
 
 ## Examples
