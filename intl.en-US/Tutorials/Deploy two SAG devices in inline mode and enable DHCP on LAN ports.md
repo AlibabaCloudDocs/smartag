@@ -2,12 +2,12 @@
 
 This topic describes how to deploy two Smart Access Gateway \(SAG\) devices in inline mode and enable Dynamic Host Configuration Protocol \(DHCP\) on the LAN ports. This way, you can connect private networks to Alibaba Cloud and improve the availability of your networks.
 
--   A Virtual Private Cloud \(VPC\) network is created. For more information, see [Create a VPC](/intl.en-US/VPCs and VSwitches/VPC management/Create a VPC.md).
+-   A Virtual Private Cloud \(VPC\) network is created. For more information, see [Work with VPCs](/intl.en-US/VPCs and vSwitchs/Work with VPCs.md).
 -   A Cloud Enterprise Network \(CEN\) instance is created and associated with the VPC network. For more information, see [Create a CEN instance]().
 
 In this example, an enterprise has created a VPC network in China \(Beijing\) and has deployed services in the VPC network. The enterprise wants to connect private networks to Alibaba Cloud through SAG devices. The enterprise wants to deploy two SAG-1000 devices in inline mode. The enterprise also wants to enable DHCP on the LAN ports of the SAG devices. This way, the enterprise can manage and dynamically assign IP addresses to the client side, and operations and maintenance \(O&M\) workloads are reduced. The enterprise also wants to enable the DHCP failover and high availability \(HA\) features of the SAG devices. This allows the enterprise to switch over to the standby device when the active device is faulty, which improves the network availability.
 
-![Architecture](https://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/en-US/8997631061/p101679.png)
+![Architecture](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/9351731061/p101679.png)
 
 ## Subnetting
 
@@ -40,7 +40,7 @@ The following table describes the IP addresses and CIDR blocks in this example. 
 
 ## Configuration procedure
 
-![Configuration procedure](https://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/en-US/9997631061/p162736.png)
+![Configuration procedure](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/9997631061/p162736.png)
 
 ## Step 1: Purchase SAG devices
 
@@ -75,13 +75,13 @@ After you purchase SAG devices in the SAG console, Alibaba Cloud delivers the de
 7.  On the Pay page, select a payment method and complete the payment.
 
 
-You can check whether the order has been placed on the Smart Access Gateway page. The SAG devices will be shipped within two business days. If the shipping is overdue, you can[submit a ticket](https://workorder-intl.console.aliyun.com/?spm=5176.15120809.nav-right.dticket.130266ebEB92in#/ticket/add/?productId=1308)to view the shipping status.
+You can check whether the order has been placed on the Smart Access Gateway page. The SAG devices will be shipped within two business days. If the shipping is overdue, you can [submit a ticket](https://workorder-intl.console.aliyun.com/?spm=5176.15120809.nav-right.dticket.130266ebEB92in#/ticket/add/?productId=1308) to view the shipping status.
 
-![View the status](https://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/en-US/5323660061/p101651.png)
+![View the status](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/5323660061/p101651.png)
 
 ## Step 2: Activate the SAG devices
 
-After you receive the SAG devices, check whether you have received all the accessories. For more information, see [Descriptions of an SAG-1000 device](/intl.en-US/Smart Access Gateway/SAG-1000 configurations/Descriptions of an SAG-1000 device.md).
+After you receive the SAG devices, check whether you have received all the accessories. For more information, see [Descriptions of an SAG-1000 device](/intl.en-US/Smart Access Gateway/SAG-1000 usage instructions/Descriptions of an SAG-1000 device.md).
 
 1.  Log on to the [SAG console](https://smartag.console.aliyun.com/).
 
@@ -114,7 +114,7 @@ After you receive the SAG devices, check whether you have received all the acces
 
 You must log on to the web console to configure the SAG devices. Before you begin, make sure that the devices are started, the 4G networks work as expected, and the devices are connected to Alibaba Cloud.
 
-1.  You can use a network cable to connect port 2 of the active SAG device to your computer and log on to the web console. For more information, see [Step 1: Configure the local client](/intl.en-US/Smart Access Gateway/SAG-1000 configurations/Web configurations for SAG-1000 devices.md) and [Step 2: Set the password](/intl.en-US/Smart Access Gateway/SAG-1000 configurations/Web configurations for SAG-1000 devices.md).
+1.  You can use a network cable to connect port 2 of the active SAG device to your computer and log on to the web console. For more information, see [Step 1: Configure the local client](/intl.en-US/Smart Access Gateway/SAG-1000 usage instructions/Configure the SAG-1000 device in the web console.md) and [Step 2: Set the password](/intl.en-US/Smart Access Gateway/SAG-1000 usage instructions/Configure the SAG-1000 device in the web console.md).
 
 2.  Assign port roles
 
@@ -126,7 +126,7 @@ You must log on to the web console to configure the SAG devices. Before you begi
 
     3.  On the Port Alloc page, find the port and select a role.
 
-        ![Assign port roles](https://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/en-US/6537811061/p162661.png)
+        ![Assign port roles](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/6537811061/p162661.png)
 
         -   **Port 5**: Select **WAN**.
         -   **Port 4**: Select **LAN**.
@@ -138,7 +138,7 @@ You must log on to the web console to configure the SAG devices. Before you begi
 
     2.  On the WAN page, click **Port 5 \(WAN\)**.
 
-        ![Configure the WAN port](https://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/en-US/6537811061/p162314.png)
+        ![Configure the WAN port](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/6537811061/p162314.png)
 
         -   **Link Type**: Select **Static**.
         -   **IP**: Enter the IP address of the WAN port. 192.168.100.1 is used in this example.
@@ -155,7 +155,7 @@ You must log on to the web console to configure the SAG devices. Before you begi
 
     2.  On the LAN page, click **Port 4 \(LAN\)**.
 
-        ![Configure the LAN port](https://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/en-US/6537811061/p162320.png)
+        ![Configure the LAN port](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/6537811061/p162320.png)
 
         -   **Link Type**: Select **Dynamic IP**.
         -   **Private Segment**: Select **Custom Segment** and enter 192.168.50.0/24.
@@ -175,7 +175,7 @@ You must log on to the web console to configure the SAG devices. Before you begi
 
     2.  On the HA page, select **Static HA**.
 
-        ![Configure HA](https://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/en-US/6537811061/p162323.png)
+        ![Configure HA](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/6537811061/p162323.png)
 
         -   **Port**: **Port 4 \(LAN\)** is used in this example.
         -   **Virtual IP**: the virtual IP address. 192.168.50.254 is used in this example.
@@ -223,7 +223,7 @@ To connect private networks to Alibaba Cloud, you must advertise routes to Aliba
 
     192.168.50.0/24 is used in this example.
 
-    ![Advertise routes to Alibaba Cloud](https://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/en-US/7537811061/p162311.png)
+    ![Advertise routes to Alibaba Cloud](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/7537811061/p162311.png)
 
 
 ## Step 5: Set up network connections in the console
@@ -246,7 +246,7 @@ After you complete the preceding steps, you must set up network connections in t
 
         The name must be 2 to 100 characters in length and can contain digits, underscores \(\_\), and hyphens \(-\). It must start with a letter or a Chinese character.
 
-        ![Create a CCN instance](https://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/en-US/6323660061/p76961.png)
+        ![Create a CCN instance](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/6323660061/p76961.png)
 
 2.  Associate the SAG instance with a CCN instance.
 
@@ -258,7 +258,7 @@ After you complete the preceding steps, you must set up network connections in t
 
     4.  On the Network Instance Details tab, click **Attach Network**, select the CCN instance you created, and then click **OK**.
 
-        ![The Attach Network tab](https://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/en-US/6323660061/p132840.png)
+        ![The Attach Network tab](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/6323660061/p132840.png)
 
 3.  Associate the CCN instance with a CEN instance.
 
@@ -270,7 +270,7 @@ After you complete the preceding steps, you must set up network connections in t
 
     3.  In the Bind CEN Instance pane, select **Existing CEN**, select the CCN instance from the drop-down list, and then click **OK**.
 
-        ![Select a CEN instance](https://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/en-US/6323660061/p63012.png)
+        ![Select a CEN instance](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/6323660061/p63012.png)
 
 4.  Create a security group rule.
 
@@ -283,7 +283,7 @@ After you complete the preceding steps, you can test the connectivity between th
 
 1.  Before you test the connectivity, you must configure the network interface controller \(NIC\) of your on-premises computer to automatically obtain an IP address. For more information, see the system manuals of your on-premises computer. The Windows operating system is used in the following example.
 
-    ![Automatically obtain an IP address](https://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/en-US/7537811061/p162415.png)
+    ![Automatically obtain an IP address](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/7537811061/p162415.png)
 
 2.  Select Automatically obtain an IP address. Then, the SAG device automatically assigns an IP address to your on-premises computer. After the SAG device assigns an IP address to your on-premises computer, you can test the connectivity between the VPC network and your private networks.
 
