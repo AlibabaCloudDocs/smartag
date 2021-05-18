@@ -4,11 +4,11 @@ This topic describes how to deploy two Smart Access Gateway \(SAG\) devices in i
 
 The following figure shows the topology of the private network. A Layer 3 switch is connected to two Layer 2 switches. Local clients and servers are connected to the Layer 2 switches. Two SAG devices are connected to the Layer 3 switch in inline mode to establish network connections between the private network and Alibaba Cloud. The two SAG devices serve as a standby device for each other.
 
-![Deploy two SAG devices in inline mode](https://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/en-US/1440731061/p101680.png)
+![Deploy two SAG devices in inline mode](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/1440731061/p101680.png)
 
 ## Prerequisites
 
--   A Virtual Private Cloud \(VPC\) network is created in the China \(Beijing\) region. For more information, see [Create a VPC](/intl.en-US/VPCs and VSwitches/VPC management/Create a VPC.md).
+-   A Virtual Private Cloud \(VPC\) network is created in the China \(Beijing\) region. For more information, see [Work with VPCs](/intl.en-US/VPCs and vSwitchs/Work with VPCs.md).
 -   A Cloud Enterprise Network \(CEN\) instance is created and associated with the VPC network in the China \(Beijing\) region. For more information, see [Create a CEN instance]().
 
 ## Subnetting
@@ -59,11 +59,11 @@ After you purchase SAG devices in the SAG console, Alibaba Cloud delivers the de
 
 You can check whether the order has been placed on the Smart Access Gateway page. The SAG devices will be shipped within two business days. If the order is not shipped within two business days, [submit a ticket](https://workorder-intl.console.aliyun.com/?spm=5176.15120809.nav-right.dticket.130266ebEB92in#/ticket/add/?productId=1308) to query the shipping status.
 
-![Query the shipping status](https://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/en-US/5323660061/p101651.png)
+![Query the shipping status](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/5323660061/p101651.png)
 
 ## Step 2: Activate the SAG devices
 
-After you receive the SAG devices, check whether you have received all the accessories. For more information, see [Descriptions of an SAG-1000 device](/intl.en-US/Smart Access Gateway/SAG-1000 configurations/Descriptions of an SAG-1000 device.md).
+After you receive the SAG devices, check whether you have received all the accessories. For more information, see [Descriptions of an SAG-1000 device](/intl.en-US/Smart Access Gateway/SAG-1000 usage instructions/Descriptions of an SAG-1000 device.md).
 
 1.  Log on to the [SAG console](https://smartag.console.aliyun.com/).
 
@@ -73,7 +73,7 @@ After you receive the SAG devices, check whether you have received all the acces
 
 4.  Click the ID of the target SAG instance. On the instance details page, click the **Device Management** tab and enter the serial number of the device.
 
-    ![Add the device](https://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/en-US/0779631061/p101760.png)
+    ![Add the device](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/0779631061/p101760.png)
 
 5.  Click **Add Device**.
 
@@ -126,9 +126,9 @@ Device 1 is used in this example. Repeat this step to configure the ports of Dev
     -   **Subnet Mask**: Enter the subnet mask of the LAN port IP address. 255.255.255.252 is used in this example.
 7.  In the left-side navigation tree, click **Manage WAN Ports**.
 
-8.  In the WAN \(Port 5\) section, click**Edit**.
+8.  In the WAN \(Port 5\) section, click **Edit**.
 
-9.  In the Configure WAN \(Port 5\) dialog box that appears, set the following parameters and click**OK**.
+9.  In the Configure WAN \(Port 5\) dialog box that appears, set the following parameters and click **OK**.
 
     -   **Connection Type**: Select **Static IP**.
     -   **IP Address**: Enter the IP address of the WAN port. 192.168.100.1 is used in this example.
@@ -255,7 +255,7 @@ After you configure the SAG devices, you must set up network connections to conn
 
         The name must be 2 to 100 characters in length and can contain digits, underscores \(\_\), and hyphens \(-\). It must start with a letter or Chinese character.
 
-        ![Create a CCN instance](https://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/en-US/6323660061/p76961.png)
+        ![Create a CCN instance](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/6323660061/p76961.png)
 
 2.  Set up network connections.
 
@@ -267,7 +267,7 @@ After you configure the SAG devices, you must set up network connections to conn
 
     4.  On the Network Instance Details tab, click **Attach Network**, select the CCN instance, and then click **OK**.
 
-        ![Select the CCN instance](https://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/en-US/6910843951/p63008.png)
+        ![Select the CCN instance](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/6910843951/p63008.png)
 
 3.  Associate the CCN instance with a CEN instance.
 
@@ -281,7 +281,7 @@ After you configure the SAG devices, you must set up network connections to conn
 
         After the CCN instance is associated with the CEN instance, SAG devices in the CCN can communicate with networks such as VPC networks and virtual border routers \(VBRs\) associated with the CEN.
 
-        ![Associate with a CEN instance](https://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/en-US/6323660061/p63012.png)
+        ![Associate with a CEN instance](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/6323660061/p63012.png)
 
 4.  Configure a security group.
 
@@ -297,7 +297,7 @@ After you configure the SAG devices, you must set up network connections to conn
 
         The following figure shows how to configure a security group rule. Set Authorization Object to the CIDR block of the private network.
 
-        ![Security group](https://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/assets/img/en-US/1779631061/p77754.png)
+        ![Security group](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/1779631061/p77754.png)
 
 
 ## Step 8: Test the connectivity
