@@ -117,7 +117,7 @@ Device 1 is used in this example. Repeat this step to configure the ports of Dev
 
 5.  In the LAN \(Port 4\) section, click **Edit**.
 
-6.  In the Configure LAN \(Port 4\) dialog box, set the following parameters and click**OK**.
+6.  In the Configure LAN \(Port 4\) dialog box, set the following parameters and click **OK**.
 
     Device 1:
 
