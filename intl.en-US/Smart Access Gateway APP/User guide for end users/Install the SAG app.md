@@ -13,7 +13,7 @@ You can install the SAG app on the following operating systems: Windows, Android
 |Operating system|Supported version|Download and installation description|
 |----------------|-----------------|-------------------------------------|
 |Windows|Supports Windows 7 SP1 and later \(32-bit and 64-bit\).|To download the SAG app for Windows, click [SAG app for Windows](http://sdwan-oss-shanghai.oss-cn-shanghai.aliyuncs.com/win_installer/windows_latest_en.html). After you download the SAG app, follow the steps recommended by the operating system to install the SAG app. |
-|Android|Supports Android 5.0 to 10.0.|To download the SAG app for Android, scan the following QR code. ![QR code for Android on Alibaba Cloud International Site](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/1831435161/p128702.png)
+|Android|Supports Android 5.0 to 10.0.|To download the SAG app for Android, scan the following QR code. ![21-5-27](https://static-aliyun-doc.oss-accelerate.aliyuncs.com/assets/img/en-US/0680012261/p278173.png)
 
 After you download the SAG app, follow the steps recommended by the operating system to install the SAG app. |
 |macOS|Supports macOS 10.11.1 and later.|To download the SAG app for macOS from the App Store, use the keyword "Aliyun Network Client" to search for the "Aliyun Network Client" application.
